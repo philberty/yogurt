@@ -1,6 +1,8 @@
 {
+    "name": "FringeTv",
     "private": true,
     "dependencies": {
+	"requirejs": null,
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
 	"jquery": "1.10.2",

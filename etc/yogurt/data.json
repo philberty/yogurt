@@ -1,0 +1,41 @@
+{
+    'premier_events_keys': [
+	'GSL',
+	'Dreamhack'
+    ],
+    'GSL' {
+	'description':'Global starcraft league',
+	'keys':[
+	    'GSL-2014-season-2'
+	],
+	'GSL-2014-season-2': {
+	    'type' : 'twitch',
+	    'subscription' : true,
+	    'wiki' : 'http://wiki.teamliquid.net/starcraft2/2014_Global_StarCraft_II_League_Season_2',
+	    'vods' : [
+		// ....
+	    ]
+	}
+    },
+    'Dreamhack':{ 
+	'description':'World\'s largest Lan Party',
+	'keys':[
+	    'Dreamhack-2014-Valencia'
+	],
+	'Dreamhack-2014-Valencia': {
+	    'type' : 'twitch',
+	    'subscription' : false,
+	    'wiki':'http://wiki.teamliquid.net/starcraft2/2014_DreamHack_Open/Valencia'
+	    'vods' : [
+		{
+		    'title':'Day 1',
+		    'stream':'http://www.twitch.tv/dreamhacksc2/b/549017420'
+		},
+		{
+		    'title':'Day 2'
+		    'stream':'http://www.twitch.tv/dreamhacksc2/b/539032245'
+		}
+	    ]
+	}
+    }
+}
