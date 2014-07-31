@@ -1,15 +1,14 @@
 import os
 import json
 
-import AppCache
+from . import AppCache
 
 from flask import Flask
 from flask import jsonify
 from flask import request
 from flask import render_template
 
-sfolder = os.path.join (os.path.dirname (os.path.abspath (__file__)), 'www')
-app = Flask ('YogurtServer', static_folder=sfolder)
+app = Flask (__name__)
 
 @app.errorhandler (404)
 def not_found (error=None):

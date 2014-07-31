@@ -5,9 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Fringe Tv Esports</title>
-    <script src="/js/lib/requirejs/require.js" data-main="js/app"></script>
   </head>
-  <body>
-    <p>Nothing here {{'yet' + '!'}}</p>
+  
+  <body ng-controller="PhoneListCtrl">
+    
+    <ul>
+      <li ng-repeat="phone in phones">
+	{{phone.name}}
+	<p>{{phone.snippet}}</p>
+      </li>
+    </ul>
+  
+    <script src="/js/lib/requirejs/require.js" data-main="js/app.js"></script>
   </body>
 </html>

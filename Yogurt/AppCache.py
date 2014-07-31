@@ -1,9 +1,9 @@
 import json
 import time
 
-import ServerUtil
-import RedisCache
-import LocalCache
+from . import ServerUtil
+from . import RedisCache
+from . import LocalCache
 
 CacheServer = None
 class CacheSystem:

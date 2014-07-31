@@ -1,12 +1,17 @@
 require.config({
     paths: {
-	jquery: '/js/lib/jquery/jquery',
+	jquery: '/js/lib/jquery/dist/jquery',
 	angular: '/js/lib/angular/angular',
-	feeds: '/js/feeds'
+	domReady: '/js/lib/requirejs-domready/domReady'
+    },
+    shim: {
+	'angular': {
+	    exports: 'angular'
+        }
     }
 });
 
-define(['jquery', 'angular', 'feeds'], function ($, Angular, Feeds) {
-    console.log ('Loaded this dependancies!')
-    Feeds.upcoming ()
+define(['jquery', 'angular'], function ($, angular) {
+    var phonecatApp = angular.module('phonecatApp', []);	
+    console.log (phonecatApp.controller)
 });

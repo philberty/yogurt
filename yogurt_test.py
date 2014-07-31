@@ -3,39 +3,37 @@
 import json
 import unittest
 
+import Yogurt
+from Yogurt import ServerUtil
 from Yogurt import AppCache
-from Yogurt import YogurtApp as FlaskApp
+from Yogurt import FeedUtil
+from Yogurt import YogurtApp
 
-def GenerateCacheData ():
-    return {'foo':1, 'bar':[1,2,3,4]}
-
-def PrintJsonPretty (data):
-    print json.dumps (data, indent=4, separators=(',', ': '))
+class TestFeed (object):
+    @FeedUtil.Feed (key='test')
+    def Feed_generateSomeData (self):
+        return {'test':[1,2,3]}
 
 class YogurtTestRestApi (unittest.TestCase):
+
     def setUp (self):
-        FlaskApp.app.config ['TESTING'] = True
-        self.app = FlaskApp.app.test_client()
-        feed_config = [{'key':'test', 'hook':GenerateCacheData}]
-        AppCache.CacheServer = AppCache.CacheSystem ('shelve', { },
-                                                     feed_config={'timeout':-1,
-                                                                  'feeds':feed_config
-                                                              })
-    
-    def tearDown (self):
-        pass
+        Yogurt.SetupTestEnv ([TestFeed ()])
+        YogurtApp.app.config ['TESTING'] = True
+        self.app = YogurtApp.app.test_client ()
 
     def test_pass (self):
         resp = self.app.get ('/api/test')
         assert resp.status_code == 200
-        data = json.loads (resp.data)
-        PrintJsonPretty (data)
+        r = json.loads (resp.data.decode("utf-8"))
+        assert (r ['status'] == 200)
+        print (r)
 
     def test_fail (self):
         resp = self.app.get ('/api/willfail')
         assert resp.status_code == 404
-        data = json.loads (resp.data)
-        PrintJsonPretty (data)
+        r = json.loads (resp.data.decode("utf-8"))
+        assert (r ['status'] == 404)
+        print (r)
 
 if __name__ == '__main__':
     unittest.main ()

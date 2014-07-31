@@ -1,14 +1,18 @@
 import sys
 import time
+import logging
 import traceback
-import ServerUtil
 
-import AppCache
-import YogurtApp
-
-from gevent.pywsgi import WSGIServer
+from . import YogurtApp
+from . import AppCache
+from . import ServerUtil
 
 version = '0.1'
+
+def SetupTestEnv (feeds):
+    logging.basicConfig(level=logging.INFO)
+    AppCache.CacheServer = AppCache.CacheSystem ({'type':'local'}, feeds)
+    AppCache.CacheServer.fillup ()
 
 class YogurtServer:
     def __init__ (self, bind, port, cache_config, feeds):
@@ -19,10 +23,9 @@ class YogurtServer:
 
     def listen (self):
         try:
-            ServerUtil.info ('WSGIServer:[gevent] starting http://%s:%i/' \
+            ServerUtil.info ('[Flask] starting http://%s:%i/' \
                              % (self.web_bind, self.web_port))
-            http_server = WSGIServer ((self.web_bind, self.web_port), YogurtApp.app)
-            http_server.serve_forever ()
+            YogurtApp.app.run (host=self.web_bind, port=self.web_port)
         except KeyboardInterrupt:
             ServerUtil.warning ('Caught keyboard interupt stopping')
         except:

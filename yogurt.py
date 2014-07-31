@@ -10,10 +10,10 @@ import logging.config
 import Yogurt
 
 from Yogurt import feed_teamliquid
-from ConfigParser import RawConfigParser as CParser
+from configparser import RawConfigParser as CParser
 
 def printVersion ():
-    print "Yogurt Version [%s]" % Yogurt.version
+    print ("Yogurt Version [%s]" % Yogurt.version)
 
 def serverMain ():
     global _spid, _rpid
@@ -29,8 +29,7 @@ def serverMain ():
         printVersion ()
         return
     if options.config is None:
-        print >> sys.stderr, "Error requires config file see --help"
-        sys.exit (1)
+        sys.exit ( "Error requires config file see --help")
     try:
         parseConfig = CParser ()
         parseConfig.read (options.config)
@@ -39,19 +38,17 @@ def serverMain ():
         cache = str (parseConfig.get ("yogurt", "cache"))
         cache_config = parseConfig._sections [cache]
     except:
-        print >> sys.stderr, "Error Parsing config [%s]" % sys.exc_info ()[1]
-        sys.exit (1)
+        sys.exit ("Error Parsing config [%s]" % sys.exc_info ()[1])
     logging.config.fileConfig (options.config)
     if options.fork is True:
         pid = os.fork ()
         if pid == -1:
-            print >> sys.stderr, "Error forking as daemon"
-            sys.exit (1)
+            sys.exit ("Error forking as daemon")
         elif pid == 0:
             os.setsid ()
             os.umask (0)
         else:
-            print pid
+            print (pid)
             sys.exit (0)
     feeds = [feed_teamliquid.FeedTeamLiqud ()]
     Yogurt.YogurtServer (wbind, wport, cache_config, feeds).listen ()

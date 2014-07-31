@@ -1,15 +1,10 @@
 import sys
 import json
-
 import functools
 import traceback
 
-import ServerUtil
-import AppCache
-
-class FeedException (Exception):
-    def __init__ (self, message):
-        self.message = message
+from . import AppCache
+from . import ServerUtil
 
 class Feed (object):
     def __init__ (self, **kwargs):
