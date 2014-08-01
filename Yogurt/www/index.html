@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app>
+<html lang="en" ng-app="phonecatApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,17 @@
     <title>Fringe Tv Esports</title>
   </head>
   
-  <body ng-controller="PhoneListCtrl">
-    
-    <ul>
-      <li ng-repeat="phone in phones">
-	{{phone.name}}
-	<p>{{phone.snippet}}</p>
-      </li>
-    </ul>
-  
+  <body>
+
+    <div ng-controller="PhoneListCtrl">
+      <ul>
+	<li ng-repeat="phone in phones">
+	  {{phone.name}}
+	  <p>{{phone.snippet}}</p>
+	</li>
+      </ul>
+    </div>
+
     <script src="/js/lib/requirejs/require.js" data-main="js/app.js"></script>
   </body>
 </html>
