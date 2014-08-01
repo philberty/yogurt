@@ -8,7 +8,8 @@ from flask import jsonify
 from flask import request
 from flask import render_template
 
-app = Flask (__name__)
+sfolder = os.path.join (os.path.dirname (os.path.abspath (__file__)), 'www')
+app = Flask (__name__, static_folder=sfolder)
 
 @app.errorhandler (404)
 def not_found (error=None):
@@ -18,10 +19,6 @@ def not_found (error=None):
     resp = jsonify (message)
     resp.status_code = 404
     return resp
-
-@app.route ("/")
-def index ():
-    return app.send_static_file ('index.html')
 
 @app.route ("/api/<path:key>")
 def Yogurt_RestApi (key):
@@ -35,6 +32,10 @@ def Yogurt_RestApi (key):
             data ['status'] = 200
             return jsonify (data)
         return not_found ()
+
+@app.route ("/")
+def index ():
+    return app.send_static_file ('index.html')
 
 @app.route ("/<path:path>")
 def statics (path):

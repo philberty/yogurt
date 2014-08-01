@@ -9,6 +9,9 @@ import requests
 from pyquery import PyQuery as pq
 
 class FeedTeamLiqud:
+    """
+    This isn't very nice to read all of this code but it will be fixed at some point
+    """
     def __init__ (self):
         self.__base = 'http://teamliquid.net'
 
