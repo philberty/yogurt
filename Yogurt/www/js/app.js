@@ -2,16 +2,19 @@ require.config({
     paths: {
 	jquery: '/js/lib/jquery/dist/jquery',
 	angular: '/js/lib/angular/angular',
-	domReady: '/js/lib/requirejs-domready/domReady'
+	angularResource: '/js/lib/angular-resource/angular-resource'
     },
     shim: {
 	'angular': {
 	    exports: 'angular'
-        }
+        },
+	'angularResource': {
+	   exports: 'angularResource'
+	}
     }
 });
 
-define("app", ["angular"], function(angular) {
+define("app", ["angular", "angularResource"], function(angular, angularResource) {
     var app = angular.module("phonecatApp", []);
     
     app.controller('PhoneListCtrl', function ($scope) {

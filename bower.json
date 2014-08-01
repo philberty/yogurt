@@ -2,9 +2,11 @@
     "name": "FringeTv",
     "private": true,
     "dependencies": {
-	"jquery": "latest",
-	"angular": "latest",
 	"requirejs": "latest",
-	"requirejs-domready": "latest"
+	"angular": "1.2.x",
+	"angular-mocks": "~1.2.x",
+	"bootstrap": "~3.1.1",
+	"angular-route": "~1.2.x",
+	"angular-resource": "~1.2.x"
     }
 }
