@@ -18,12 +18,16 @@ class CacheSystem:
             raise Exception ('Uknown cache type [%s]' % self.type)
         self.__cache.set ("__yogurt_test","ping")
 
-    def fillup (self):
+    def fillup (self, ignore=True):
         ServerUtil.info ('Initilizing app cache')
-        for i in self.feeds:
-            feeds = filter (lambda x: x.startswith ('Feed_'), dir (i))
-            for y in feeds:
-                getattr (i, y) ()
+        try:
+            for i in self.feeds:
+                feeds = filter (lambda x: x.startswith ('Feed_'), dir (i))
+                for y in feeds:
+                    getattr (i, y) ()
+        except:
+            if not ignore:
+                raise
         ServerUtil.info ('Cache initilization done!')
 
     def get (self, key):

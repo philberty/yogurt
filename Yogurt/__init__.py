@@ -7,10 +7,13 @@ from . import YogurtApp
 from . import AppCache
 from . import ServerUtil
 
-version = '0.1'
+__version__ = '0.1'
+__author__ = "Philip Herron"
+__email__ = "redbrain@gcc.gnu.org"
+__url__ = "https://github.com/redbrain"
 
 def SetupTestEnv (feeds):
-    logging.basicConfig(level=logging.INFO)
+    logging.basicConfig (level=logging.INFO)
     AppCache.CacheServer = AppCache.CacheSystem ({'type':'local'}, feeds)
     AppCache.CacheServer.fillup ()
 
@@ -33,17 +36,14 @@ class YogurtServer:
             ServerUtil.error ("%s" % sys.exc_info () [1])
 
 class YogurtFeeder:
-    def __init__ (self, feeds, cache_config):
+    def __init__ (self, cache_config, feeds):
         AppCache.CacheServer = AppCache.CacheSystem (cache_config, feeds)
 
     def run (self, timer):
-        if timer is None:
-            AppCache.CacheServer.fillup ()
-        else:
-            ServerUtil.info ('Feeding every %s mins' % timer)
-            try:
-                while True:
-                    AppCache.CacheServer.fillup ()
-                    time.sleep (timer * 60)
-            except KeyboardInterrupt:
-                ServerUtil.info ('Caught Keyboard interupt stopping!')
+        ServerUtil.info ('Feeding every %s mins' % timer)
+        try:
+            while True:
+                AppCache.CacheServer.fillup ()
+                time.sleep (timer * 60)
+        except KeyboardInterrupt:
+            ServerUtil.info ('Caught Keyboard interupt stopping!')

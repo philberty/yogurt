@@ -1,10 +1,9 @@
 import sys
 import json
 import requests
-import ServerUtil
 
-from FeedUtil import FeedException, Feed
-from ConfigParser import RawConfigParser as CParser
+from . import ServerUtil
+from . import FeedUtil
 
 class FeedYouTube (object):
     def __init__ (self, url, key):

@@ -8,7 +8,7 @@ import traceback
 import logging.config
 
 import Yogurt
-
+from Yogurt import feed_youtube
 from Yogurt import feed_teamliquid
 from configparser import RawConfigParser as CParser
 
@@ -16,7 +16,6 @@ def printVersion ():
     print ("Yogurt Version [%s]" % Yogurt.version)
 
 def serverMain ():
-    global _spid, _rpid
     parser = optparse.OptionParser ()
     parser.add_option ("-v", "--version", dest='version',
                        help="Print version", action="store_true")
