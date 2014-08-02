@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" ng-app="phonecatApp">
+<html lang="en" ng-app="FringeApp">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +9,10 @@
   
   <body>
 
-    <div ng-controller="PhoneListCtrl">
+    <div ng-controller="live">
       <ul>
-	<li ng-repeat="phone in phones">
-	  {{phone.name}}
-	  <p>{{phone.snippet}}</p>
+	<li ng-repeat="event in data">
+	  {{event.title}}
 	</li>
       </ul>
     </div>
