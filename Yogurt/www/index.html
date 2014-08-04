@@ -28,7 +28,7 @@
             <li class="active"><a href="#">Upcoming</a></li>
 
 	    <li ng-repeat="event in data">
-	      <a href={{event.event}}>{{event.title}}</a>
+	      <a ng-bind="event.title" href={{event.event}}></a>
 	    </li>
 
           </ul>
@@ -49,18 +49,17 @@
 		<div class="panel panel-default" ng-repeat="event in data">
 		  <div class="panel-heading">
 		    <h4 class="panel-title">
-		      <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
-			{{ event.title }}
+		      <a data-toggle="collapse" data-parent="#accordion" ng-bind="event.title"  href="#collapseOne">
 		      </a>
 		    </h4>
 		  </div>
 		  <div id="collapseOne" class="panel-collapse collapse in">
 		    <div class="panel-body">
 
-		      <strong>Description: </strong><p>{{ event.description }}</p>
-		      <strong>Event Information: </strong><a href="{{ event.event }}">{{ event.event }}</a>
+		      <strong>Description: </strong><p ng-bind="event.description"></p>
+		      <strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
 		      <br>
-		      <strong>Stream: </strong><a href="{{ event.stream}}">{{event.stream}}</a>
+		      <strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
 
 		    </div>
 		  </div>
