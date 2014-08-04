@@ -1,7 +1,8 @@
 require.config({
     paths: {
 	jquery: '/js/lib/jquery/dist/jquery',
-	angular: '/js/lib/angular/angular'
+	angular: '/js/lib/angular/angular',
+	bootstrap: '/js/lib/bootstrap/dist/js/bootstrap'
     },
     shim: {
 	'angular': {
@@ -23,8 +24,16 @@ define("app", ["angular"], function(angular) {
     app.controller ('upcoming', ['$scope', '$http',
 				 function ($scope, $http) {
 				     $http.get ('/api/upcoming').success(function(data) {
-					 $scope.data = data ['']
+					 $scope.data = data ['events']
 				     })
 				 }])
+
+    app.controller ('streams', ['$scope', '$http',
+				 function ($scope, $http) {
+				     $http.get ('/api/streams').success(function(data) {
+					 $scope.data = data ['starcraft2']
+				     })
+				 }])
+
     return app;
 });
