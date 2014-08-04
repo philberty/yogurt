@@ -1,3 +1,3 @@
 .PHONY: test
 test:
-	python yogurt_test.py
+	python3 yogurt_test.py
