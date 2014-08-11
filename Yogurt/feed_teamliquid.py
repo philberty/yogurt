@@ -109,9 +109,9 @@ class FeedTeamLiqud:
             if node is None:
                 continue
             link = node.attrib ['href']
-            if link [0] == '/':
-                link = self.__base + link
-            events.append ({'title':node.attrib ['title'], 'event':link})
+            link = self.__base + link
+            eid = link.split ('/').pop ()
+            events.append ({'title':node.attrib ['title'], 'event':link, 'id':eid [1:]})
         events = list (map (self.__parseEventStreamInfo, events))
         return {'live_events':events, 'length':len (events)}
 

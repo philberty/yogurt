@@ -15,7 +15,8 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">FringeTV</a>
-	  <a class="navbar-brand" href="/about">About</a>
+	  <a class="navbar-brand" href="/vods.html">VoDs</a>
+	  <a class="navbar-brand" href="/about.html">About</a>
 	  <a class="navbar-brand" href="https://github.com/redbrain/yogurt">Github</a>
         </div>
       </div>
@@ -49,11 +50,11 @@
 		<div class="panel panel-default" ng-repeat="event in data">
 		  <div class="panel-heading">
 		    <h4 class="panel-title">
-		      <a data-toggle="collapse" data-parent="#accordion" ng-bind="event.title" href="#collapseOne">
+		      <a data-toggle="collapse" data-parent="#accordion" ng-bind="event.title" ng-attr-href="{{ \"#\".concat (event.id) }}">
 		      </a>
 		    </h4>
 		  </div>
-		  <div id="collapseOne" class="panel-collapse collapse in">
+		  <div ng-attr-id="{{ event.id }}" class="panel-collapse collapse in">
 		    <div class="panel-body">
 
 		      <strong>Description: </strong><p ng-bind="event.description"></p>

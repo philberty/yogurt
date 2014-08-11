@@ -37,10 +37,6 @@ def Yogurt_RestApi (key):
 def index ():
     return app.send_static_file ('index.html')
 
-@app.route ("/about")
-def about ():
-    return app.send_static_file ('about.html')
-
 @app.route ("/<path:path>")
 def statics (path):
     return app.send_static_file (path)

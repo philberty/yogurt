@@ -12,21 +12,13 @@ from Yogurt import feed_youtube
 from Yogurt import feed_teamliquid
 from configparser import RawConfigParser as CParser
 
-def printVersion ():
-    print ("Yogurt Version [%s]" % Yogurt.version)
-
 def serverMain ():
     parser = optparse.OptionParser ()
-    parser.add_option ("-v", "--version", dest='version',
-                       help="Print version", action="store_true")
     parser.add_option ("-c", "--config", dest="config",
                        help="Config file location", default=None)
     parser.add_option ("-F", "--fork", dest="fork", action="store_true",
                        help="Fork as daemon", default=False)
     (options, args) = parser.parse_args ()
-    if options.version is True:
-        printVersion ()
-        return
     if options.config is None:
         sys.exit ( "Error requires config file see --help")
     try:
