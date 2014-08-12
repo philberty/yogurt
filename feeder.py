@@ -4,7 +4,6 @@ import os
 import sys
 import logging
 import optparse
-import traceback
 import logging.config
 
 import Yogurt

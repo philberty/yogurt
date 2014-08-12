@@ -4,15 +4,14 @@ import os
 import sys
 import logging
 import optparse
-import traceback
 import logging.config
-
 import Yogurt
+
 from Yogurt import feed_youtube
 from Yogurt import feed_teamliquid
 from configparser import RawConfigParser as CParser
 
-def serverMain ():
+def ServerMain ():
     parser = optparse.OptionParser ()
     parser.add_option ("-c", "--config", dest="config",
                        help="Config file location", default=None)
@@ -36,7 +35,7 @@ def serverMain ():
         if pid == -1:
             sys.exit ("Error forking as daemon")
         elif pid == 0:
-            os.setsid ()
+            os.setsid (os.getpid ())
             os.umask (0)
         else:
             print (pid)
@@ -45,4 +44,4 @@ def serverMain ():
     Yogurt.YogurtServer (wbind, wport, cache_config, feeds).listen ()
 
 if __name__ == "__main__":
-    serverMain ()
+    ServerMain ()
