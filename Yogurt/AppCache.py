@@ -1,38 +1,35 @@
-import json
-import time
+import asyncio
 
-from . import ServerUtil
 from . import RedisCache
 from . import LocalCache
+from . import ServerUtil
 
 CacheServer = None
+
+
 class CacheSystem:
-    def __init__ (self, config, feeds):
+    def __init__(self, config, feeds=[]):
         self.feeds = feeds
-        self.type = config ['type'].lower ()
+        self.type = config['type'].lower()
         if self.type == 'redis':
-            self.__cache = RedisCache.Cache (config)
+            self.__cache = RedisCache.Cache(config)
         elif self.type == 'local':
-            self.__cache = LocalCache.Cache (config)
+            self.__cache = LocalCache.Cache(config)
         else:
-            raise Exception ('Uknown cache type [%s]' % self.type)
-        self.__cache.set ("__yogurt_test","ping")
+            raise Exception('Unknown cache type [%s]' % self.type)
+        self.__cache.set("__yogurt_test", "ping")
+        ServerUtil.info('Cache setup [%s]' % self.type)
 
-    def fillup (self, ignore=True):
-        ServerUtil.info ('Initilizing app cache')
-        try:
-            for i in self.feeds:
-                feeds = filter (lambda x: x.startswith ('Feed_'), dir (i))
-                for y in feeds:
-                    getattr (i, y) ()
-        except:
-            if not ignore:
-                raise
-        ServerUtil.info ('Cache initilization done!')
+    def incubate(self):
+        for i in self.feeds:
+            feeds = filter(lambda x: x.startswith('Feed_'), dir(i))
+            for y in feeds:
+                getattr(i, y)()
 
-    def get (self, key):
-        return self.__cache.get (key)
+    def get(self, key):
+        return self.__cache.get(key)
 
-    def set (self, key, value):
-        return self.__cache.set (key, value)
+    def set(self, key, value):
+        ServerUtil.info('Cache setting key [%s] in [%s]' % (key, self.type))
+        return self.__cache.set(key, value)
 

@@ -2,6 +2,12 @@
 logs
 *.log
 
+# pycharm
+.idea
+
+# redis
+dump.rdb
+
 # Runtime data
 pids
 *.pid

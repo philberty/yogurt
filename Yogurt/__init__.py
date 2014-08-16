@@ -2,6 +2,7 @@ import sys
 import time
 import logging
 import traceback
+import threading
 
 from . import YogurtApp
 from . import AppCache
@@ -12,38 +13,36 @@ __author__ = "Philip Herron"
 __email__ = "redbrain@gcc.gnu.org"
 __url__ = "https://github.com/redbrain"
 
-def SetupTestEnv (feeds):
-    logging.basicConfig (level=logging.INFO)
-    AppCache.CacheServer = AppCache.CacheSystem ({'type':'local'}, feeds)
-    AppCache.CacheServer.fillup ()
+
+def setupTestLoggingAndCache():
+    logging.basicConfig(filename='tests.log', level=logging.DEBUG)
+    AppCache.CacheServer = AppCache.CacheSystem({'type': 'local'})
+
 
 class YogurtServer:
-    def __init__ (self, bind, port, cache_config, feeds):
+    def __init__(self, bind, port, cache_config):
         self.web_bind = bind
         self.web_port = port
-        AppCache.CacheServer = AppCache.CacheSystem (cache_config, feeds)
-        AppCache.CacheServer.fillup ()
+        AppCache.CacheServer = AppCache.CacheSystem(cache_config)
 
-    def listen (self):
+    def listen(self):
         try:
-            ServerUtil.info ('[Flask] starting http://%s:%i/' \
-                             % (self.web_bind, self.web_port))
-            YogurtApp.app.run (host=self.web_bind, port=self.web_port)
+            ServerUtil.info('[Flask] starting http://%s:%i/' % (self.web_bind, self.web_port))
+            YogurtApp.app.run(host=self.web_bind, port=self.web_port)
         except KeyboardInterrupt:
-            ServerUtil.warning ('Caught keyboard interupt stopping')
+            ServerUtil.warning('Caught keyboard interrupt stopping')
         except:
-            ServerUtil.error ("%s" % traceback.format_exc ())
-            ServerUtil.error ("%s" % sys.exc_info () [1])
+            ServerUtil.error("%s" % traceback.format_exc())
+            ServerUtil.error("%s" % sys.exc_info()[1])
+
 
 class YogurtFeeder:
-    def __init__ (self, cache_config, feeds):
-        AppCache.CacheServer = AppCache.CacheSystem (cache_config, feeds)
+    def __init__(self, cache_config, feeds):
+        AppCache.CacheServer = AppCache.CacheSystem(cache_config, feeds=feeds)
 
-    def run (self, timer):
-        ServerUtil.info ('Feeding every %s mins' % timer)
+    def run(self):
+        ServerUtil.info('Feeding...')
         try:
-            while True:
-                AppCache.CacheServer.fillup ()
-                time.sleep (timer * 60)
+            AppCache.CacheServer.incubate()
         except KeyboardInterrupt:
-            ServerUtil.info ('Caught Keyboard interupt stopping!')
+            ServerUtil.info('Caught Keyboard interrupt stopping!')

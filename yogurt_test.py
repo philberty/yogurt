@@ -1,39 +1,29 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import json
 import unittest
 
-import Yogurt
-from Yogurt import ServerUtil
-from Yogurt import AppCache
-from Yogurt import FeedUtil
-from Yogurt import YogurtApp
+from Yogurt import Feed_TwitchTv
+from Yogurt import setupTestLoggingAndCache
 
-class TestFeed (object):
-    @FeedUtil.Feed (key='test')
-    def Feed_generateSomeData (self):
-        return {'test':[1,2,3]}
+class TestFeedTwitchGSL(unittest.TestCase):
+    def setUp(self):
+        setupTestLoggingAndCache()
+        self._codes = ['Code S', 'Code A']
+        self._leagues = ['2014 GSL Season 3', '2014 GSL Season 1', '2014 GSL Season 2']
+        with open('./videos.json', 'r') as fd:
+            self._feedVideos = json.loads(fd.read())['videos']
 
-class YogurtTestRestApi (unittest.TestCase):
+    def testGslFeed(self):
+        feed = Feed_TwitchTv.Feeds_TwitchTv_GSL()
+        gsl = feed.getSortedGslBroadcasts(self._feedVideos)
+        for i in gsl.keys():
+            assert i in self._leagues
+            for j in self._codes:
+                assert j in gsl[i]
+        for i in gsl[self._leagues[2]][self._codes[0]]:
+            print(gsl[self._leagues[2]][self._codes[0]][i].keys())
 
-    def setUp (self):
-        Yogurt.SetupTestEnv ([TestFeed ()])
-        YogurtApp.app.config ['TESTING'] = True
-        self.app = YogurtApp.app.test_client ()
-
-    def test_pass (self):
-        resp = self.app.get ('/api/test')
-        assert resp.status_code == 200
-        r = json.loads (resp.data.decode("utf-8"))
-        assert (r ['status'] == 200)
-        print (r)
-
-    def test_fail (self):
-        resp = self.app.get ('/api/willfail')
-        assert resp.status_code == 404
-        r = json.loads (resp.data.decode("utf-8"))
-        assert (r ['status'] == 404)
-        print (r)
 
 if __name__ == '__main__':
-    unittest.main ()
+    unittest.main()
