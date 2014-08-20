@@ -38,7 +38,11 @@ def serverMain ():
         else:
             print(pid)
             sys.exit(0)
-    feeds = [Feed_TeamLiquid.Feeds_TeamLiquid(), Feed_TwitchTv.Feeds_TwitchTv_GSL()]
+    feeds = [
+        Feed_TeamLiquid.Feeds_TeamLiquid(),
+        Feed_TwitchTv.Feeds_TwitchTv_GSL()
+        Feed_TwitchTv.Feeds_TwitchTv_Dreamhack()
+    ]
     Yogurt.YogurtFeeder(cache_config, feeds).run()
 
 if __name__ == "__main__":

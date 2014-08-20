@@ -96,7 +96,7 @@ class Feeds_TeamLiquid:
         return node
 
     @FeedUtil.Feed(key='live', timer=15)
-    def Feedx_getLiveEvents(self):
+    def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
         request = requests.get(self.__base)
         if not request.ok:
@@ -116,7 +116,7 @@ class Feeds_TeamLiquid:
         return {'live_events': events, 'length': len(events)}
 
     @FeedUtil.Feed(key='streams', timer=15)
-    def Feedx_getStarcraftPlayerStreams(self):
+    def Feed_getStarcraftPlayerStreams(self):
         ServerUtil.info('Looking for player streams on teamliquid!')
         request = requests.get(self.__base)
         if not request.ok:
@@ -133,7 +133,7 @@ class Feeds_TeamLiquid:
         return {'starcraft2': streams, 'length': len(streams)}
 
     @FeedUtil.Feed(key='upcoming', timer=30)
-    def Feedx_getUpcomingEvents(self):
+    def Feed_getUpcomingEvents(self):
         ServerUtil.info('Looking for upcomming events on teamliquid!')
         request = requests.get(self.__base)
         if not request.ok:

@@ -1,5 +1,6 @@
 import sys
 import json
+import time
 import functools
 
 from datetime import datetime
@@ -13,7 +14,15 @@ class FeedException(Exception):
         self.message = message
 
 def restfiyString(string):
-    return string.replace(' ', '_')
+    tmp = string
+    replaces = [':', '-', ' ']
+    for i in replaces:
+        tmp = tmp.replace(i, '')
+    return tmp
+
+def getTimeStamp():
+    ts = time.time()
+    return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
 
 class Feed(object):
     def __init__(self, **kwargs):
@@ -39,12 +48,15 @@ class Feed(object):
             retval = func(*args, **kwargs)
             ServerUtil.info('<<< Feed Event Leaving [%s]' % func.__name__)
             if retval is not None:
-                if self._key:
-                    AppCache.CacheServer.set(self._key, json.dumps(retval))
-                else:
-                    if retval is not None:
+                if retval is not None:
+                    if self._key:
+                        retval['__yogurt_timestamp'] = getTimeStamp()
+                        AppCache.CacheServer.set(self._key, json.dumps(retval))
+                    else:
                         for i in retval.keys():
-                            AppCache.CacheServer.set(self._base % restfiyString(i), json.dumps(retval[i]))
+                            retval[i]['__yogurt_timestamp'] = getTimeStamp()
+                            AppCache.CacheServer.set(self._base % restfiyString(i),
+                                                     json.dumps(retval[i]))
         return decorated
 
 
@@ -60,6 +72,7 @@ class CacheResult:
         def decorated(*args, **kwargs):
             if self._first is True:
                 self._retval = func(*args, **kwargs)
+                ServerUtil.info ('Setting Cached Result for [%s]' % func.__name__)
                 self._first = False
                 self._timestamp = datetime.now()
             else:
@@ -68,6 +81,7 @@ class CacheResult:
                     diff = (now - self._timestamp).seconds * 60
                     if diff >= self._timer:
                         self._retval = func(*args, **kwargs)
+                        ServerUtil.info ('Setting new cached result for [%s]' % func.__name__)
                         self._timestamp = ts
             return self._retval
         return decorated

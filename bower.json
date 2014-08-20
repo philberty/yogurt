@@ -5,7 +5,7 @@
 	"requirejs": "latest",
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
-	"bootstrap": "~3.1.1",
+	"bootstrap": "~3.2.0",
 	"angular-route": "~1.2.x",
 	"angular-resource": "~1.2.x"
     }

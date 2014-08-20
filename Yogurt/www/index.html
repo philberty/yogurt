@@ -15,7 +15,6 @@
       <div class="container-fluid">
         <div class="navbar-header">
           <a class="navbar-brand" href="/">FringeTV</a>
-	  <a class="navbar-brand" href="/vods.html">VoDs</a>
 	  <a class="navbar-brand" href="/about.html">About</a>
 	  <a class="navbar-brand" href="https://github.com/redbrain/yogurt">Github</a>
         </div>
@@ -37,45 +36,7 @@
 	<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
           <h1 class="page-header">Starcraft 2</h1>
 
-	  <ul class="nav nav-tabs">
-	    <li class="active"><a href="#live" data-toggle="tab">Live Events</a></li>
-	    <li><a href="#streams" data-toggle="tab">Player Streams</a></li>
-	  </ul>
-	  <div class="tab-content">
-
-	    <div class="tab-pane fade in active" id="live">
-
-	      <div class="panel-group" id="accordion" ng-controller="live">
-
-		<div class="panel panel-default" ng-repeat="event in data">
-		  <div class="panel-heading">
-		    <h4 class="panel-title">
-		      <a data-toggle="collapse" data-parent="#accordion" ng-bind="event.title" ng-attr-href="{{ \"#\".concat (event.id) }}">
-		      </a>
-		    </h4>
-		  </div>
-		  <div ng-attr-id="{{ event.id }}" class="panel-collapse collapse in">
-		    <div class="panel-body">
-
-		      <strong>Description: </strong><p ng-bind="event.description"></p>
-		      <strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
-		      <br>
-		      <strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
-
-		    </div>
-		  </div>
-		</div>
-
-	      </div>	      
-	    </div>
-
-	    <div class="tab-pane fade in active" id="streams">
-	      
-	      
-	      
-	    </div>
-
-	  </div>
+	  
 
 	</div>
       </div>

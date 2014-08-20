@@ -1,4 +1,4 @@
-import asyncio
+import json
 
 from . import RedisCache
 from . import LocalCache
@@ -21,10 +21,14 @@ class CacheSystem:
         ServerUtil.info('Cache setup [%s]' % self.type)
 
     def incubate(self):
+        leagues = []
         for i in self.feeds:
+            if hasattr(i, 'league'):
+                leagues.append(i.league)
             feeds = filter(lambda x: x.startswith('Feed_'), dir(i))
             for y in feeds:
                 getattr(i, y)()
+        self.set('leagues', json.dumps({'leagues': leagues}))
 
     def get(self, key):
         return self.__cache.get(key)

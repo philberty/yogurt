@@ -28,9 +28,9 @@ def Yogurt_RestApi(key):
         data = None
     finally:
         if data is not None:
-            data ['status'] = 200
+            data['status'] = 200
             return jsonify(data)
-        return not_found(error='Invalid key')
+        return not_found(error='Invalid key [%s]' % key)
 
 @app.route("/")
 def index():

@@ -35,5 +35,20 @@ define("app", ["angular"], function(angular) {
 				     })
 				 }])
 
+    app.controller ('leagues', ['$scope', '$http',
+				function ($scope, $http) {
+				    $http.get ('/api/leagues').success(function(data) {
+					$scope.data = []
+					var offs = 0
+					for (i in data ['leagues']) {
+					    $http.get ('/api/league/' + data ['leagues'][i]).success(
+						function(league) {
+						    $scope.data [offs++] = league
+						}
+					    )
+					}
+				    })
+				}])
+
     return app;
 });
