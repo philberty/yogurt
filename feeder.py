@@ -40,7 +40,7 @@ def serverMain ():
             sys.exit(0)
     feeds = [
         Feed_TeamLiquid.Feeds_TeamLiquid(),
-        Feed_TwitchTv.Feeds_TwitchTv_GSL()
+        Feed_TwitchTv.Feeds_TwitchTv_GSL(),
         Feed_TwitchTv.Feeds_TwitchTv_Dreamhack()
     ]
     Yogurt.YogurtFeeder(cache_config, feeds).run()
