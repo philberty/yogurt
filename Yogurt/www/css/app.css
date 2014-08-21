@@ -182,8 +182,8 @@ h1,h2,h3 {
 }
   
 .badge{
-   color:#3B5999;
-   background-color:#fff;
+   color:red;
+   background-color:#393939;
 }
 .badge:hover, .badge-inverse{
    background-color:#3B5999;
@@ -289,3 +289,5 @@ small.text-muted {
     padding-left:3px;
   }
 }
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

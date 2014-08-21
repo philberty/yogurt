@@ -3,10 +3,11 @@
     "private": true,
     "dependencies": {
 	"requirejs": "latest",
+	"bootstrap": "~3.2.0",
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
-	"bootstrap": "~3.2.0",
 	"angular-route": "~1.2.x",
-	"angular-resource": "~1.2.x"
+	"angular-resource": "~1.2.x",
+	"angular-bootstrap": "0.11.0"
     }
 }

@@ -1,0 +1,9 @@
+<label>Player Streams</label>
+
+<accordion close-others="oneAtATime">
+  
+  <accordion-group ng-repeat="stream in data" heading="{{ stream.name }}">
+    {{stream.href}}
+  </accordion-group>
+  
+</accordion>
