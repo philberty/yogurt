@@ -86,6 +86,34 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], functio
 	})
 	$scope.oneAtATime = true;
     })
+
+    app.controller ('vods', function ($scope, $http) {
+	$http.get ('/api/leagues').success(function(data) {
+	    $scope.data = []
+	    $scope.slides = []
+	    $scope.myInterval = 5000;
+	    $scope.leagues = data ['leagues']
+
+	    for (var i in $scope.leagues) {
+		var league = $scope.leagues[i]
+		$http.get ('/api/league/'+league).success(function(channel) {
+		    $scope.data.push(channel)
+		    $scope.addSlide(channel);
+		})
+	    }
+
+	    var slides = $scope.slides
+	    $scope.addSlide = function(league) {
+		var newWidth = 600 + slides.length;
+		console.log (league)
+		slides.push({
+		    image: league ['logo'],
+		    text: league ['display_name']
+		});
+	    };
+	    
+	})
+    })
     
     angular.bootstrap(document, ['FringeApp']);
     return app;
