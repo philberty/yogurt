@@ -1,12 +1,15 @@
-<div>
-  <div style="height: 305px width: 305px">
-    <carousel interval="myInterval">
-      <slide ng-repeat="slide in slides" active="slide.active">
-        <img ng-src="{{slide.image}}" style="margin:auto;">
-        <div class="carousel-caption">
-          <p>{{slide.text}}</p>
-        </div>
-      </slide>
-    </carousel>
+<div class="container">
+  <h2 class="sub-header">Previous Event VoDs</h2>
+
+  <div class="row placeholders">
+
+    <div ng-repeat="league in leagues" class="col-xs-4 col-sm-2 placeholder">
+      <a class="thumbnail" href="#/league/{{league._name}}">
+	<img ng-attr-src="{{league.logo}}" height="150" width="150">
+	<h4 ng-bind="league.display_name"></h4>
+      </a>
+    </div>
+
   </div>
 </div>
+

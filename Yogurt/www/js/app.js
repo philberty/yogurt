@@ -5,9 +5,14 @@ require.config({
 
 	angular: '/js/lib/angular/angular',
 	angularRoute: '/js/lib/angular-route/angular-route',
+	angularTree: '/js/lib/angular-ui-tree/dist/angular-ui-tree',
 	angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls'
     },
     shim: {
+	'angularTree': {
+	    deps: ['angular'],
+	    exports: 'angular'
+	},
 	'angularBootstrap': {
 	    deps: ['angular'],
 	    exports: 'angular'
@@ -24,8 +29,8 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], function($, angular) {
-    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap']);
+define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularRoute"], function($, angular) {
+    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'ui.tree']);
 
     app.controller("sidebar", function($scope, $location) {
 	$scope.$on('$locationChangeSuccess', function(event) {
@@ -57,6 +62,14 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], functio
 		     templateUrl: 'vods.html',
 		     controller: 'vods'
 		 })
+		 .when('/league/:param', {
+		     templateUrl: 'league.html',
+		     controller: 'league'
+		 })
+		 .when('/videos/:league/:event', {
+		     templateUrl: 'breadcrumb.html',
+		     controller: 'videos'
+		 })
 		 .when('/', {
 		     redirectTo: "/about"
 		 })
@@ -87,31 +100,87 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], functio
 	$scope.oneAtATime = true;
     })
 
+    app.controller ('league', function ($scope, $routeParams, $http) {
+	$http.get ('/api/league/' + $routeParams.param + '/events').success(function(data) {
+	    $scope.events = data
+	    $scope.name = $routeParams.param
+	})
+    })
+
+    app.controller ('videos', function ($scope, $routeParams, $http) {
+	var eventPath = '/api/league/' + $routeParams.league + '/event/' + $routeParams.event;
+	$http.get (eventPath).success(function(data) {
+	    $scope.league = $routeParams.league
+	    $scope.event = $routeParams.event
+
+	    var videos = {}
+	    var exclude = ["__yogurt_timestamp", "status"]
+	    for (var i in data) {
+		var found = false;
+		for (var y in exclude) {
+		    if (i == exclude[y]) {
+			found = true
+			break
+		    }
+		}
+		if (!found) {
+		    videos[i] = data[i]
+		}
+	    }
+	    $scope.videos = videos
+
+
+	    $scope.list = [{
+      "id": 1,
+      "title": "1. dragon-breath",
+      "items": []
+    }, {
+      "id": 2,
+      "title": "2. moiré-vision",
+      "items": [{
+        "id": 21,
+        "title": "2.1. tofu-animation",
+        "items": [{
+          "id": 211,
+          "title": "2.1.1. spooky-giraffe",
+          "items": []
+        }, {
+          "id": 212,
+          "title": "2.1.2. bubble-burst",
+          "items": []
+        }],
+      }, {
+        "id": 22,
+        "title": "2.2. barehand-atomsplitting",
+        "items": []
+      }],
+    }, {
+      "id": 3,
+      "title": "3. unicorn-zapper",
+      "items": []
+    }, {
+      "id": 4,
+      "title": "4. romantic-transclusion",
+      "items": []
+    }];
+
+	})
+    })
+
     app.controller ('vods', function ($scope, $http) {
 	$http.get ('/api/leagues').success(function(data) {
-	    $scope.data = []
-	    $scope.slides = []
-	    $scope.myInterval = 5000;
-	    $scope.leagues = data ['leagues']
+	    var leagues = $scope.leagues = []
 
-	    for (var i in $scope.leagues) {
-		var league = $scope.leagues[i]
-		$http.get ('/api/league/'+league).success(function(channel) {
-		    $scope.data.push(channel)
-		    $scope.addSlide(channel);
-		})
-	    }
-
-	    var slides = $scope.slides
-	    $scope.addSlide = function(league) {
-		var newWidth = 600 + slides.length;
-		console.log (league)
-		slides.push({
-		    image: league ['logo'],
-		    text: league ['display_name']
-		});
+	    $scope.addLeague = function(name) {
+		$http.get ('/api/league/'+name).success(function(channel) {
+		    channel['_name'] = name
+		    leagues.push(channel);
+		})	
 	    };
-	    
+
+	    for (var i in data ['leagues']) {
+		$scope.addLeague (data['leagues'][i])
+	    }
 	})
     })
     

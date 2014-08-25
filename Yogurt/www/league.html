@@ -1,0 +1,19 @@
+<div class="container">
+  <h2 class="sub-header">League - {{ name }}</h2>
+
+  <div class="row placeholders">
+    <hr>
+
+    <div class="col-xs-4 col-sm-4 placeholder">
+
+      <ul class="list-group">
+	<a ng-repeat="event in events.keys" href="#/videos/{{name}}/{{event}}">
+	  <li class="list-group-item">{{event}}</li>
+	</a>
+      </ul>
+      
+    </div>
+
+  </div>
+
+</div>
