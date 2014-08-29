@@ -2,14 +2,21 @@
 
 [![Build Status](https://travis-ci.org/redbrain/yogurt.svg?branch=master)](https://travis-ci.org/redbrain/yogurt)
 
-Python Flask WebApp using Angular for make an E-Sports WebApp for
-keeping up to date with VoD's, events and streams aimed for Starcraft
-2 but could/will support more games.
+Feed Aggregator for E-Sports FeedHandlers scrape Sites and push json representations of the VoD's and Events into
+Redis Cache.
 
-Uses Python3!!!!!
+## Compilation and installation
+
+Development on Mac:
 
 ```bash
-$ sudo pip install -r requirements.txt
+$ brew install npm python3
+$ pip3 install requirements.txt
 $ bower install
-$ ./yogurt.py -c etc/yogurt/yogurt.py
+
+$ python3 ./yogurt_test.py
+
+$ ./feeder.py -c etc/yogurt/yogurt.cfg # fills your specified cache 
+$ ./yogurt.py -c etc/yogurt/yogurt.cfg # runs the webapp
 ```
+
