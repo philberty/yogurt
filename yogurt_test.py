@@ -3,35 +3,71 @@
 import json
 import unittest
 
-from Yogurt import YogurtApp
 from Yogurt import AppCache
+from Yogurt import FeedUtil
+from Yogurt import YogurtApp
 from Yogurt import Feed_TwitchTv
-from Yogurt import setupTestLoggingAndCache
+from Yogurt import setupTestEnviroment
+
+from unittest.mock import MagicMock
+
+class MockFeedClass(object):
+    @FeedUtil.Feed(key='mock', timer=60)
+    def Feed_mockFeed(self):
+        return {'mock': 'mock'}
 
 class TestFeedTwitchGSL(unittest.TestCase):
     def setUp(self):
-        setupTestLoggingAndCache()
+        cache = setupTestEnviroment()
         self.app = YogurtApp.app.test_client()
-        self._codes = ['Code S', 'Code A']
-        self._leagues = ['2014 GSL Season 3', '2014 GSL Season 1', '2014 GSL Season 2']
-        with open('./videos.json', 'r') as fd:
-            self._feedVideos = json.loads(fd.read())['videos']
-        feed = Feed_TwitchTv.Feeds_TwitchTv_GSL()
-        self.gsl = feed.getSortedGslBroadcasts(self._feedVideos)
-        AppCache.CacheServer.set ('testLeagues', json.dumps(self.gsl))
+        with open('videos.json', 'r') as fd:
+            videos = json.loads(fd.read())['videos']
+            Feed_TwitchTv.getChannelVideos = MagicMock(return_value=videos)
+            Feed_TwitchTv.getChannelObject = MagicMock(return_value={})
+        cache.injectFeed(MockFeedClass())
+        cache.injectFeed(Feed_TwitchTv.Feeds_TwitchTv_GSL())
+        cache.injectFeed(Feed_TwitchTv.Feeds_TwitchTv_Dreamhack())
+        cache.incubate()
 
-    def testGslFeed(self):
-        resp = self.app.get('/api/testLeagues')
-        data = json.loads (resp.data.decode("utf-8"))
-        assert data['status'] == 200
-        ndata = {}
-        for i in data.keys():
-            if i != 'status':
-                ndata[i] = data[i]
-        for i in ndata.keys():
-            assert i in self._leagues
-            for j in self._codes:
-                assert j in self.gsl[i]
+    def testMockFeed(self):
+        resp = self.app.get('/api/mock')
+        payload = json.loads(resp.data.decode("utf-8"))
+        assert resp.status == '200 OK'
+        assert 'mock' in payload
+
+    def testGetListOfLeagues(self):
+        resp = self.app.get('/api/leagues')
+        payload = json.loads(resp.data.decode("utf-8"))
+        assert resp.status == '200 OK'
+        assert len(payload['leagues']) == 2
+
+    def testGetMockGslLeagueObject(self):
+        resp = self.app.get('/api/league/gsl')
+        assert resp.status == '200 OK'
+
+    def testGetMockDHLeagueObject(self):
+        resp = self.app.get('/api/league/dreamhack')
+        assert resp.status == '200 OK'
+
+    def testGetMockGSLLeagueEventList(self):
+        resp = self.app.get('/api/league/gsl/events')
+        payload = json.loads(resp.data.decode("utf-8"))
+        assert resp.status == '200 OK'
+        assert len(payload['keys']) == 3
+
+    def testGetMockDHLeagueEventList(self):
+        resp = self.app.get('/api/league/dreamhack/events')
+        payload = json.loads(resp.data.decode("utf-8"))
+        assert resp.status == '200 OK'
+        assert len(payload['keys']) == 9
+
+    def testGetMockGSLLeagueEventObject(self):
+        resp = self.app.get('/api/league/gsl/event/2014GSLSeason3')
+        assert resp.status == '200 OK'
+
+    def testGetMockDHLeagueEventObject(self):
+        resp = self.app.get('/api/league/dreamhack/event/DreamHackOpenValencia2014')
+        assert resp.status == '200 OK'
 
 if __name__ == '__main__':
-    unittest.main()
+    unittest.main(verbosity=2)

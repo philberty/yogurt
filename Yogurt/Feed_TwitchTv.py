@@ -103,30 +103,12 @@ class Feeds_TwitchTv_GSL(object):
 
     def sortGslLeagueVideosByCode(self, videos):
         ServerUtil.info('Sort League by Code A/S')
-        sorted = {'Code S': [], 'Code A': []}
+        sorted = {'CodeS': [], 'CodeA': []}
+        codeKeys = ['Code S', 'Code A']
         for video in videos:
-            for code in sorted.keys():
-                codeKey = FeedUtil.restfiyString(code)
+            for code in codeKeys:
                 if code in video['title']:
-                    sorted[codeKey].append(video)
-        return sorted
-
-    def sortGslVideosByRound(self, videos):
-        ServerUtil.info('Sort League Code by Rounds')
-        sorted = {}
-        for i in videos:
-            try:
-                round = re.search('Ro[0-9][0-9].', i['title'])
-                if round is None:
-                    round = re.search('Ro[0-9].', i['title'])
-                    if round is None:
-                        round = re.search('Final', i['title'])
-                round = round.group()
-                if not round in sorted:
-                    sorted[round] = []
-                sorted[FeedUtil.restfiyString(round)].append(i)
-            except:
-                pass
+                    sorted[FeedUtil.restfiyString(code)].append(video)
         return sorted
 
     def sortGslVideosByGroup(self, videos):
@@ -134,13 +116,31 @@ class Feeds_TwitchTv_GSL(object):
         sorted = {}
         for i in videos:
             try:
-                group = re.search('Group [A-Z]', i['title'])
+                group = re.search('Group [a-zA-Z]', i['title'])
                 if group is None:
                     group = re.search('Final', i['title'])
-                group = group.group()
-                if not group in sorted:
+                group = FeedUtil.restfiyString(group.group())
+                if group not in sorted:
                     sorted[group] = []
-                sorted[FeedUtil.restfiyString(group)].append(i)
+                sorted[group].append(i)
+            except:
+                pass
+        return sorted
+
+    def sortGslVideosByRound(self, videos):
+        ServerUtil.info('Sort League Code by Rounds')
+        sorted = {}
+        for i in videos:
+            try:
+                round = re.search('Ro[0-9][0-9]', i['title'])
+                if round is None:
+                    round = re.search('Ro[0-9]', i['title'])
+                    if round is None: 
+                        round = re.search('Final', i['title'])
+                round = FeedUtil.restfiyString(round.group())
+                if round not in sorted:
+                    sorted[round] = []
+                sorted[round].append(i)
             except:
                 pass
         return sorted
@@ -156,8 +156,7 @@ class Feeds_TwitchTv_GSL(object):
                     if match is None:
                         if 'Final' in i ['title']:
                             match = 'Final'
-                if hasattr(match, 'group'):
-                    match = match.group ()
+                match = FeedUtil.restfiyString(match.group())
                 if not match in sorted:
                     sorted[match] = []
                 sorted[FeedUtil.restfiyString(match)].append(i)
@@ -165,13 +164,13 @@ class Feeds_TwitchTv_GSL(object):
                 pass
         return sorted
 
-    def sortGslCodeA(self, videos):
+    def sortGslCodeAVideos(self, videos):
         sortedByGroup = self.sortGslVideosByGroup(videos)
         for i in sortedByGroup.keys():
             sortedByGroup[i] = self.sortGslVideosByMatch(sortedByGroup[i])
         return sortedByGroup
 
-    def sortGslCodeS(self, videos):
+    def sortGslCodeSVideos(self, videos):
         sortedByRound = self.sortGslVideosByRound(videos)
         for i in sortedByRound.keys():
             sortedByRound[i] = self.sortGslVideosByGroup(sortedByRound[i])
@@ -183,9 +182,10 @@ class Feeds_TwitchTv_GSL(object):
         allGslLeagues = self.sortGslVideosByLeague(videos)
         gslLeaguesSorted = {}
         for i in allGslLeagues.keys():
-            gslLeaguesSorted[i] = self.sortGslLeagueVideosByCode(allGslLeagues[i])
-            gslLeaguesSorted[i]['CodeA'] = self.sortGslCodeA(gslLeaguesSorted[i]['CodeA'])
-            gslLeaguesSorted[i]['CodeS'] = self.sortGslCodeS(gslLeaguesSorted[i]['CodeS'])
+            league = FeedUtil.restfiyString(i)
+            gslLeaguesSorted[league] = self.sortGslLeagueVideosByCode(allGslLeagues[i])
+            gslLeaguesSorted[league]['CodeA'] = self.sortGslCodeAVideos(gslLeaguesSorted[league]['CodeA'])
+            gslLeaguesSorted[league]['CodeS'] = self.sortGslCodeSVideos(gslLeaguesSorted[league]['CodeS'])
         return gslLeaguesSorted
 
     @FeedUtil.CacheResult(timer=50)

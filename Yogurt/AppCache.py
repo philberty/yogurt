@@ -3,6 +3,7 @@ import json
 from . import RedisCache
 from . import LocalCache
 from . import ServerUtil
+from . import ShelveCache
 
 CacheServer = None
 
@@ -13,12 +14,17 @@ class CacheSystem:
         self.type = config['type'].lower()
         if self.type == 'redis':
             self.__cache = RedisCache.Cache(config)
+        elif self.type == 'shelve':
+            self.__cache = ShelveCache.Cache(config)
         elif self.type == 'local':
             self.__cache = LocalCache.Cache(config)
         else:
             raise Exception('Unknown cache type [%s]' % self.type)
         self.__cache.set("__yogurt_test", "ping")
         ServerUtil.info('Cache setup [%s]' % self.type)
+
+    def injectFeed(self, feed):
+        self.feeds.append(feed)
 
     def incubate(self):
         leagues = []

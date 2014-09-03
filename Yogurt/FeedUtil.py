@@ -18,7 +18,7 @@ def restfiyString(string):
     replaces = [':', '-', ' ']
     for i in replaces:
         tmp = tmp.replace(i, '')
-    return tmp
+    return str(tmp)
 
 def getTimeStamp():
     ts = time.time()

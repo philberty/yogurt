@@ -4,8 +4,8 @@ import logging
 import traceback
 import threading
 
-from . import YogurtApp
 from . import AppCache
+from . import YogurtApp
 from . import ServerUtil
 
 __version__ = '0.1'
@@ -14,9 +14,9 @@ __email__ = "redbrain@gcc.gnu.org"
 __url__ = "https://github.com/redbrain"
 
 
-def setupTestLoggingAndCache():
-    logging.basicConfig(filename='tests.log', level=logging.DEBUG)
+def setupTestEnviroment():
     AppCache.CacheServer = AppCache.CacheSystem({'type': 'local'})
+    return AppCache.CacheServer
 
 class YogurtServer:
     def __init__(self, bind, port, cache_config):
