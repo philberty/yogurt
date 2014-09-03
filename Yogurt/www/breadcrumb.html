@@ -6,11 +6,9 @@
 
     <div class="col-xs-2 col-sm-4 placeholder">
 
-      <div ng-repeat="(key,val) in videos">
-
-	
-
-      </div>
+      <ol class="breadcrumb">
+	<li ng-repeat="crumb in breadcrumb"><a href="{{crumb.href}}">{{crumb.key}}</a></li>
+      </ol>
       
     </div>
   </div>

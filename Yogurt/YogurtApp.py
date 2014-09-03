@@ -22,7 +22,7 @@ def not_found(error=None):
 @app.route("/api/<path:key>")
 def Yogurt_RestApi(key):
     try:
-        data = AppCache.CacheServer.get(key).decode("utf-8")
+        data = AppCache.CacheServer.get(key)
         data = json.loads(data)
     except Exception:
         data = None

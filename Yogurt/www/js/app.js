@@ -66,7 +66,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
 		     templateUrl: 'league.html',
 		     controller: 'league'
 		 })
-		 .when('/videos/:league/:event', {
+		 .when('/videos/:league/:resourceUrl*', {
 		     templateUrl: 'breadcrumb.html',
 		     controller: 'videos'
 		 })
@@ -108,62 +108,28 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
     })
 
     app.controller ('videos', function ($scope, $routeParams, $http) {
-	var eventPath = '/api/league/' + $routeParams.league + '/event/' + $routeParams.event;
-	$http.get (eventPath).success(function(data) {
-	    $scope.league = $routeParams.league
-	    $scope.event = $routeParams.event
+	var league = $routeParams['league']
+	var path = $routeParams['resourceUrl'].split('/')
 
-	    var videos = {}
-	    var exclude = ["__yogurt_timestamp", "status"]
-	    for (var i in data) {
-		var found = false;
-		for (var y in exclude) {
-		    if (i == exclude[y]) {
-			found = true
-			break
-		    }
-		}
-		if (!found) {
-		    videos[i] = data[i]
+	var basePath = '#/videos/'+league
+	$scope.breadcrumb = []
+	for (var i in path) {
+	    var elem = path[i]
+	    basePath += '/' + elem
+	    $scope.breadcrumb.push({'key': elem, 'href':basePath})
+	}
+	$scope.league = league
+	$scope.event = path[0]
+
+	$http.get ('/api/league/'+league+'/event/'+$scope.event).success(function(data) {
+	    $scope.data = data
+	    for (var i in path){
+		if (i > 0) {
+		    var elem = path[i]
+		    $scope.data = $scope.data.elem
 		}
 	    }
-	    $scope.videos = videos
-
-
-	    $scope.list = [{
-      "id": 1,
-      "title": "1. dragon-breath",
-      "items": []
-    }, {
-      "id": 2,
-      "title": "2. moiré-vision",
-      "items": [{
-        "id": 21,
-        "title": "2.1. tofu-animation",
-        "items": [{
-          "id": 211,
-          "title": "2.1.1. spooky-giraffe",
-          "items": []
-        }, {
-          "id": 212,
-          "title": "2.1.2. bubble-burst",
-          "items": []
-        }],
-      }, {
-        "id": 22,
-        "title": "2.2. barehand-atomsplitting",
-        "items": []
-      }],
-    }, {
-      "id": 3,
-      "title": "3. unicorn-zapper",
-      "items": []
-    }, {
-      "id": 4,
-      "title": "4. romantic-transclusion",
-      "items": []
-    }];
-
+	    console.log ($scope.data)
 	})
     })
 

@@ -18,7 +18,6 @@ def setupTestLoggingAndCache():
     logging.basicConfig(filename='tests.log', level=logging.DEBUG)
     AppCache.CacheServer = AppCache.CacheSystem({'type': 'local'})
 
-
 class YogurtServer:
     def __init__(self, bind, port, cache_config):
         self.web_bind = bind
