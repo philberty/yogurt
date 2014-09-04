@@ -1,0 +1,4164 @@
+{
+    "videos": [
+        {
+            "length": 54962,
+            "recorded_at": "2014-07-19T07:46:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/549017420",
+            "title": "DreamHack Open: Valencia 2014 - Day 1 ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a549017420",
+            "views": 14585,
+            "broadcast_id": 10313436128,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a549017420"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-549017420-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 32114,
+            "recorded_at": "2014-07-18T11:13:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/548714982",
+            "title": "DreamHack Open: Valencia 2014 - Day 1 ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a548714982",
+            "views": 6246,
+            "broadcast_id": 10301259632,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a548714982"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-548714982-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 43,
+            "recorded_at": "2014-07-18T11:06:24Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/548709956",
+            "title": "DreamHack Open: Valencia 2014 - Day 1 ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a548709956",
+            "views": 159,
+            "broadcast_id": 10301214000,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a548709956"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-548709956-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 31515,
+            "recorded_at": "2014-06-16T13:39:44Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/539032245",
+            "title": "DreamHack Open: Summer 2014 - Day 2",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a539032245",
+            "views": 26292,
+            "broadcast_id": 9926904816,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a539032245"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-539032245-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 42535,
+            "recorded_at": "2014-06-15T11:38:56Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/538720187",
+            "title": "DreamHack Open: Summer 2014 - Day 1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a538720187",
+            "views": 22207,
+            "broadcast_id": 9914790272,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a538720187"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-538720187-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4903,
+            "recorded_at": "2014-06-14T21:52:59Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/538539802",
+            "title": "DreamHack Open: Summer 2014 - Day 1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a538539802",
+            "views": 1172,
+            "broadcast_id": 9908312976,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a538539802"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-538539802-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 23966,
+            "recorded_at": "2014-06-14T15:08:47Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/538433212",
+            "title": "DreamHack Open: Summer 2014 - Day 1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a538433212",
+            "views": 6300,
+            "broadcast_id": 9903831760,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a538433212"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-538433212-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 18,
+            "recorded_at": "2014-06-13T20:26:41Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/538168487",
+            "title": "DreamHack Open: Summer 2014 - Day 1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a538168487",
+            "views": 134,
+            "broadcast_id": 9894280736,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a538168487"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-538168487-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 20,
+            "recorded_at": "2014-06-13T20:26:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/538168394",
+            "title": "DreamHack Open: Summer 2014 - Day 1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a538168394",
+            "views": 111,
+            "broadcast_id": 9894276368,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a538168394"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-538168394-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 23644,
+            "recorded_at": "2014-04-27T16:01:53Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/523666584",
+            "title": "DreamHack Open 2014 Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a523666584",
+            "views": 18455,
+            "broadcast_id": 9361766080,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a523666584"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523666584-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8779,
+            "recorded_at": "2014-04-27T13:31:48Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/523630485",
+            "title": "DreamHack Open 2014 Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a523630485",
+            "views": 5035,
+            "broadcast_id": 9360009744,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a523630485"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523630485-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 18296,
+            "recorded_at": "2014-04-27T08:22:30Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/523575951",
+            "title": "DreamHack Open 2014 Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a523575951",
+            "views": 8818,
+            "broadcast_id": 9357786032,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a523575951"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523575951-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 33373,
+            "recorded_at": "2014-04-26T10:24:26Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/523250285",
+            "title": "DreamHack Open 2014 Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a523250285",
+            "views": 8656,
+            "broadcast_id": 9345439968,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a523250285"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523250285-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 44,
+            "recorded_at": "2014-04-26T08:27:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/523226919",
+            "title": "DreamHack Open 2014 Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a523226919",
+            "views": 517,
+            "broadcast_id": 9344770032,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a523226919"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523226919-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 47835,
+            "recorded_at": "2013-11-30T10:23:31Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/483926225",
+            "title": "DreamHack Open 2013 - Dreamhack Winter 2013",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a483926225",
+            "views": 28584,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a483926225"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483926225-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 51497,
+            "recorded_at": "2013-11-29T10:11:19Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/483683325",
+            "title": "DreamHack Open 2013 - Dreamhack Winter 2013",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a483683325",
+            "views": 23191,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a483683325"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483683325-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 40831,
+            "recorded_at": "2013-11-28T11:17:03Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/483487889",
+            "title": "DreamHack Open 2013 - Dreamhack Winter 2013",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a483487889",
+            "views": 13832,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a483487889"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483487889-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 43,
+            "recorded_at": "2013-11-27T17:49:16Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/483304527",
+            "title": "DreamHack Open 2013 - Valencia - Stream Schedule- Starts 12:00 CEST 19 of july at http://Dreamhack.tv",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a483304527",
+            "views": 199,
+            "broadcast_id": 7652251920,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a483304527"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483304527-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 504,
+            "recorded_at": "2013-07-19T09:38:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/432682982",
+            "title": "DreamHack Open 2013 - Valencia - Stream Schedule- Starts 12:00 CEST 19 of july at http://Dreamhack.tv",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a432682982",
+            "views": 494,
+            "broadcast_id": 6206907536,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a432682982"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-432682982-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 57549,
+            "recorded_at": "2013-07-18T17:38:49Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/432353353",
+            "title": "DreamHack Open 2013 - Valencia - Stream Schedule- Starts 12:00 CEST 19 of july at http://Dreamhack.tv",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a432353353",
+            "views": 808,
+            "broadcast_id": 6199582544,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a432353353"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-432353353-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 323,
+            "recorded_at": "2013-07-18T17:33:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/432342262",
+            "title": "DreamHack Open 2013 - Valencia - Stream Schedule",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a432342262",
+            "views": 63,
+            "broadcast_id": 6199535776,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a432342262"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-432342262-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 34880,
+            "recorded_at": "2013-06-17T13:36:48Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/418180382",
+            "title": "DreamHack Open Summer - RO8",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Final 8 show from DreamHack Summer 2013.",
+            "_id": "a418180382",
+            "views": 59032,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a418180382"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418180382-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 17747,
+            "recorded_at": "2013-06-17T08:33:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/418112553",
+            "title": "\r\nDreamHack Open 2013 - DreamHack summer 2013 - RO 16 starts 11.00 CEST",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a418112553",
+            "views": 12873,
+            "broadcast_id": 5924174432,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a418112553"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418112553-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 43150,
+            "recorded_at": "2013-06-16T11:32:23Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/417713683",
+            "title": "DreamHack Open 2013 - DreamHack summer 2013 - Group Stage #2",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a417713683",
+            "views": 9383,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a417713683"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417713683-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 32379,
+            "recorded_at": "2013-06-15T14:19:30Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/417292265",
+            "title": "DreamHack Open 2013 - DreamHack summer 2013 - Group Stage #1",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": null,
+            "_id": "a417292265",
+            "views": 7973,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a417292265"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417292265-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 15749,
+            "recorded_at": "2012-11-24T16:27:12Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342650167",
+            "title": "DreamHack Winter 2012 - StarCraft II - Stream #1 with Apollo and iNcontroL",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342650167",
+            "views": 32806,
+            "broadcast_id": 4239592464,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342650167"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342650167-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 44,
+            "recorded_at": "2012-11-24T16:25:55Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342643720",
+            "title": "DreamHack Winter 2012 - StarCraft II - Stream #1 with Apollo and iNcontroL",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342643720",
+            "views": 564,
+            "broadcast_id": 4239586240,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342643720"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342643720-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 20215,
+            "recorded_at": "2012-11-24T10:48:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342587274",
+            "title": "DreamHack Winter 2012 - StarCraft II - Stream #1 with Apollo and iNcontroL",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342587274",
+            "views": 3958,
+            "broadcast_id": 4238050208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342587274"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342587274-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 35622,
+            "recorded_at": "2012-11-23T11:40:51Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342321456",
+            "title": "DreamHack Winter 2012 - StarCraft II - Stream #1 with Apollo and iNcontroL",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342321456",
+            "views": 9764,
+            "broadcast_id": 4232028608,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342321456"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342321456-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 14120,
+            "recorded_at": "2012-11-22T19:08:40Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342158386",
+            "title": "DreamHack Winter 2012 - StarCraft II - Stream #1",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342158386",
+            "views": 4701,
+            "broadcast_id": 4227863168,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342158386"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342158386-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 26368,
+            "recorded_at": "2012-11-22T11:48:24Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/342079480",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Apollo & iNcontroL. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a342079480",
+            "views": 6325,
+            "broadcast_id": 4225872992,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a342079480"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-342079480-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 44,
+            "recorded_at": "2012-11-21T19:01:37Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/341898403",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a341898403",
+            "views": 261,
+            "broadcast_id": 4221620480,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a341898403"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-341898403-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8556,
+            "recorded_at": "2012-06-18T21:48:49Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321911169",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321911169",
+            "views": 6997,
+            "broadcast_id": 3274670400,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321911169"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321911169-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 30348,
+            "recorded_at": "2012-06-18T11:29:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321860501",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321860501",
+            "views": 13093,
+            "broadcast_id": 3272095760,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321860501"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321860501-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 28593,
+            "recorded_at": "2012-06-17T15:30:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321773208",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321773208",
+            "views": 26489,
+            "broadcast_id": 3266987440,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321773208"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321773208-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4281,
+            "recorded_at": "2012-06-17T14:18:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321763902",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321763902",
+            "views": 1489,
+            "broadcast_id": 3266671632,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321763902"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321763902-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 23878,
+            "recorded_at": "2012-06-17T07:40:34Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321738610",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat. This is a live event.",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321738610",
+            "views": 10400,
+            "broadcast_id": 3265179456,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321738610"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321738610-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 34348,
+            "recorded_at": "2012-06-16T12:43:22Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/321642242",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring dApollo & djWheat",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a321642242",
+            "views": 8110,
+            "broadcast_id": 3260262704,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a321642242"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-321642242-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8133,
+            "recorded_at": "2011-11-26T08:43:20Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300985546",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300985546",
+            "views": 343,
+            "broadcast_id": 2135932880,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300985546"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300985546-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 24207,
+            "recorded_at": "2011-11-25T16:07:20Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300919504",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300919504",
+            "views": 80,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300919504"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300919504-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 5323,
+            "recorded_at": "2011-11-25T14:37:51Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300913715",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300913715",
+            "views": 28,
+            "broadcast_id": 2131136368,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300913715"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300913715-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 13695,
+            "recorded_at": "2011-11-25T10:49:03Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300902489",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300902489",
+            "views": 26,
+            "broadcast_id": 2130297952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300902489"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300902489-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 6666,
+            "recorded_at": "2011-11-25T08:57:18Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300897359",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300897359",
+            "views": 47,
+            "broadcast_id": 2129917536,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300897359"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300897359-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4961,
+            "recorded_at": "2011-11-24T21:51:32Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300861658",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300861658",
+            "views": 30,
+            "broadcast_id": 2127123952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300861658"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300861658-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3632,
+            "recorded_at": "2011-11-24T20:50:35Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300856188",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300856188",
+            "views": 28,
+            "broadcast_id": 2126843088,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300856188"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300856188-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 995,
+            "recorded_at": "2011-11-24T20:33:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300852043",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300852043",
+            "views": 0,
+            "broadcast_id": 2126759152,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300852043"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300852043-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 13547,
+            "recorded_at": "2011-11-24T16:46:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300843784",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300843784",
+            "views": 56,
+            "broadcast_id": 2125736336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300843784"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300843784-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 5684,
+            "recorded_at": "2011-11-24T15:09:59Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300835170",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300835170",
+            "views": 23,
+            "broadcast_id": 2125325936,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300835170"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300835170-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8253,
+            "recorded_at": "2011-11-24T12:52:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300828913",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tasteless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300828913",
+            "views": 78,
+            "broadcast_id": 2124793776,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300828913"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300828913-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 12702,
+            "recorded_at": "2011-11-24T09:18:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300818010",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tastless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300818010",
+            "views": 116,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300818010"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300818010-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1221,
+            "recorded_at": "2011-11-24T08:55:44Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/300812831",
+            "title": "Welcome to the DreamHack SC2 Stream Featuring Artosis and Tastless",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a300812831",
+            "views": 60,
+            "broadcast_id": 2123994288,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a300812831"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300812831-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8350,
+            "recorded_at": "2011-06-20T07:51:58Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288450503",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288450503",
+            "views": 18,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288450503"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288450503-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 8429,
+            "recorded_at": "2011-06-19T18:15:21Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288413315",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288413315",
+            "views": 6,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288413315"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288413315-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 5290,
+            "recorded_at": "2011-06-19T14:40:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288398666",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288398666",
+            "views": 83,
+            "broadcast_id": 1357136560,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288398666"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288398666-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 20657,
+            "recorded_at": "2011-06-19T08:56:15Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288384430",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288384430",
+            "views": 20,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288384430"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288384430-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 6248,
+            "recorded_at": "2011-06-18T19:52:35Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288344241",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288344241",
+            "views": 350,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288344241"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288344241-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 17381,
+            "recorded_at": "2011-06-18T13:54:48Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288324411",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288324411",
+            "views": 21,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288324411"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288324411-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3709,
+            "recorded_at": "2011-06-18T12:12:49Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288315823",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288315823",
+            "views": 10,
+            "broadcast_id": 1351983120,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288315823"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288315823-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 13284,
+            "recorded_at": "2011-06-18T08:22:52Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/b/288308788",
+            "title": "DreamHack Starcraft 2",
+            "game": "StarCraft II: Wings of Liberty",
+            "description": null,
+            "_id": "a288308788",
+            "views": 98,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/a288308788"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288308788-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3723,
+            "recorded_at": "2014-04-27T21:33:54Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/4201503",
+            "title": "DreamHack Open Bucharest - Grand Finals - Impact vs Life",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Bucharest Grand Finals! Axiom.Impact vs Startale_Life best of 5.",
+            "_id": "c4201503",
+            "views": 4163,
+            "broadcast_id": 9361766080,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c4201503"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523757565-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 145,
+            "recorded_at": "2014-04-27T22:20:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/4144949",
+            "title": "Life wins DreamHack Open Bucharest",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Life wins DreamHack Open Bucharest",
+            "_id": "c4144949",
+            "views": 5649,
+            "broadcast_id": 9361766080,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c4144949"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-523765746-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1826,
+            "recorded_at": "2013-11-30T17:10:10Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3373800",
+            "title": "Dreamhack Open Grand Finals: Loser Bracket - MMA vs Patience",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Loser Bracket - Round 4 - MMA vs Patience",
+            "_id": "c3373800",
+            "views": 2298,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3373800"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483988480-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2521,
+            "recorded_at": "2013-11-30T16:09:27Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3368006",
+            "title": "Dreamhack Open Grand Finals: Loser Bracket - Innovation vs JYP",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Loser Bracket - Round 4 - Innovation vs JYP",
+            "_id": "c3368006",
+            "views": 2035,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3368006"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483972529-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3122,
+            "recorded_at": "2013-11-30T13:58:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3367783",
+            "title": "Dreamhack Open Grand Finals: Loser Bracket - Patience vs Polt",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Loser Bracket - Round 3 - Patience - Polt",
+            "_id": "c3367783",
+            "views": 935,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3367783"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483953188-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2814,
+            "recorded_at": "2013-11-30T13:01:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3367697",
+            "title": "Dreamhack Open Grand Finals: Loser Bracket - JYP vs Naniwa",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Loser Bracket - Round 3 - JYP vs Naniwa",
+            "_id": "c3367697",
+            "views": 934,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3367697"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483944642-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3271,
+            "recorded_at": "2013-11-30T11:56:24Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3367585",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - HerO vs Polt",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 2 - HerO vs Polt",
+            "_id": "c3367585",
+            "views": 548,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3367585"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483936811-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2569,
+            "recorded_at": "2013-11-30T10:48:06Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3367364",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - Patience vs sOs",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 2 - Patience vs sOs",
+            "_id": "c3367364",
+            "views": 233,
+            "broadcast_id": 7682186352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3367364"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483926225-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3300,
+            "recorded_at": "2013-11-29T23:31:32Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323423",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - Naniwa vs Leenock",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 2 - Naniwa vs Leenock",
+            "_id": "c3323423",
+            "views": 5226,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323423"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483808220-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3259,
+            "recorded_at": "2013-11-29T22:25:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323402",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket Jaedong vs JYP",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 2 - Jaedong vs JYP ",
+            "_id": "c3323402",
+            "views": 8437,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323402"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483795442-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2267,
+            "recorded_at": "2013-11-29T21:28:55Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323378",
+            "title": " Dreamhack Open Grand Finals: WB Final - Taeja vs Life",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Winner Bracket Final - Taeja vs Life",
+            "_id": "c3323378",
+            "views": 16110,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323378"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483783042-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1686,
+            "recorded_at": "2013-11-29T20:47:30Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323356",
+            "title": "Dreamhack Open Grand Finals: SF - Innovation vs Life",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Winner Bracket Semi Finals - Innovation vs Life",
+            "_id": "c3323356",
+            "views": 2933,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323356"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483776809-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3281,
+            "recorded_at": "2013-11-29T19:40:02Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323316",
+            "title": "Dreamhack Open Grand Finals: SF - MMA vs  Taeja",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Winner Bracket Semi Finals - MMA vs  Taeja",
+            "_id": "c3323316",
+            "views": 2869,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323316"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483758415-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3925,
+            "recorded_at": "2013-11-29T18:18:14Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323281",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket Polt vs HyuN",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Loser Bracket - Round 1 - Polt vs HyuN",
+            "_id": "c3323281",
+            "views": 757,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323281"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483747141-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1944,
+            "recorded_at": "2013-11-29T17:26:18Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323243",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - Goswser vs sOs",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 1 - Goswser vs sOs",
+            "_id": "c3323243",
+            "views": 498,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323243"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483736595-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2134,
+            "recorded_at": "2013-11-29T16:37:50Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323169",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - ForGG vs Leenock",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 1- ForGG vs Leenock",
+            "_id": "c3323169",
+            "views": 427,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323169"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483726604-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2696,
+            "recorded_at": "2013-11-29T15:41:47Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3323124",
+            "title": " Dreamhack Open Grand Finals: Loser Bracket - TLO vs JYP",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Loser Bracket - Round 1 - TLO vs JYP",
+            "_id": "c3323124",
+            "views": 338,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3323124"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483721696-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4329,
+            "recorded_at": "2013-11-29T14:13:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3322680",
+            "title": " Dreamhack Open Grand Finals: QF - Life vs Naniwa",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Quarter Finals - Life vs Naniwa",
+            "_id": "c3322680",
+            "views": 775,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3322680"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483708963-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2469,
+            "recorded_at": "2013-11-29T13:16:55Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3322633",
+            "title": " Dreamhack Open Grand Finals: QF - Jaedong vs Innovation",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Quarter Finals - Jaedong vs Innovation",
+            "_id": "c3322633",
+            "views": 693,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3322633"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483701487-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3380,
+            "recorded_at": "2013-11-29T12:11:18Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3322585",
+            "title": " Dreamhack Open Grand Finals: QF - Taeja vs Hero",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Quarter Finals - Taeja vs Hero",
+            "_id": "c3322585",
+            "views": 1058,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3322585"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483694851-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4107,
+            "recorded_at": "2013-11-29T10:47:31Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3322555",
+            "title": " Dreamhack Open Grand Finals: QF - Patience vs MMA",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Quarter Finals - Patience vs MMA",
+            "_id": "c3322555",
+            "views": 652,
+            "broadcast_id": 7669676912,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3322555"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483686131-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2488,
+            "recorded_at": "2013-11-28T21:52:52Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318929",
+            "title": " Dreamhack Open Grand Finals: Group C - sOs vs Innovation",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Group C - Round 5 - sOs vs Innovation",
+            "_id": "c3318929",
+            "views": 3402,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318929"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483582961-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3529,
+            "recorded_at": "2013-11-28T20:47:53Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318771",
+            "title": " Dreamhack Open Grand Finals: Group D - Jaedong vs Hero",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Group D - Round 4 - Jaedong vs Hero ",
+            "_id": "c3318771",
+            "views": 2275,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318771"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483571879-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2414,
+            "recorded_at": "2013-11-28T19:52:16Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318656",
+            "title": "Dreamhack Open Grand Finals: Group C - Taeja vs sOs",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Group C - Round 3 - Taeja vs sOs",
+            "_id": "c3318656",
+            "views": 6146,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318656"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483560463-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2903,
+            "recorded_at": "2013-11-28T19:00:21Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318607",
+            "title": "Dreamhack Open Grand Finals: Group D - Jaedong vs Leenock",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Group D - Round 2 - Jaedong vs Leenock ",
+            "_id": "c3318607",
+            "views": 1603,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318607"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483549294-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3321,
+            "recorded_at": "2013-11-28T17:53:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318542",
+            "title": "Dreamhack Open Grand Finals: Group C - ForGG vs Innovation",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Group C - Round 1 - ForGG vs Innovation ",
+            "_id": "c3318542",
+            "views": 1273,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318542"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483538992-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2247,
+            "recorded_at": "2013-11-28T16:17:22Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318491",
+            "title": "Dreamhack Open Grand Finals: Group B - Life vs MMA ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "Dreamhack Open Grand Finals: Group B - Round 5 - Life vs MMA ",
+            "_id": "c3318491",
+            "views": 1292,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318491"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483524222-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4420,
+            "recorded_at": "2013-11-28T14:51:07Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318374",
+            "title": " Dreamhack Open Grand Finals: Group A - Naniwa vs Hyun",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": " Dreamhack Open Grand Finals: Group A - Round 4 - Naniwa vs Hyun ",
+            "_id": "c3318374",
+            "views": 1705,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318374"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483511553-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2912,
+            "recorded_at": "2013-11-28T13:53:50Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3318282",
+            "title": "Dreamhack Open Grand Finals: Group A - TLO vs Naniwa",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Grand Finals at DreamHack Winter 2013. Group A - Round 3 - TLO vs Naniwa",
+            "_id": "c3318282",
+            "views": 1514,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3318282"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483504037-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2299,
+            "recorded_at": "2013-11-28T13:06:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3317535",
+            "title": "DreamHack Open Grand Finals: Group B - MMA vs. StarDust",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Grand Finals at DreamHack Winter 2013. Group B - MMA vs. StarDust.",
+            "_id": "c3317535",
+            "views": 1180,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3317535"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483497058-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4581,
+            "recorded_at": "2013-11-28T11:47:47Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3317479",
+            "title": "DreamHack Open Grand Finals: Group A - Life vs. Polt",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Grand Finals at DreamHack Winter 2013. Group A - Life vs. Polt.",
+            "_id": "c3317479",
+            "views": 1820,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3317479"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483490886-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4582,
+            "recorded_at": "2013-11-28T11:47:46Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/3317467",
+            "title": "DreamHack Open Grand Finals: Group A - Life vs. Polt",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open Grand Finals at DreamHack Winter 2013. Introduction and Life vs. Polt (Group A).",
+            "_id": "c3317467",
+            "views": 429,
+            "broadcast_id": 7660224352,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c3317467"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-483490886-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 6410,
+            "recorded_at": "2013-06-17T21:14:55Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475526",
+            "title": "DHOpen summer: Grand final - Jaedong vs Stardust",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop at DreamHack Summer 2013. This is the grand final with \"The Tyrant\" Jaedong versus the underdog Stardust",
+            "_id": "c2475526",
+            "views": 2669,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475526"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418336757-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2562,
+            "recorded_at": "2013-06-17T20:00:45Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475418",
+            "title": "DHOpen summer: RO4 - Sjow vs Stardust",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop at DreamHack Summer 2013. Round of four.",
+            "_id": "c2475418",
+            "views": 933,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475418"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418302620-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3295,
+            "recorded_at": "2013-06-17T12:10:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475336",
+            "title": "DHOpen summer: RO16 - Gumiho vs Hyun",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Round of 16 - Gumiho vs Hyun",
+            "_id": "c2475336",
+            "views": 262,
+            "broadcast_id": 5924174432,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475336"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418156401-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2406,
+            "recorded_at": "2013-06-17T11:06:20Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475224",
+            "title": "DHOpen summer: RO16 - Sjow vs Harstem",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Round of 16 - Sjow vs Harstem",
+            "_id": "c2475224",
+            "views": 328,
+            "broadcast_id": 5924174432,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475224"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418142971-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3234,
+            "recorded_at": "2013-06-17T10:04:31Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475175",
+            "title": "DHOpen summer: RO16 - Squirtle vs TLO",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Round of 16 - Squirtle vs TLO",
+            "_id": "c2475175",
+            "views": 257,
+            "broadcast_id": 5924174432,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475175"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418130607-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2058,
+            "recorded_at": "2013-06-17T09:07:01Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2475133",
+            "title": "DHOpen summer: RO16 - Stephano vs Jaedong",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Round of 16 - Stephano vs Jaedong",
+            "_id": "c2475133",
+            "views": 194,
+            "broadcast_id": 5924174432,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2475133"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418118592-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2880,
+            "recorded_at": "2013-06-16T22:22:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474911",
+            "title": "DHOpen summer: GS#3 - Gumiho vs Jaedong",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #3 - Gumiho vs Jaedong",
+            "_id": "c2474911",
+            "views": 219,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474911"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417936956-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3877,
+            "recorded_at": "2013-06-16T21:12:33Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474854",
+            "title": "DHOpen summer: GS#3 - Thorzain vs Elfi",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #3 - Thorzain vs Elfi",
+            "_id": "c2474854",
+            "views": 78,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474854"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417916187-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3516,
+            "recorded_at": "2013-06-16T20:06:40Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474828",
+            "title": " DHOpen summer: GS#3 - Stephano vs TheStc",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #3 - Stephano vs TheStc",
+            "_id": "c2474828",
+            "views": 42,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474828"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417892591-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 5407,
+            "recorded_at": "2013-06-16T17:30:08Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474788",
+            "title": "DHOpen summer: GS#2 - Stephano vs ToD",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Stephano vs ToD",
+            "_id": "c2474788",
+            "views": 45,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474788"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417821261-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1304,
+            "recorded_at": "2013-06-16T16:43:11Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474768",
+            "title": "DHOpen summer: GS#2 - Taeja vs Gumiho",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Taeja vs Gumiho",
+            "_id": "c2474768",
+            "views": 31,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474768"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417809877-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3097,
+            "recorded_at": "2013-06-16T15:30:58Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474699",
+            "title": "DHOpen summer: GS#2 - JAEDONG vs Elfi",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Jaedong vs Elfi",
+            "_id": "c2474699",
+            "views": 46,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474699"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417777878-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1823,
+            "recorded_at": "2013-06-16T13:34:23Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474679",
+            "title": "DHOpen summer: GS#2 - Life vs TheStc",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Life vs TheStc",
+            "_id": "c2474679",
+            "views": 15,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474679"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417748181-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2683,
+            "recorded_at": "2013-06-16T12:31:43Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474643",
+            "title": "DHOpen summer: GS#2 - Cytoplasm vs PiG",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Cytoplasm vs PiG",
+            "_id": "c2474643",
+            "views": 15,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474643"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417721730-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2053,
+            "recorded_at": "2013-06-16T11:44:50Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474617",
+            "title": "DHOpen summer: GS#2 - Huk vs Violet",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #2 - Huk vs Violet",
+            "_id": "c2474617",
+            "views": 19,
+            "broadcast_id": 5917523904,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474617"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417713683-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3026,
+            "recorded_at": "2013-06-15T22:01:31Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474582",
+            "title": "DHOpen summer: GS#1 - Lucifron vs Bunny ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 -Lucifron vs Bunny",
+            "_id": "c2474582",
+            "views": 25,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474582"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417463932-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2334,
+            "recorded_at": "2013-06-15T21:02:11Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474533",
+            "title": "DHOpen summer: GS#1 - Sjow vs Ret ",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 - Sjow vs Ret",
+            "_id": "c2474533",
+            "views": 15,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474533"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417439634-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2240,
+            "recorded_at": "2013-06-15T20:03:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474508",
+            "title": "DHOpen summer: GS#1 - TLO vs DieStar",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 - TLO vs DieStar",
+            "_id": "c2474508",
+            "views": 27,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474508"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417415773-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1579,
+            "recorded_at": "2013-06-15T18:06:24Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474470",
+            "title": "DHOpen summer: GS#1 - Snute vs Harstem",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 - Snute vs Harstem",
+            "_id": "c2474470",
+            "views": 13,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474470"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417366842-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2562,
+            "recorded_at": "2013-06-15T16:57:50Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474448",
+            "title": "DHOpen summer: GS#1 - GoOdy vs Feast",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 - GoOdy vs Feast",
+            "_id": "c2474448",
+            "views": 15,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474448"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417344429-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2158,
+            "recorded_at": "2013-06-15T16:06:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2474281",
+            "title": "DHOpen summer: GS#1 - Hyun vs Morrow",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open summer 2013: Groupstage #1 - Morrow vs Hyun",
+            "_id": "c2474281",
+            "views": 19,
+            "broadcast_id": 5910752576,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2474281"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-417323290-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1709,
+            "recorded_at": "2013-06-17T19:15:29Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2447229",
+            "title": "DHS13 RO4 Jaedong vs. Taeja",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop at DreamHack Summer 2013. First semifinal.",
+            "_id": "c2447229",
+            "views": 817,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2447229"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418290920-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3379,
+            "recorded_at": "2013-06-17T17:59:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2447215",
+            "title": "DHS13 RO8 Hyun vs. Stardust",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop live from DreamHack Summer 2013. Fourth Quarter-finals.",
+            "_id": "c2447215",
+            "views": 584,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2447215"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418256753-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4206,
+            "recorded_at": "2013-06-17T16:27:49Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2447189",
+            "title": "DHS13 RO8 SjoW vs. Life",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop at DreamHack Summer 2013. Third Quarert Finals.",
+            "_id": "c2447189",
+            "views": 741,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2447189"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418225480-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1953,
+            "recorded_at": "2013-06-17T15:34:10Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2447163",
+            "title": "DHS13 RO8 TLO vs. Taeja",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop from DreamHack Summer 2013",
+            "_id": "c2447163",
+            "views": 396,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2447163"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418206690-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2705,
+            "recorded_at": "2013-06-17T14:15:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/2447150",
+            "title": "DHS13 RO8 LucifroN vs. Jaedong",
+            "game": "StarCraft II: Heart of the Swarm",
+            "description": "DreamHack Open 2nd stop from DreamHack Summer 2013. First Quarter Final. ",
+            "_id": "c2447150",
+            "views": 446,
+            "broadcast_id": 5925493264,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c2447150"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-418188682-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1996,
+            "recorded_at": "2011-11-26T10:08:44Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687413",
+            "title": "DRG(Z) vs NaNiWa(P)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687413",
+            "views": 4111,
+            "broadcast_id": 2135932880,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687413"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-301033784-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2608,
+            "recorded_at": "2011-11-26T09:11:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687412",
+            "title": "WhiteRa(P) vs Naama(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687412",
+            "views": 1659,
+            "broadcast_id": 2135932880,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687412"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-301033624-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2909,
+            "recorded_at": "2011-11-25T21:47:26Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/908342",
+            "title": "sjoW(T) vs Happy(T) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Apollo",
+            "_id": "c908342",
+            "views": 773,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c908342"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300962483-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 951,
+            "recorded_at": "2011-11-25T21:31:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687330",
+            "title": "sjoW(T) vs Happy(T) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Apollo",
+            "_id": "c1687330",
+            "views": 403,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687330"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300962294-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1935,
+            "recorded_at": "2011-11-25T20:35:20Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687329",
+            "title": "WhiteRa(P) vs Happy(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Apollo",
+            "_id": "c1687329",
+            "views": 321,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687329"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300962109-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 964,
+            "recorded_at": "2011-11-25T18:57:23Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687328",
+            "title": "SeleCT(T) vs Nerchio(Z) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687328",
+            "views": 308,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687328"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300961755-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1305,
+            "recorded_at": "2011-11-25T18:35:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687326",
+            "title": "SeleCT(T) vs Nerchio(Z) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687326",
+            "views": 253,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687326"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300959669-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1762,
+            "recorded_at": "2011-11-25T17:32:21Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687324",
+            "title": "HerO(P) vs DRG(Z) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687324",
+            "views": 299,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687324"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300959522-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 233,
+            "recorded_at": "2011-11-25T17:28:27Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687323",
+            "title": "HerO(P) vs DRG(Z) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687323",
+            "views": 248,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687323"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300959313-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2667,
+            "recorded_at": "2011-11-25T16:33:45Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687322",
+            "title": "SaSe(P) vs SeleCT(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687322",
+            "views": 158,
+            "broadcast_id": 2131508416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687322"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300959226-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3434,
+            "recorded_at": "2011-11-25T15:05:45Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687321",
+            "title": "Ret(Z) vs merz(T)",
+            "game": null,
+            "description": "Cast: Artosis and TLO",
+            "_id": "c1687321",
+            "views": 69,
+            "broadcast_id": 2131136368,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687321"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300958276-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 828,
+            "recorded_at": "2011-11-25T14:40:26Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/908307",
+            "title": "SarenS(T) vs Seiplo(P) Part 2",
+            "game": null,
+            "description": "Cast: Artosis and TLO",
+            "_id": "c908307",
+            "views": 48,
+            "broadcast_id": 2131136368,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c908307"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300957506-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1171,
+            "recorded_at": "2011-11-25T14:17:50Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687320",
+            "title": "SarenS(T) vs Seiplo(P)",
+            "game": null,
+            "description": "Cast: Artosis and TLO",
+            "_id": "c1687320",
+            "views": 56,
+            "broadcast_id": 2130297952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687320"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300956526-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2001,
+            "recorded_at": "2011-11-25T13:11:44Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687318",
+            "title": "Seiplo(P) vs Genius(P)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687318",
+            "views": 33,
+            "broadcast_id": 2130297952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687318"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300955766-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3222,
+            "recorded_at": "2011-11-25T10:56:31Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687316",
+            "title": "Orly(Z) vs HuK(P)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687316",
+            "views": 57,
+            "broadcast_id": 2130297952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687316"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300955429-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2045,
+            "recorded_at": "2011-11-25T09:59:45Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687315",
+            "title": "HuK(P) vs PuMa(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687315",
+            "views": 79,
+            "broadcast_id": 2129917536,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687315"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300955161-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2626,
+            "recorded_at": "2011-11-25T09:13:28Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687314",
+            "title": "aTnClouD(T) vs coLNaNiWa(P)",
+            "game": null,
+            "description": "Cast: Artosis and TLO",
+            "_id": "c1687314",
+            "views": 45,
+            "broadcast_id": 2129917536,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687314"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300954583-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3105,
+            "recorded_at": "2011-11-24T22:14:10Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687205",
+            "title": "HuK(P) vs Seala(Z)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687205",
+            "views": 42,
+            "broadcast_id": 2127123952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687205"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300871184-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 463,
+            "recorded_at": "2011-11-24T21:54:16Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687204",
+            "title": "HuK(P) vs TITAN(P) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687204",
+            "views": 26,
+            "broadcast_id": 2127123952,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687204"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300871050-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2056,
+            "recorded_at": "2011-11-24T21:15:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687203",
+            "title": "HuK(P) vs TITAN(P) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687203",
+            "views": 32,
+            "broadcast_id": 2126843088,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687203"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300870896-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2032,
+            "recorded_at": "2011-11-24T17:45:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687201",
+            "title": "HerO(P) vs TLO(Z)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687201",
+            "views": 65,
+            "broadcast_id": 2125736336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687201"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300870240-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2204,
+            "recorded_at": "2011-11-24T16:47:18Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687200",
+            "title": "ToD(P) vs Fuzer(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687200",
+            "views": 24,
+            "broadcast_id": 2125736336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687200"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869998-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2499,
+            "recorded_at": "2011-11-24T15:16:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687199",
+            "title": "Stephano(Z) vs SjoW(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687199",
+            "views": 91,
+            "broadcast_id": 2125325936,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687199"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869690-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 681,
+            "recorded_at": "2011-11-24T14:52:17Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687197",
+            "title": "SaSe(P) vs dmerz(T) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687197",
+            "views": 19,
+            "broadcast_id": 2124793776,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687197"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869492-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1235,
+            "recorded_at": "2011-11-24T14:31:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687196",
+            "title": "SaSe(P) vs dmerz(T) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687196",
+            "views": 19,
+            "broadcast_id": 2124793776,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687196"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869424-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 866,
+            "recorded_at": "2011-11-24T13:43:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/907370",
+            "title": "DongRaeGu(Z) vs LaLush(Z)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c907370",
+            "views": 20,
+            "broadcast_id": 2124793776,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c907370"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869273-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 4449,
+            "recorded_at": "2011-11-24T11:36:33Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687195",
+            "title": "mouzThorZaIN(T) vs dSeleCt(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687195",
+            "views": 49,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687195"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300869001-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 497,
+            "recorded_at": "2011-11-24T11:19:08Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/907364",
+            "title": "mouzMana(P) vs ESCGoOdy(T) Part 2",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c907364",
+            "views": 57,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c907364"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300868669-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2555,
+            "recorded_at": "2011-11-24T09:25:10Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/907362",
+            "title": "PhoeNix(Z) vs aTnClouD(T)",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c907362",
+            "views": 16,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c907362"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300868556-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 3686,
+            "recorded_at": "2011-11-24T10:17:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687194",
+            "title": "mouzMana(P) vs ESCGoOdy(T) Part 1",
+            "game": null,
+            "description": "Cast: Tasteless and Artosis",
+            "_id": "c1687194",
+            "views": 62,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687194"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300868246-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 2924,
+            "recorded_at": "2011-11-24T09:19:01Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1687149",
+            "title": "PhoeNix vs aTnClouD",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1687149",
+            "views": 18,
+            "broadcast_id": 2124070592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1687149"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-300838444-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 825,
+            "recorded_at": "2011-06-19T12:42:37Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679262",
+            "title": "Dreamhack 2011 - Match 1 HayprO (Z) V Bomber (T) Part 1",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679262",
+            "views": 9,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679262"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292965683-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 487,
+            "recorded_at": "2011-06-18T21:17:00Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1363567",
+            "title": "Dreamhack 2011 - Match 1 Hasuobs (p) V July (Z)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1363567",
+            "views": 13,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1363567"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292965135-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 549,
+            "recorded_at": "2011-06-20T09:59:45Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679107",
+            "title": "Dreamhack 2011 - Match 2 Moon (Z) V Naniwa (P)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679107",
+            "views": 14,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679107"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292816144-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 999,
+            "recorded_at": "2011-06-20T09:35:27Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679106",
+            "title": "Dreamhack 2011 - Match 1 Moon (Z) V Naniwa (P)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679106",
+            "views": 18,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679106"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292815693-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 750,
+            "recorded_at": "2011-06-20T08:34:18Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679105",
+            "title": "Dreamhack 2011 - Match 3 Sen (Z) V July (Z)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679105",
+            "views": 10,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679105"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292815631-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 701,
+            "recorded_at": "2011-06-20T08:19:15Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679104",
+            "title": "Dreamhack 2011 - Match 2 Sen (Z) V July (Z)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679104",
+            "views": 7,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679104"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292815603-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 341,
+            "recorded_at": "2011-06-20T08:08:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1679103",
+            "title": "Dreamhack 2011 - Match 1 Sen (Z) V July (Z)",
+            "game": null,
+            "description": "Starcraft 2",
+            "_id": "c1679103",
+            "views": 18,
+            "broadcast_id": 1360562832,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1679103"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-292815564-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1163,
+            "recorded_at": "2011-06-19T20:15:35Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675242",
+            "title": "DreamHack 2011 : Match 2 - NaNiwa (P) v BratOK (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675242",
+            "views": 17,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675242"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903563-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 418,
+            "recorded_at": "2011-06-19T20:02:23Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260951",
+            "title": "DreamHack 2011 : Match 1 - NaNiwa (P) v BratOK (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260951",
+            "views": 8,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260951"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903533-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 865,
+            "recorded_at": "2011-06-19T18:53:01Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675240",
+            "title": "DreamHack 2011 : Match 3 - July (Z) v MaNa (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675240",
+            "views": 16,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675240"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903337-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 783,
+            "recorded_at": "2011-06-19T18:39:08Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675239",
+            "title": "DreamHack 2011 : Match 2 - July (Z) v MaNa (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675239",
+            "views": 9,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675239"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903314-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 832,
+            "recorded_at": "2011-06-19T18:21:19Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675238",
+            "title": "DreamHack 2011 : Match 1 - July (Z) v MaNa (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675238",
+            "views": 20,
+            "broadcast_id": 1357884592,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675238"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903297-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1374,
+            "recorded_at": "2011-06-19T15:39:10Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675237",
+            "title": "DreamHack 2011 : Match 3 - Bischu (P) v Tarson (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675237",
+            "views": 1,
+            "broadcast_id": 1357136560,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675237"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903200-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1080,
+            "recorded_at": "2011-06-19T15:17:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260945",
+            "title": "DreamHack 2011 : Match 2 - Bischu (P) v Tarson (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260945",
+            "views": 9,
+            "broadcast_id": 1357136560,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260945"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903169-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 717,
+            "recorded_at": "2011-06-19T15:03:19Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675236",
+            "title": "DreamHack 2011 : Match 1 - Bischu (P) v Tarson (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675236",
+            "views": 11,
+            "broadcast_id": 1357136560,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675236"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903146-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 978,
+            "recorded_at": "2011-06-19T14:23:22Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675235",
+            "title": "DreamHack 2011 : Match 2 - Moon (Z) v Lalush (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675235",
+            "views": 1,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675235"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903049-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 987,
+            "recorded_at": "2011-06-19T13:59:54Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675234",
+            "title": "DreamHack 2011 : Match 1 - Moon (Z) v Lalush (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675234",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675234"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288903017-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 905,
+            "recorded_at": "2011-06-19T13:32:02Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675233",
+            "title": "DreamHack 2011 : Match 3 - Haypro (Z) v Bomber (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675233",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675233"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902925-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1709,
+            "recorded_at": "2011-06-19T13:01:56Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675232",
+            "title": "DreamHack 2011 : Match 2 - Haypro (Z) v Bomber (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675232",
+            "views": 1,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675232"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902860-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 242,
+            "recorded_at": "2011-06-19T12:56:22Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675231",
+            "title": "DreamHack 2011 : Match 1 - Haypro (Z) v Bomber (T) - Part 2",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675231",
+            "views": 1,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675231"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902822-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 822,
+            "recorded_at": "2011-06-19T12:42:40Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260925",
+            "title": "DreamHack 2011 : Match 1 - Haypro (Z) v Bomber (T) - Part 1",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260925",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260925"
+            },
+            "preview": "xarth/404_processing_320x240.png",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1227,
+            "recorded_at": "2011-06-19T11:59:59Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675230",
+            "title": "DreamHack 2011 : Match 2 - Happy (P) v Xlord (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675230",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675230"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902684-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1291,
+            "recorded_at": "2011-06-19T11:35:02Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675229",
+            "title": "DreamHack 2011 : Match 1 - Happy (P) v Xlord (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675229",
+            "views": 10,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675229"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902640-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1339,
+            "recorded_at": "2011-06-19T11:09:33Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675228",
+            "title": "DreamHack 2011 : Match 3 - Haypro (Z) v Xlord (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675228",
+            "views": 1,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675228"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902536-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 625,
+            "recorded_at": "2011-06-19T10:56:22Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675227",
+            "title": "DreamHack 2011 : Match 2 - Haypro (Z) v Xlord (Z) - Part 2",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675227",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675227"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288384430-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 790,
+            "recorded_at": "2011-06-19T10:43:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675226",
+            "title": "DreamHack 2011 : Match 2 - Haypro (Z) v Xlord (Z) - Part 1",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675226",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675226"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902449-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 787,
+            "recorded_at": "2011-06-19T10:26:25Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260917",
+            "title": "DreamHack 2011 : Match 1 - Haypro (Z) v Xlord (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260917",
+            "views": 1,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260917"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902412-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 461,
+            "recorded_at": "2011-06-19T09:39:25Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675225",
+            "title": "DreamHack 2011 : Match 2 - Goody (T) v WhiteRa (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675225",
+            "views": 0,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675225"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902357-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 775,
+            "recorded_at": "2011-06-19T09:24:35Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675224",
+            "title": "DreamHack 2011 : Match 1 - Goody (T) v WhiteRa (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675224",
+            "views": 10,
+            "broadcast_id": 1356136336,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675224"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288902310-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 398,
+            "recorded_at": "2011-06-18T21:27:51Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675215",
+            "title": "DreamHack 2011 : Match 2 - Hasuobs (P) v July (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675215",
+            "views": 0,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675215"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288895371-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 489,
+            "recorded_at": "2011-06-18T21:16:59Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675214",
+            "title": "DreamHack 2011 : Match 1 - Hasuobs (P) v July (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675214",
+            "views": 0,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675214"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288344241-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 296,
+            "recorded_at": "2011-06-18T20:10:15Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260694",
+            "title": "DreamHack 2011 : Match 2 - HuK (P) v Tarson (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260694",
+            "views": 1,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260694"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288894736-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 525,
+            "recorded_at": "2011-06-18T19:58:32Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1260690",
+            "title": "DreamHack 2011 : Match 1 - HuK (P) v Tarson (T)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1260690",
+            "views": 2,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1260690"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288894651-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 339,
+            "recorded_at": "2011-06-18T18:36:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675212",
+            "title": "DreamHack 2011 : Match 2 - Sen (Z) v Naugrim (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675212",
+            "views": 0,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675212"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288894283-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 706,
+            "recorded_at": "2011-06-18T18:20:53Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675211",
+            "title": "DreamHack 2011 : Match 1 - Sen (Z) v Naugrim (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675211",
+            "views": 0,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675211"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288324411-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 613,
+            "recorded_at": "2011-06-18T17:22:41Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675210",
+            "title": "DreamHack 2011 : Match 2 - IdrA (Z) v SaSe (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675210",
+            "views": 16,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675210"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288893961-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 365,
+            "recorded_at": "2011-06-18T17:15:41Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675209",
+            "title": "DreamHack 2011 : Match 1 - IdrA (Z) v SaSe (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675209",
+            "views": 19,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675209"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288893860-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1208,
+            "recorded_at": "2011-06-18T16:41:21Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675208",
+            "title": "DreamHack 2011 : Match 2 - Cloud (T) v Sen (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675208",
+            "views": 0,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675208"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288893251-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 559,
+            "recorded_at": "2011-06-18T11:13:27Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675207",
+            "title": "DreamHack 2011 : Match 2 - NaNiwa (P) v Tyler (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675207",
+            "views": 1,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675207"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288893026-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1035,
+            "recorded_at": "2011-06-18T16:22:08Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675205",
+            "title": "DreamHack 2011 : Match 1 - Cloud (T) v Sen (Z)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675205",
+            "views": 0,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675205"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288892589-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 422,
+            "recorded_at": "2011-06-18T11:01:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1675204",
+            "title": "DreamHack 2011 : Match 1 - NaNiwa (P) v Tyler (P)",
+            "game": null,
+            "description": "Starcraft2",
+            "_id": "c1675204",
+            "views": 1,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1675204"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288891756-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 610,
+            "recorded_at": "2011-06-18T15:12:57Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1255038",
+            "title": "DreamHack 2011 : Match 1 - MC (P) v Adelscott (P)",
+            "game": null,
+            "description": "Totalbiscuit Casts at Dreamhack",
+            "_id": "c1255038",
+            "views": 3,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1255038"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288504374-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1033,
+            "recorded_at": "2011-06-18T14:33:27Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674797",
+            "title": "DreamHack 2011 : Match 3 - IdrA (Z) v merz (T)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674797",
+            "views": 2,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674797"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288429135-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 403,
+            "recorded_at": "2011-06-18T10:08:09Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674764",
+            "title": "DreamHack 2011 : Match 1 - NaNiwa (P) v Strelok (T)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674764",
+            "views": 1,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674764"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288380441-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1034,
+            "recorded_at": "2011-06-18T10:26:52Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674755",
+            "title": "DreamHack 2011 : Match 3 - NaNiwa (P) v Strelok (T)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674755",
+            "views": 0,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674755"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288374455-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 155,
+            "recorded_at": "2011-06-18T10:23:07Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674754",
+            "title": "DreamHack 2011 : Match 2 - NaNiwa (P) v Strelok (T) - Part 2",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674754",
+            "views": 1,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674754"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288374268-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 424,
+            "recorded_at": "2011-06-18T10:15:59Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674753",
+            "title": "DreamHack 2011 : Match 2 - NaNiwa (P) v Strelok (T) - Part 1",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674753",
+            "views": 2,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674753"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288374228-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 421,
+            "recorded_at": "2011-06-18T15:31:36Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674752",
+            "title": "DreamHack 2011 : Match 3 - MC (P) v Adelscott (P)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674752",
+            "views": 14,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674752"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288324411-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 315,
+            "recorded_at": "2011-06-18T15:25:38Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1252205",
+            "title": "DreamHack 2011 : Match 2 - MC (P) v Adelscott (P)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1252205",
+            "views": 4,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1252205"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288373397-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 975,
+            "recorded_at": "2011-06-18T09:19:47Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674751",
+            "title": "DreamHack 2011 : Match 1 - Socke (P) v MorroW (Z)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674751",
+            "views": 1,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674751"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288372162-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 659,
+            "recorded_at": "2011-06-18T14:21:08Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674748",
+            "title": "DreamHack 2011 : Match 2 - IdrA (Z) v merz (T)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674748",
+            "views": 1,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674748"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288370538-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1155,
+            "recorded_at": "2011-06-18T14:00:58Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674747",
+            "title": "DreamHack 2011 : Match 1 - IdrA (Z) v merz (T)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674747",
+            "views": 5,
+            "broadcast_id": 1352296208,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674747"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288370464-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 958,
+            "recorded_at": "2011-06-18T12:56:39Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674744",
+            "title": "DreamHack 2011 : Match 3 - NightEnD (P) v Dimaga (Z) ",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674744",
+            "views": 13,
+            "broadcast_id": 1351983120,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674744"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288368790-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 534,
+            "recorded_at": "2011-06-18T12:46:24Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674743",
+            "title": "DreamHack 2011 : Match 2 - NightEnD (P) v Dimaga (Z)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674743",
+            "views": 1,
+            "broadcast_id": 1351983120,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674743"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288368732-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1005,
+            "recorded_at": "2011-06-18T12:29:04Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674742",
+            "title": "DreamHack 2011 : Match 1 - NightEnD (P) v Dimaga (Z)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674742",
+            "views": 5,
+            "broadcast_id": 1351983120,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674742"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288368671-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 837,
+            "recorded_at": "2011-06-18T09:39:07Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674737",
+            "title": "DreamHack 2011 : Match 2 - Socke (P) v MorroW (Z)",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.",
+            "_id": "c1674737",
+            "views": 3,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674737"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288366267-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 795,
+            "recorded_at": "2011-06-18T09:03:44Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674736",
+            "title": "DreamHack 2011 : Match 3 - Tyler v Strelok ",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during DreamHack Summer 2011. Tyler v Strelok\r\n\r\nRecorded live on Justin.tv",
+            "_id": "c1674736",
+            "views": 3,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674736"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288363291-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 912,
+            "recorded_at": "2011-06-18T08:43:30Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674733",
+            "title": "DreamHack 2011 : Tyler vs Strelok - Match 2",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during Day 1 of DreamHack Summer 2011.\r\n\r\nRecorded live on Justin.tv",
+            "_id": "c1674733",
+            "views": 5,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674733"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288362610-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 900,
+            "recorded_at": "2011-06-18T08:26:42Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674731",
+            "title": "DreamHack 2011 : Tyler vs Strelok ",
+            "game": null,
+            "description": "Totalbiscuit casts on Stream 2 during DreamHack Summer 2011. First match of the day : Tyler v Strelok. \n\nRecorded live on Justin.tv",
+            "_id": "c1674731",
+            "views": 3,
+            "broadcast_id": 1351340896,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674731"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288362033-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        },
+        {
+            "length": 1418,
+            "recorded_at": "2011-06-18T19:52:49Z",
+            "url": "http://www.twitch.tv/dreamhacksc2/c/1674718",
+            "title": "Dreamhack 2011 : TotalBiscuit and ogsMC first ever english co-cast",
+            "game": null,
+            "description": "ogsMC, GSL winner and all-round complete baller, made his english casting debut with TotalBiscuit with Huk vs Tarson",
+            "_id": "c1674718",
+            "views": 83,
+            "broadcast_id": 1353510416,
+            "_links": {
+                "channel": "https://api.twitch.tv/kraken/channels/dreamhacksc2",
+                "self": "https://api.twitch.tv/kraken/videos/c1674718"
+            },
+            "preview": "http://static-cdn.jtvnw.net/jtv.thumbs/archive-288349522-320x240.jpg",
+            "channel": {
+                "display_name": "DreamhackSC2",
+                "name": "dreamhacksc2"
+            }
+        }
+    ]
+}

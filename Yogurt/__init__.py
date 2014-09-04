@@ -14,7 +14,8 @@ __email__ = "redbrain@gcc.gnu.org"
 __url__ = "https://github.com/redbrain"
 
 
-def setupTestEnviroment():
+def testingResetCache():
+    AppCache.CacheServer = None
     AppCache.CacheServer = AppCache.CacheSystem({'type': 'local'})
     return AppCache.CacheServer
 

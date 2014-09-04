@@ -53,14 +53,21 @@ class Feeds_TwitchTv_Dreamhack:
     @property
     def league(self):
         return 'dreamhack'
+        
+    def _getTwitchDreamhackVdeos(self):
+        videos = getChannelVideos('dreamhacksc2', broadcasts=True)
+        for i in getChannelVideos('dreamhacksc2', broadcasts=False):
+            if i not in videos:
+                videos.append(i)
+        return videos
 
     @FeedUtil.CacheResult(timer=50)
     def getDreamhackVideos(self):
-        videos = getChannelVideos('dreamhacksc2', broadcasts=True)
-        videos += getChannelVideos('dreamhacksc2', broadcasts=False)
-        sorted = { }
+        videos = self._getTwitchDreamhackVdeos()
+        sorted = {}
         for i in self._filters:
-            sorted[i] = list(filter(lambda x: i in x['title'], videos))
+            sorted[i] = {'_type': 'list', '_keys': ['event']}
+            sorted[i]['event'] = list(filter(lambda x: i in x['title'], videos))
         return sorted
 
     @FeedUtil.Feed(key='league/dreamhack', timer=60)
@@ -72,7 +79,7 @@ class Feeds_TwitchTv_Dreamhack:
         videos = self.getDreamhackVideos()
         events = []
         for i in videos.keys():
-            events.append(FeedUtil.restfiyString (i))
+            events.append(FeedUtil.restfiyString(i))
         return {'keys': events}
 
     @FeedUtil.Feed(base='league/dreamhack/event/%s', timer=60)
@@ -166,16 +173,25 @@ class Feeds_TwitchTv_GSL(object):
 
     def sortGslCodeAVideos(self, videos):
         sortedByGroup = self.sortGslVideosByGroup(videos)
+        sortedByGroup['_type'] = 'dir'
         for i in sortedByGroup.keys():
             sortedByGroup[i] = self.sortGslVideosByMatch(sortedByGroup[i])
+            listKeys = list(sortedByGroup[i].keys())
+            sortedByGroup[i]['_type'] = 'list'
+            sortedByGroup[i]['_keys'] = listKeys
         return sortedByGroup
 
     def sortGslCodeSVideos(self, videos):
         sortedByRound = self.sortGslVideosByRound(videos)
+        sortedByRound['_type'] = 'dir'
         for i in sortedByRound.keys():
             sortedByRound[i] = self.sortGslVideosByGroup(sortedByRound[i])
+            sortedByRound[i]['_type'] = 'dir'
             for j in sortedByRound[i].keys():
                 sortedByRound[i][j] = self.sortGslVideosByMatch(sortedByRound[i][j])
+                listKeys = list(sortedByRound[i][j].keys())
+                sortedByRound[i][j]['_type'] = 'list'
+                sortedByRound[i][j]['_keys'] = listKeys
         return sortedByRound
 
     def getSortedGslBroadcasts(self, videos):
@@ -184,6 +200,7 @@ class Feeds_TwitchTv_GSL(object):
         for i in allGslLeagues.keys():
             league = FeedUtil.restfiyString(i)
             gslLeaguesSorted[league] = self.sortGslLeagueVideosByCode(allGslLeagues[i])
+            gslLeaguesSorted[league]['_type'] = 'dir'
             gslLeaguesSorted[league]['CodeA'] = self.sortGslCodeAVideos(gslLeaguesSorted[league]['CodeA'])
             gslLeaguesSorted[league]['CodeS'] = self.sortGslCodeSVideos(gslLeaguesSorted[league]['CodeS'])
         return gslLeaguesSorted

@@ -12,6 +12,7 @@ class CacheSystem:
     def __init__(self, config, feeds=[]):
         self.feeds = feeds
         self.type = config['type'].lower()
+        self.__cache = None
         if self.type == 'redis':
             self.__cache = RedisCache.Cache(config)
         elif self.type == 'shelve':

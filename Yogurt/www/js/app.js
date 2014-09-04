@@ -122,13 +122,8 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
 	$scope.event = path[0]
 
 	$http.get ('/api/league/'+league+'/event/'+$scope.event).success(function(data) {
-	    $scope.data = data
-	    for (var i in path){
-		if (i > 0) {
-		    var elem = path[i]
-		    $scope.data = $scope.data.elem
-		}
-	    }
+	    $scope.data = data[$scope.event]
+	    
 	    console.log ($scope.data)
 	})
     })

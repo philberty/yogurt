@@ -1,17 +1,22 @@
-from distutils.core import setup
+#!/usr/bin/env python3
+
+import os
+import Yogurt
+
+from distutils.core import setup, Command
 
 setup (
     name = "Yogurt",
-    version = "0.1",
-    url = 'https://github.com/redbrain/yogurt',
-    author = 'Philip Herron',
-    author_email = 'redbrain@gcc.gnu.org',
+    version = Yogurt.__version__,
+    url = Yogurt.__url__,
+    author = Yogurt.__author__,
+    author_email = Yogurt.__email__,
     license = "MIT",
     description = 'A feed Aggregator Starcraft',
     platforms = ('Any',),
     keywords = ('web', 'sc2', 'feeds'),
     packages = ['Yogurt'],
-    scripts = ['yogurt.py'],
+    scripts = ['bin/yogurt.py', 'bin/feeder.py'],
     package_data = {'Yogurt': ['www']},
-    data_files=[('/etc/yogurt/', ['etc/yogurt/yogurt.cfg'])],
+    data_files = [('/etc/yogurt/', ['etc/yogurt/yogurt.cfg'])]
 )
