@@ -16,7 +16,7 @@ setup (
     platforms = ('Any',),
     keywords = ('web', 'sc2', 'feeds'),
     packages = ['Yogurt'],
-    scripts = ['bin/yogurt.py', 'bin/feeder.py'],
+    scripts = ['yogurt.py', 'feeder.py'],
     package_data = {'Yogurt': ['www']},
     data_files = [('/etc/yogurt/', ['etc/yogurt/yogurt.cfg'])]
 )
