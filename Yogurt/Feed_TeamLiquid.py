@@ -2,6 +2,7 @@ import re
 
 from . import FeedUtil
 from . import ServerUtil
+from . import Feed_TwitchTv
 
 import requests
 from pyquery import PyQuery as pq
@@ -44,6 +45,16 @@ class Feeds_TeamLiquid:
             ServerUtil.warning('Unable to parse out stream info for [%s]' % node['href'])
         finally:
             node['stream'] = stream
+        try:
+            result = re.search("channel=[a-zA-Z0-9]*", node['stream'])
+            channel = result.group()
+            channel = channel.split('=')[1]
+            channelObject = Feed_TwitchTv.getChannelObject(channel)
+            node['followers'] = channelObject['followers']
+            node['logo'] = channelObject['logo']
+            node['views'] = channelObject['views']
+        except:
+            pass
         return node
 
     def __parseLiveStream(self, node):

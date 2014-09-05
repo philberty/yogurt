@@ -5,14 +5,9 @@ require.config({
 
 	angular: '/js/lib/angular/angular',
 	angularRoute: '/js/lib/angular-route/angular-route',
-	angularTree: '/js/lib/angular-ui-tree/dist/angular-ui-tree',
 	angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls'
     },
     shim: {
-	'angularTree': {
-	    deps: ['angular'],
-	    exports: 'angular'
-	},
 	'angularBootstrap': {
 	    deps: ['angular'],
 	    exports: 'angular'
@@ -29,8 +24,8 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularRoute"], function($, angular) {
-    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'ui.tree']);
+define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], function($, angular) {
+    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap']);
 
     app.controller("sidebar", function($scope, $location) {
 	$scope.$on('$locationChangeSuccess', function(event) {
@@ -80,6 +75,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
     app.controller ('upcoming', function ($scope, $http) {
 	$http.get ('/api/upcoming').success(function(data) {
 	    $scope.data = data ['events']
+	    $scope.data[0]['first'] = true
 	})
 	$scope.name = 'Upcoming Events'
 	$scope.oneAtATime = true;
@@ -88,6 +84,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
     app.controller ('live', function ($scope, $http) {
 	$http.get ('/api/live').success(function(data) {
 	    $scope.data = data ['live_events']
+	    $scope.data[0]['first'] = true
 	})
 	$scope.name = 'Live Events'
 	$scope.oneAtATime = true;
@@ -96,6 +93,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
      app.controller ('streams', function ($scope, $http) {
 	$http.get ('/api/streams').success(function(data) {
 	    $scope.data = data ['starcraft2']
+	    $scope.data[0]['first'] = true
 	})
 	$scope.oneAtATime = true;
     })
@@ -120,11 +118,25 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularTree", "angularR
 	}
 	$scope.league = league
 	$scope.event = path[0]
+	$scope.basePath = basePath
+	$scope.backToLeagues = "#/league/" + league
 
 	$http.get ('/api/league/'+league+'/event/'+$scope.event).success(function(data) {
-	    $scope.data = data[$scope.event]
-	    
-	    console.log ($scope.data)
+	    $scope.data = data
+
+	    for (var i in path) {
+		var elem = path[i]
+		$scope.data = $scope.data[elem]
+	    }
+
+	    $scope.isList = false
+	    $scope.isDir = false
+	    $scope.listKeys = $scope.data['_keys']
+	    if ($scope.data['_type'] == 'list') {
+		$scope.isList = true
+	    } else {
+		$scope.isDir = true
+	    }
 	})
     })
 

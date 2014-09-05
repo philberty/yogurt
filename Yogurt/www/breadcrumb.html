@@ -1,14 +1,42 @@
-<div class="container">
+<div class="container-fluid">
   <h2 class="sub-header">League - {{ league }} - {{ event }}</h2>
 
   <div class="row placeholders">
     <hr>
 
-    <div class="col-xs-2 col-sm-4 placeholder">
-
+    <div class="col-md-12">
       <ol class="breadcrumb">
+	<li><a href="{{backToLeagues}}">Back</a></li>
 	<li ng-repeat="crumb in breadcrumb"><a href="{{crumb.href}}">{{crumb.key}}</a></li>
       </ol>
+    </div>
+
+    <div>
+      <div ng-if="isList">
+	<div ng-repeat="item in listKeys">
+
+	  <div ng-repeat="video in data[item]" class="col-md-4">
+
+	    <a class="thumbnail" href="{{video.url}}">
+	      <img ng-attr-src="{{video.preview}}" height="320" width="240">
+	      <h4>{{video.title}}</h4>
+	      Views {{video.views}}
+	    </a>
+
+	  </div>
+
+	</div>
+      </div>
+
+      <div ng-if="isDir">
+	<div ng-repeat="item in listKeys" class="col-md-4">
+
+	  <a class="thumbnail" href="{{basePath + '/' + item}}">
+	    <h4>{{item}}</h4>
+	  </a>
+
+	</div>
+      </div>
       
     </div>
   </div>

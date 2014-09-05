@@ -28,6 +28,7 @@ def getChannelVideos(channel, broadcasts=True, offset=50):
 
 
 def getChannelObject(channel):
+    ServerUtil.info("Fetching Twitch Tv Channel object for [%s]" % channel)
     _endPoint = 'https://api.twitch.tv/kraken'
     _channelPath = '/channels/%s'
     resp = requests.get(_endPoint + (_channelPath % channel))
@@ -173,23 +174,34 @@ class Feeds_TwitchTv_GSL(object):
 
     def sortGslCodeAVideos(self, videos):
         sortedByGroup = self.sortGslVideosByGroup(videos)
+        groupKeys = list(sortedByGroup.keys())
+        groupKeys.sort()
         sortedByGroup['_type'] = 'dir'
-        for i in sortedByGroup.keys():
+        sortedByGroup['_keys'] = groupKeys
+        for i in groupKeys:
             sortedByGroup[i] = self.sortGslVideosByMatch(sortedByGroup[i])
             listKeys = list(sortedByGroup[i].keys())
+            listKeys.sort()
             sortedByGroup[i]['_type'] = 'list'
             sortedByGroup[i]['_keys'] = listKeys
         return sortedByGroup
 
     def sortGslCodeSVideos(self, videos):
         sortedByRound = self.sortGslVideosByRound(videos)
+        roundKeys = list(sortedByRound.keys())
+        roundKeys.sort()
         sortedByRound['_type'] = 'dir'
-        for i in sortedByRound.keys():
+        sortedByRound['_keys'] = roundKeys
+        for i in roundKeys:
             sortedByRound[i] = self.sortGslVideosByGroup(sortedByRound[i])
+            groupKeys = list(sortedByRound[i].keys())
+            groupKeys.sort()
             sortedByRound[i]['_type'] = 'dir'
-            for j in sortedByRound[i].keys():
+            sortedByRound[i]['_keys'] = groupKeys
+            for j in groupKeys:
                 sortedByRound[i][j] = self.sortGslVideosByMatch(sortedByRound[i][j])
                 listKeys = list(sortedByRound[i][j].keys())
+                listKeys.sort()
                 sortedByRound[i][j]['_type'] = 'list'
                 sortedByRound[i][j]['_keys'] = listKeys
         return sortedByRound
@@ -200,7 +212,9 @@ class Feeds_TwitchTv_GSL(object):
         for i in allGslLeagues.keys():
             league = FeedUtil.restfiyString(i)
             gslLeaguesSorted[league] = self.sortGslLeagueVideosByCode(allGslLeagues[i])
+            codeKeys = list(gslLeaguesSorted[league].keys())
             gslLeaguesSorted[league]['_type'] = 'dir'
+            gslLeaguesSorted[league]['_keys'] = codeKeys
             gslLeaguesSorted[league]['CodeA'] = self.sortGslCodeAVideos(gslLeaguesSorted[league]['CodeA'])
             gslLeaguesSorted[league]['CodeS'] = self.sortGslCodeSVideos(gslLeaguesSorted[league]['CodeS'])
         return gslLeaguesSorted

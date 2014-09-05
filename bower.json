@@ -7,7 +7,6 @@
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
 	"angular-route": "~1.2.x",
-	"angular-ui-tree": "2.1.5",
 	"angular-resource": "~1.2.x",
 	"angular-bootstrap": "0.11.0"
     }
