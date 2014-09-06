@@ -15,7 +15,7 @@ class FeedException(Exception):
 
 def restfiyString(string):
     tmp = string
-    replaces = [':', '-', ' ']
+    replaces = [':', '-', ',', ' ']
     for i in replaces:
         tmp = tmp.replace(i, '')
     return str(tmp)
