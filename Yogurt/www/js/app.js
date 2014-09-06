@@ -36,42 +36,47 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
     })
 
     app.config(
-	['$routeProvider', function($routeProvider)
-	 {
-	     $routeProvider
-		 .when('/about', {
-		     templateUrl: 'about.html',
-		     controller: ''
-		 })
-		 .when('/upcoming', {
-		     templateUrl: 'listview.html',
-		     controller: 'upcoming'
-		 })
-		 .when('/live', {
-		     templateUrl: 'listview.html',
-		     controller: 'live'
-		 })
-		 .when('/streams', {
-		     templateUrl: 'streams.html',
-		     controller: 'streams'
-		 })
-		 .when('/vods', {
-		     templateUrl: 'vods.html',
-		     controller: 'vods'
-		 })
-		 .when('/league/:param', {
-		     templateUrl: 'league.html',
-		     controller: 'league'
-		 })
-		 .when('/videos/:league/:resourceUrl*', {
-		     templateUrl: 'breadcrumb.html',
-		     controller: 'videos'
-		 })
-		 .when('/', {
-		     redirectTo: "/about"
-		 })
-	 }
-	]
+	['$routeProvider', function($routeProvider) {
+	    $routeProvider
+		.when('/about', {
+		    templateUrl: 'about.html',
+		    controller: ''
+		})
+		.when('/upcoming', {
+		    templateUrl: 'listview.html',
+		    controller: 'upcoming'
+		})
+		.when('/live', {
+		    templateUrl: 'listview.html',
+		    controller: 'live'
+		})
+		.when('/streams', {
+		    templateUrl: 'streams.html',
+		    controller: 'streams'
+		})
+		.when('/vods', {
+		    templateUrl: 'vods.html',
+		    controller: 'vods'
+		})
+		.when('/league/:param', {
+		    templateUrl: 'league.html',
+		    controller: 'league'
+		})
+		.when('/videos/:league/:resourceUrl*', {
+		    templateUrl: 'breadcrumb.html',
+		    controller: 'videos'
+		})
+		.when('/twitch/:title/:id', {
+		    templateUrl: 'twitch.html',
+		    controller: 'twitch'
+		})
+		.when('/', {
+		    redirectTo: "/about"
+		})
+		.otherwise({
+		    redirectTo: '/'
+		})
+	}]
     )
     
     app.controller ('upcoming', function ($scope, $http) {
@@ -105,6 +110,11 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
 	    $scope.events = data
 	    $scope.name = $routeParams.param
 	})
+    })
+
+    app.controller ('twitch', function ($scope, $routeParams) {
+	$scope.title = $routeParams.title
+	$scope.video = "archive_id=" + $routeParams.id
     })
 
     app.controller ('videos', function ($scope, $routeParams, $http) {

@@ -39,13 +39,20 @@ class Feeds_TwitchTv_GSL(object):
         sorted = {}
         for i in videos:
             try:
-                group = re.search('Group [a-zA-Z]', i['title'])
-                if group is None:
-                    group = re.search('Final', i['title'])
-                group = FeedUtil.restfiyString(group.group())
-                if group not in sorted:
-                    sorted[group] = []
-                sorted[group].append(i)
+                # has no group
+                if 'Ro4' in i['title']:
+                    group = 'SemiFinal'
+                    if group not in sorted:
+                        sorted[group] = []
+                    sorted[group].append(i)
+                else:
+                    group = re.search('Group [a-zA-Z]', i['title'])
+                    if group is None:
+                        group = re.search('Final', i['title'])
+                    group = FeedUtil.restfiyString(group.group())
+                    if group not in sorted:
+                        sorted[group] = []
+                    sorted[group].append(i)
             except:
                 pass
         return sorted
@@ -77,8 +84,7 @@ class Feeds_TwitchTv_GSL(object):
                 if match is None:
                     match = re.search('Match[0-9]', i['title'])
                     if match is None:
-                        if 'Final' in i ['title']:
-                            match = 'Final'
+                        match = re.search('Final', i['title'])
                 match = FeedUtil.restfiyString(match.group())
                 if not match in sorted:
                     sorted[match] = []
