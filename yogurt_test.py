@@ -4,7 +4,10 @@ import json
 import unittest
 
 import Yogurt
+
 from Yogurt import AppCache
+AppCache.Testing = True
+
 from Yogurt import FeedUtil
 from Yogurt import YogurtApp
 from Yogurt import Feed_TwitchTv

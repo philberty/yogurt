@@ -3,6 +3,8 @@ require.config({
 	jquery: '/js/lib/jquery/dist/jquery',
 	bootstrap: '/js/lib/bootstrap/dist/js/bootstrap.min.js',
 
+	socialite: '/js/lib/socialite-js/socialite',
+
 	angular: '/js/lib/angular/angular',
 	angularRoute: '/js/lib/angular-route/angular-route',
 	angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls'
@@ -24,7 +26,7 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], function($, angular) {
+define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "socialite"], function($, angular) {
     var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap']);
 
     app.controller("sidebar", function($scope, $location) {
@@ -158,5 +160,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute"], functio
     })
     
     angular.bootstrap(document, ['FringeApp']);
+    Socialite.load();
+
     return app;
 });

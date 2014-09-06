@@ -1,13 +1,13 @@
 import sys
 import json
 import time
+import asyncio
 import functools
 
 from datetime import datetime
 
 from . import AppCache
 from . import ServerUtil
-
 
 class FeedException(Exception):
     def __init__(self, message):
@@ -40,25 +40,35 @@ class Feed(object):
             raise Exception('Feed handler does not provide %s' % sys.exc_info()[1])
         if not hasattr(self, '_key') or not hasattr(self, '_base'):
             raise Exception('Feed handler doesn\'t specify a key or base')
-
-    def __call__(self, func):
-        @functools.wraps(func)
-        def decorated(*args, **kwargs):
-            ServerUtil.info('>>> Feed Event Calling [%s]' % func.__name__)
-            retval = func(*args, **kwargs)
-            ServerUtil.info('<<< Feed Event Leaving [%s]' % func.__name__)
+   
+    def _doFeedCall(self, func, *args, **kwargs):
+        ServerUtil.info('>>> Feed Event Calling [%s]' % func.__name__)
+        retval = func(*args, **kwargs)
+        ServerUtil.info('<<< Feed Event Leaving [%s]' % func.__name__)
+        if retval is not None:
             if retval is not None:
-                if retval is not None:
-                    if self._key:
-                        retval['__yogurt_timestamp'] = getTimeStamp()
-                        AppCache.CacheServer.set(self._key, json.dumps(retval))
-                    else:
-                        for i in retval.keys():
-                            retval[i]['__yogurt_timestamp'] = getTimeStamp()
-                            AppCache.CacheServer.set(self._base % restfiyString(i),
-                                                     json.dumps(retval[i]))
+                if self._key:
+                    retval['__yogurt_timestamp'] = getTimeStamp()
+                    AppCache.CacheServer.set(self._key, json.dumps(retval))
+                else:
+                    for i in retval.keys():
+                        retval[i]['__yogurt_timestamp'] = getTimeStamp()
+                        AppCache.CacheServer.set(self._base % restfiyString(i),
+                                                 json.dumps(retval[i]))
+
+    def __callAsync__(self, func):
+        def decorated(*args, **kwargs):
+            while True:
+                self._doFeedCall(func, *args, **kwargs)
+                yield from asyncio.sleep(self._timer)
         return decorated
 
+    def __callSync__(self, func):
+        def decorated(*args, **kwargs):
+            self._doFeedCall(func, *args, **kwargs)
+        return decorated
+
+    __call__ = __callSync__ if AppCache.Testing else __callAsync__
 
 class CacheResult:
     def __init__(self, timer=None):

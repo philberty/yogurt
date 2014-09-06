@@ -21,8 +21,8 @@
 
 	    <a class="thumbnail" href="{{video.url}}">
 	      <img ng-attr-src="{{video.preview}}" height="320" width="240">
-	      <h4>{{video.title}}</h4>
-	      Views {{video.views}}
+	      <h5>{{video.title}}</h5>
+	      <h6>Views {{video.views}}</h6>
 	    </a>
 
 	  </div>
@@ -34,7 +34,7 @@
 	<div ng-repeat="item in listKeys" class="col-md-4">
 
 	  <a class="thumbnail" href="{{basePath + '/' + item}}">
-	    <h4>{{item}}</h4>
+	    <h5>{{item}}</h5>
 	  </a>
 
 	</div>

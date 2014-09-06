@@ -4,6 +4,7 @@
     "dependencies": {
 	"requirejs": "latest",
 	"bootstrap": "~3.2.0",
+	"socialite-js": "latest",
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
 	"angular-route": "~1.2.x",
