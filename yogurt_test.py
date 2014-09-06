@@ -10,7 +10,11 @@ AppCache.Testing = True
 
 from Yogurt import FeedUtil
 from Yogurt import YogurtApp
+
+from Yogurt import Feed_GSL
+from Yogurt import Feed_Redbull
 from Yogurt import Feed_TwitchTv
+from Yogurt import Feed_Dreamhack
 
 from unittest.mock import MagicMock
 
@@ -43,7 +47,7 @@ class TestFeedTwitch_Dreamhack(unittest.TestCase):
             videos = json.loads(fd.read())['videos']
             Feed_TwitchTv.getChannelVideos = MagicMock(return_value=videos)
             Feed_TwitchTv.getChannelObject = MagicMock(return_value={})
-        cache.injectFeed(Feed_TwitchTv.Feeds_TwitchTv_Dreamhack())
+        cache.injectFeed(Feed_Dreamhack.Feeds_TwitchTv_Dreamhack())
         cache.incubate()
 
     def testGetListOfLeagues(self):
@@ -76,7 +80,7 @@ class TestFeedTwitch_GSL(unittest.TestCase):
             videos = json.loads(fd.read())['videos']
             Feed_TwitchTv.getChannelVideos = MagicMock(return_value=videos)
             Feed_TwitchTv.getChannelObject = MagicMock(return_value={})
-        cache.injectFeed(Feed_TwitchTv.Feeds_TwitchTv_GSL())
+        cache.injectFeed(Feed_GSL.Feeds_TwitchTv_GSL())
         cache.incubate()
 
     def testGetListOfLeagues(self):
@@ -96,9 +100,11 @@ class TestFeedTwitch_GSL(unittest.TestCase):
         self.assertEqual(len(payload['keys']), 3)
 
     def testGetMockGSLLeagueEventObject(self):
-        resp = self.app.get('/api/league/gsl/event/2014GSLSeason3')
+        resp = self.app.get('/api/league/gsl/event/2014GSLSeason2')
         payload = json.loads(resp.data.decode("utf-8"))
         self.assertEqual(resp.status, '200 OK')
+        with open('listing.json', 'w') as fd:
+            fd.write(json.dumps(payload, indent=4))
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

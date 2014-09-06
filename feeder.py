@@ -6,9 +6,13 @@ import logging
 import optparse
 import logging.config
 
-import Yogurt
-from Yogurt import Feed_TwitchTv
+from Yogurt import Feed_GSL
+from Yogurt import Feed_Redbull
+from Yogurt import Feed_Dreamhack
 from Yogurt import Feed_TeamLiquid
+
+from Yogurt import YogurtFeeder
+
 from configparser import RawConfigParser as CParser
 
 def serverMain ():
@@ -40,12 +44,11 @@ def serverMain ():
             sys.exit(0)
     feeds = [
         Feed_TeamLiquid.Feeds_TeamLiquid(),
-        Feed_TwitchTv.Feeds_TwitchTv_GSL(),
-        Feed_TwitchTv.Feeds_TwitchTv_Dreamhack(),
-        Feed_TwitchTv.Feeds_TwitchTv_RedBull()
-        
+        Feed_GSL.Feeds_TwitchTv_GSL(),
+        Feed_Dreamhack.Feeds_TwitchTv_Dreamhack(),
+        Feed_Redbull.Feeds_TwitchTv_RedBull()
     ]
-    Yogurt.YogurtFeeder(cache_config, feeds).run()
+    YogurtFeeder(cache_config, feeds).run()
 
 if __name__ == "__main__":
     serverMain ()
