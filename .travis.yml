@@ -1,8 +1,6 @@
 language: python
   - "3.4"
-  - "pypy3"
 install:
-  - "pip install -q -r requirements.txt"
-  - "pip install ."
+  - "pip3 install -r requirements.txt"
 script:
   - nosetests ./yogurt_test.py
