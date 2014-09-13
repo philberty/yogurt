@@ -6,12 +6,12 @@
     <div class="col-md-8">
       <accordion close-others="oneAtATime">
 	
-	<accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
-	  <strong>Description: </strong><p ng-bind="event.description"></p>
-	  <strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
-	  <br>
-	  <strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
-	</accordion-group>
+		<accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
+		  <strong>Description: </strong><p ng-bind="event.description"></p>
+		  <strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
+		  <br />
+		  <strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
+		</accordion-group>
 	
       </accordion>
     </div>
