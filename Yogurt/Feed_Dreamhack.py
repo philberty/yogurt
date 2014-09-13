@@ -23,7 +23,8 @@ class Feeds_TwitchTv_Dreamhack:
     def _getTwitchDreamhackVdeos(self):
         videos = Feed_TwitchTv.getChannelVideos('dreamhacksc2', broadcasts=True)
         for i in Feed_TwitchTv.getChannelVideos('dreamhacksc2', broadcasts=False):
-            videos.append(i)
+            if i not in videos:
+                videos.append(i)
         return videos
 
     @FeedUtil.CacheResult(timer=50)
