@@ -49,7 +49,7 @@ class Feeds_TwitchTv_GSL(object):
                     group = 'QuarterFinal'
                     if group not in sorted:
                         sorted[group] = []
-                    sorted[group].appendi()
+                    sorted[group].append(i)
                 else:
                     group = re.search('Group [a-zA-Z]', i['title'])
                     if group is None:
