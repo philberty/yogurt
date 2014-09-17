@@ -4,6 +4,7 @@ from . import Feed_TwitchTv
 class Feeds_TwitchTv_Dreamhack:
     def __init__(self):
         self._filters = [
+            'DreamHack Open: Moscow 2014',
             'DreamHack Open: Valencia 2014',
             'DreamHack Open: Summer 2014',
             'DreamHack Open 2014 Bucharest',

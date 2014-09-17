@@ -5,6 +5,8 @@
 Feed Aggregator for E-Sports FeedHandlers scrape Sites and push json representations of the VoD's and Events into
 Redis Cache.
 
+![FringeTV](/Yogurt/www/img/screenshot.png?raw=true "FringeTV")
+
 ## Compilation and installation
 
 Development on Mac:
