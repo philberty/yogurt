@@ -108,8 +108,13 @@ class Feeds_TwitchTv_GSL(object):
             sortedByGroup[i] = self.sortGslVideosByMatch(sortedByGroup[i])
             listKeys = list(sortedByGroup[i].keys())
             listKeys.sort()
-            sortedByGroup[i]['_type'] = 'list'
+            sortedByGroup[i]['_type'] = 'dir'
             sortedByGroup[i]['_keys'] = listKeys
+            for j in listKeys:
+                matchkeys = list(sortedByGroup[i][j].keys())
+                matchkeys.sort()
+                sortedByGroup[i][j]['_type'] = 'list'
+                sortedByGroup[i][j]['_keys'] = matchkeys
         return sortedByGroup
 
     def sortGslCodeSVideos(self, videos):
@@ -128,8 +133,13 @@ class Feeds_TwitchTv_GSL(object):
                 sortedByRound[i][j] = self.sortGslVideosByMatch(sortedByRound[i][j])
                 listKeys = list(sortedByRound[i][j].keys())
                 listKeys.sort()
-                sortedByRound[i][j]['_type'] = 'list'
+                sortedByRound[i][j]['_type'] = 'dir'
                 sortedByRound[i][j]['_keys'] = listKeys
+                for k in listKeys:
+                    matchkeys = list(sortedByRound[i][j][k].keys)
+                    matchkeys.sort()
+                    sortedByRound[i][j][k]['_type'] = 'list'
+                    sortedByRound[i][j][k]['_keys'] = matchkeys
         return sortedByRound
 
     def getSortedGslBroadcasts(self, videos):
