@@ -161,7 +161,8 @@ class Feeds_TwitchTv_GSL(object):
         events = []
         for i in gsl.keys():
             events.append(FeedUtil.restfiyString(i))
-        return {'keys': events.sort()}
+        events.sort()
+        return {'keys': events}
 
     @FeedUtil.Feed(base='league/gsl/event/%s', timer=60)
     def Feed_getGSLEventVideos(self):
