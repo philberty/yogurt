@@ -1,13 +1,13 @@
 <div class="container-fluid">
-  <h2 class="sub-header">Previous Event VoDs</h2>
   <hr>
 
-  <div class="row placeholders">
+  <div class="container">
 
-    <div ng-repeat="league in leagues" class="col-xs-4 col-sm-2 placeholder">
+    <div ng-repeat="league in leagues" class="col-xs-2">
       <a class="thumbnail" href="#/league/{{league._name}}">
-	<img ng-attr-src="{{league.logo}}" height="320" width="240">
-	<h5 ng-bind="league.display_name"></h5>
+	<img ng-attr-src="{{league.logo}}" class="img-rounded" height="320" width="240">
+	<h5>{{league.display_name}}</h5>
+	<h6>Views: {{league.views}}</h6>
       </a>
     </div>
 

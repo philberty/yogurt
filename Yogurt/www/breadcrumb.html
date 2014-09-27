@@ -1,7 +1,6 @@
 <div class="container-fluid">
-  <h2 class="sub-header">League - {{ league }} - {{ event }}</h2>
 
-  <div class="row placeholders">
+  <div class="container-fluid">
     <hr>
 
     <div class="col-md-12">
@@ -12,17 +11,18 @@
 	</li>
       </ol>
     </div>
+  </div>
 
+  <div class="container">
     <div>
       <div ng-if="isList">
 	<div ng-repeat="item in listKeys">
 
-	  <div ng-repeat="video in data[item]" class="col-md-4">
+	  <div ng-repeat="video in data[item]" class="col-xs-3">
 
 	    <a class="thumbnail" href="{{video.url}}">
-	      <img ng-attr-src="{{video.preview}}" height="320" width="240">
-	      <h5>{{video.title}}</h5>
-	      <h6>Views {{video.views}}</h6>
+	      <img ng-attr-src="{{video.preview}}" class="img-rounded" height="320" width="240">
+	      <label>{{video.title}}</label>
 	    </a>
 
 	  </div>

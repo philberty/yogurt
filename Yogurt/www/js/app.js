@@ -31,7 +31,13 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
 
     app.controller("sidebar", function($scope, $location) {
 	$scope.$on('$locationChangeSuccess', function(event) {
-	    $scope.tab = $location.path()
+	    var context = $location.path()
+	    if (context.substring(1, 7) == "videos"
+		|| context.substring(1, 7) == "league") {
+		$scope.tab = "vods"
+	    } else {
+		$scope.tab = context
+	    }
 	})
     })
 
@@ -91,7 +97,10 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
     app.controller ('live', function ($scope, $http) {
 	$http.get ('/api/live').success(function(data) {
 	    $scope.data = data ['live_events']
-	    $scope.data[0]['first'] = true
+	    $scope.valid = ($scope.data.length > 0) ? true : false
+	    if ($scope.valid) {
+		$scope.data[0]['first'] = true
+	    }
 	})
 	$scope.name = 'Live Events'
 	$scope.oneAtATime = true;

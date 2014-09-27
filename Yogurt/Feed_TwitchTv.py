@@ -9,7 +9,7 @@ def getChannelVideos(channel, broadcasts=True, offset=50):
     _channelPath = '/channels/%s/videos'
     payload = {'broadcasts': str(broadcasts).lower(), 'limit': offset, 'offset': 0}
     while True:
-        ServerUtil.info("Twitch Channel [%s] videos offset [%s]"
+        ServerUtil.debug("Twitch Channel [%s] videos offset [%s]"
                         % (channel, payload['offset']))
         resp = requests.get(_endPoint + (_channelPath % channel), params=payload)
         if not resp.ok:

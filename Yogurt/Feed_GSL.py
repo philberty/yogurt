@@ -54,7 +54,7 @@ class Feeds_TwitchTv_GSL(object):
                     group = re.search('Group [a-zA-Z]', i['title'])
                     if group is None:
                         group = re.search('Final', i['title'])
-                    group = FeedUtil.restfiyString(group.group())
+                    group = group.group()
                     if group not in sorted:
                         sorted[group] = []
                     sorted[group].append(i)
@@ -72,7 +72,7 @@ class Feeds_TwitchTv_GSL(object):
                     round = re.search('Ro[0-9]', i['title'])
                     if round is None: 
                         round = re.search('Final', i['title'])
-                round = FeedUtil.restfiyString(round.group())
+                round = round.group()
                 if round not in sorted:
                     sorted[round] = []
                 sorted[round].append(i)
@@ -90,10 +90,10 @@ class Feeds_TwitchTv_GSL(object):
                     match = re.search('Match[0-9]', i['title'])
                     if match is None:
                         match = re.search('Final', i['title'])
-                match = FeedUtil.restfiyString(match.group())
+                match = match.group()
                 if not match in sorted:
                     sorted[match] = []
-                sorted[FeedUtil.restfiyString(match)].append(i)
+                sorted[match].append(i)
             except:
                 pass
         return sorted
@@ -108,13 +108,8 @@ class Feeds_TwitchTv_GSL(object):
             sortedByGroup[i] = self.sortGslVideosByMatch(sortedByGroup[i])
             listKeys = list(sortedByGroup[i].keys())
             listKeys.sort()
-            sortedByGroup[i]['_type'] = 'dir'
+            sortedByGroup[i]['_type'] = 'list'
             sortedByGroup[i]['_keys'] = listKeys
-            for j in listKeys:
-                matchkeys = list(sortedByGroup[i][j].keys())
-                matchkeys.sort()
-                sortedByGroup[i][j]['_type'] = 'list'
-                sortedByGroup[i][j]['_keys'] = matchkeys
         return sortedByGroup
 
     def sortGslCodeSVideos(self, videos):
@@ -133,13 +128,8 @@ class Feeds_TwitchTv_GSL(object):
                 sortedByRound[i][j] = self.sortGslVideosByMatch(sortedByRound[i][j])
                 listKeys = list(sortedByRound[i][j].keys())
                 listKeys.sort()
-                sortedByRound[i][j]['_type'] = 'dir'
+                sortedByRound[i][j]['_type'] = 'list'
                 sortedByRound[i][j]['_keys'] = listKeys
-                for k in listKeys:
-                    matchkeys = list(sortedByRound[i][j][k].keys)
-                    matchkeys.sort()
-                    sortedByRound[i][j][k]['_type'] = 'list'
-                    sortedByRound[i][j][k]['_keys'] = matchkeys
         return sortedByRound
 
     def getSortedGslBroadcasts(self, videos):
@@ -158,7 +148,8 @@ class Feeds_TwitchTv_GSL(object):
     @FeedUtil.CacheResult(timer=50)
     def getGslVideos(self):
         videos = Feed_TwitchTv.getChannelVideos('gsl', broadcasts=True)
-        return self.getSortedGslBroadcasts(videos)
+        sorted = self.getSortedGslBroadcasts(videos)
+        return sorted
 
     @FeedUtil.Feed(key='league/gsl', timer=60)
     def Feed_getGslChannelInfo(self):
@@ -170,7 +161,7 @@ class Feeds_TwitchTv_GSL(object):
         events = []
         for i in gsl.keys():
             events.append(FeedUtil.restfiyString(i))
-        return {'keys': events}
+        return {'keys': events.sort()}
 
     @FeedUtil.Feed(base='league/gsl/event/%s', timer=60)
     def Feed_getGSLEventVideos(self):

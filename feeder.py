@@ -44,9 +44,9 @@ def serverMain ():
             sys.exit(0)
     feeds = [
         Feed_TeamLiquid.Feeds_TeamLiquid(),
-        Feed_GSL.Feeds_TwitchTv_GSL(),
         Feed_Dreamhack.Feeds_TwitchTv_Dreamhack(),
-        Feed_Redbull.Feeds_TwitchTv_RedBull()
+        Feed_Redbull.Feeds_TwitchTv_RedBull(),
+        Feed_GSL.Feeds_TwitchTv_GSL()
     ]
     YogurtFeeder(cache_config, feeds).run()
 

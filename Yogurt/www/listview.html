@@ -1,19 +1,21 @@
 <div class="container-fluid">
-  <h2 class="sub-header" ng-bind="name"></h2>
   <hr>
 
-  <div class="row">
-    <div class="col-md-8">
-      <accordion close-others="oneAtATime">
-	
-		<accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
-		  <strong>Description: </strong><p ng-bind="event.description"></p>
-		  <strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
-		  <br />
-		  <strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
-		</accordion-group>
-	
-      </accordion>
-    </div>
+  <div ng-if="valid" class="container-fluid">
+    <accordion close-others="oneAtATime">
+      
+      <accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
+	<strong>Description: </strong><p ng-bind="event.description"></p>
+	<strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
+	<br />
+	<strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
+      </accordion-group>
+      
+    </accordion>
   </div>
+
+  <div ng-if="valid == false">
+    <h2>Sorry, currently nothing to see here!</h2>
+  </div>
+
 </div>
