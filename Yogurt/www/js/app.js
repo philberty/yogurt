@@ -2,14 +2,19 @@ require.config({
     paths: {
 	jquery: '/js/lib/jquery/dist/jquery',
 	bootstrap: '/js/lib/bootstrap/dist/js/bootstrap.min.js',
-
+	spin: '/js/lib/spin.js/spin',
 	socialite: '/js/lib/socialite-js/socialite',
 
 	angular: '/js/lib/angular/angular',
 	angularRoute: '/js/lib/angular-route/angular-route',
-	angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls'
+	angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls',
+	angularSpinner: '/js/lib/angular-spinner/angular-spinner'
     },
     shim: {
+	'angularSpinner': {
+	    deps: ['angular', 'spin'],
+	    exports: 'angular'
+	},
 	'angularBootstrap': {
 	    deps: ['angular'],
 	    exports: 'angular'
@@ -26,8 +31,8 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "socialite"], function($, angular) {
-    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap']);
+define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularSpinner", "socialite"], function($, angular) {
+    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'angularSpinner']);
 
     app.controller("sidebar", function($scope, $location) {
 	$scope.$on('$locationChangeSuccess', function(event) {
@@ -126,7 +131,16 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
 	$scope.video = "archive_id=" + $routeParams.id
     })
 
-    app.controller ('videos', function ($scope, $routeParams, $http) {
+    app.controller ('videos', function ($scope, $routeParams, $http, usSpinnerService) {
+	$scope.startSpin = function(){
+            usSpinnerService.spin('loader');
+	}
+	$scope.stopSpin = function(){
+            usSpinnerService.stop('loader');
+	}
+
+	$scope.startSpin()
+
 	var league = $routeParams['league']
 	var path = $routeParams['resourceUrl'].split('/')
 
@@ -158,6 +172,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "sociali
 	    } else {
 		$scope.isDir = true
 	    }
+	    $scope.stopSpin()
 	})
     })
 

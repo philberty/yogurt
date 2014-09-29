@@ -9,6 +9,7 @@
 	"angular-mocks": "~1.2.x",
 	"angular-route": "~1.2.x",
 	"angular-resource": "~1.2.x",
-	"angular-bootstrap": "0.11.0"
+	"angular-bootstrap": "0.11.0",
+	"angular-spinner": "latest"
     }
 }
