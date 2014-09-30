@@ -27,18 +27,8 @@ def ServerMain():
         cache = str(parseConfig.get("yogurt", "cache"))
         cache_config = parseConfig._sections[cache]
     except:
-        sys.exit("Error Parsing config [%s]" % sys.exc_info()[1])
+        sys.exit("Error Parsing config [%s] - [%s]" % (options.config, sys.exc_info()[1]))
     logging.config.fileConfig(options.config)
-    if options.fork is True:
-        pid = os.fork()
-        if pid == -1:
-            sys.exit("Error forking as daemon")
-        elif pid == 0:
-            os.setsid(os.getpid())
-            os.umask(0)
-        else:
-            print(pid)
-            sys.exit(0)
     Yogurt.YogurtServer(wbind, wport, cache_config).listen()
 
 

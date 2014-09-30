@@ -30,18 +30,8 @@ def serverMain ():
         cache = str (parseConfig.get("yogurt", "cache"))
         cache_config = parseConfig._sections[cache]
     except:
-        sys.exit("Error Parsing config [%s]" % sys.exc_info ()[1])
+        sys.exit("Error Parsing config [%s]" % (options.config, sys.exc_info ()[1]))
     logging.config.fileConfig(options.config)
-    if options.fork is True:
-        pid = os.fork()
-        if pid == -1:
-            sys.exit("error Demonizing!")
-        elif pid == 0:
-            os.setsid()
-            os.umask(0)
-        else:
-            print(pid)
-            sys.exit(0)
     feeds = [
         Feed_TeamLiquid.Feeds_TeamLiquid(),
         Feed_Dreamhack.Feeds_TwitchTv_Dreamhack(),
