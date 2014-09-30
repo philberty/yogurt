@@ -377,7 +377,7 @@ body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
   line-height: 1.72222;
-  color: #34495e;
+  color: #3B3B3B;
   background-color: #fff;
   }
 a {
@@ -5987,7 +5987,7 @@ select[multiple].navbar-form .select2-search input[type="text"] {
   margin: -6px -10px;
   font-size: 12px;
   line-height: 17px;
-  background-color: #2A7AAF;
+  background-color: #1ABC9C;
 
   -webkit-font-smoothing: subpixel-antialiased;
   }
@@ -6140,7 +6140,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
   color: #ccc;
   }
 .navbar-inverse {
-  background-color: #34495e;
+  background-color: #6441A5;
   }
 .navbar-inverse .navbar-brand {
   color: #fff;
@@ -6177,7 +6177,7 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #1abc9c;
+  background-color: #B9A3E3;
   }
 .navbar-inverse .navbar-nav > .disabled > a,
 .navbar-inverse .navbar-nav > .disabled > a:hover,
@@ -8577,4 +8577,3 @@ input.todo-search-field::-webkit-input-placeholder {
     margin-top: 40px;
 }
 
-/*# sourceMappingURL=fringe.css.map */
