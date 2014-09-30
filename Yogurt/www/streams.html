@@ -2,7 +2,7 @@
 
   <hr>
 
-  <div ng-repeat="stream in data">
+  <div ng-if="valid" ng-repeat="stream in data">
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
       <a class="thumbnail" href="{{stream.href}}">
 	<img ng-attr-src="{{stream.logo}}" height="320" width="240">
@@ -11,5 +11,8 @@
     </div>
   </div>
 
+  <div ng-if="valid == false">
+    <h2>Sorry, currently nothing to see here!</h2>
+  </div>
 
 </div>

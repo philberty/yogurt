@@ -90,10 +90,12 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	}]
     )
     
-    app.controller ('upcoming', function ($scope, $http) {
+    app.controller ('upcoming', function ($scope, $http, usSpinnerService) {
 	$http.get ('/api/upcoming').success(function(data) {
 	    $scope.data = data ['events']
 	    $scope.data[0]['first'] = true
+	    $scope.valid = true
+	    usSpinnerService.stop('loader')
 	})
 	$scope.name = 'Upcoming Events'
 	$scope.oneAtATime = true;
@@ -108,10 +110,11 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	    }
 	})
 	$scope.name = 'Live Events'
-	$scope.oneAtATime = true;
+	$scope.oneAtATime = true
+	$scope.valid = false
     })
 
-     app.controller ('streams', function ($scope, $http) {
+    app.controller ('streams', function ($scope, $http, usSpinnerService) {
 	$http.get ('/api/streams').success(function(data) {
 	    $scope.data = data ['starcraft2']
 	    $scope.data[0]['first'] = true
@@ -120,8 +123,11 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 		    $scope.data[i].logo = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
 		}
 	    }
+	    $scope.valid = true
+	    usSpinnerService.stop('loader')
 	})
-	$scope.oneAtATime = true;
+	$scope.oneAtATime = true
+	$scope.valid = false
     })
 
     app.controller ('league', function ($scope, $routeParams, $http) {
