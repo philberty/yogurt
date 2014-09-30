@@ -3,15 +3,13 @@
     <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
 
     <div class="container-fluid">
-        <hr>
 
-        <ol class="breadcrumb">
+        <ul class="breadcrumb">
             <li><a href="{{backToLeagues}}">Back</a>
             </li>
-            <li ng-repeat="crumb in breadcrumb">
-                <a href="{{crumb.href}}">{{crumb.key}}</a>
+            <li ng-repeat="crumb in breadcrumb" href="{{crumb.href}}">{{crumb.key}}</a>
             </li>
-        </ol>
+        </ul>
 
     </div>
 
