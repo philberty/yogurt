@@ -101,13 +101,19 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	$scope.oneAtATime = true;
     })
 
-    app.controller ('live', function ($scope, $http) {
+    app.controller ('live', function ($scope, $http, usSpinnerService) {
 	$http.get ('/api/live').success(function(data) {
 	    $scope.data = data ['live_events']
 	    $scope.valid = ($scope.data.length > 0) ? true : false
 	    if ($scope.valid) {
 		$scope.data[0]['first'] = true
 	    }
+	    for (i in $scope.data) {
+		if (typeof($scope.data[i].stream) == 'object') {
+		    $scope.data[i].stream = $scope.data[i].stream.stream
+		}
+	    }
+	    usSpinnerService.stop('loader')
 	})
 	$scope.name = 'Live Events'
 	$scope.oneAtATime = true

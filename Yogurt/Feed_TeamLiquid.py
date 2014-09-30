@@ -24,11 +24,7 @@ class Feeds_TeamLiquid:
         return {'event': rhref, 'title': data['title']}
 
     def __parseStreamLink(self, stream):
-        if 'twitch.tv' in stream:
-            if 'twitch.tv/embed?channel' not in stream:
-                channel = stream.split('/').pop()
-                stream = "http://www.twitch.tv/embed?channel=" + channel
-        elif 'teamliquid.net/video/streams' in stream:
+        if 'teamliquid.net/video/streams' in stream:
             stream = self.__parseStreamTeamLiquid({'href': stream})
         return stream
 
