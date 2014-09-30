@@ -1,22 +1,21 @@
 <div class="container-fluid">
 
-  <span us-spinner spinner-key="loader"></span>
+  <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
 
   <div class="container-fluid">
     <hr>
 
-    <div class="col-md-12">
-      <ol class="breadcrumb">
-	<li><a href="{{backToLeagues}}">Back</a></li>
-	<li ng-repeat="crumb in breadcrumb">
-	  <a href="{{crumb.href}}">{{crumb.key}}</a>
-	</li>
-      </ol>
-    </div>
+    <ol class="breadcrumb">
+      <li><a href="{{backToLeagues}}">Back</a></li>
+      <li ng-repeat="crumb in breadcrumb">
+	<a href="{{crumb.href}}">{{crumb.key}}</a>
+      </li>
+    </ol>
+  
   </div>
 
-  <div class="container">
-    <div>
+  <div class="row">
+    <div class="container-fluid">
       <div ng-if="isList">
 	<div ng-repeat="item in listKeys">
 
@@ -33,12 +32,9 @@
       </div>
 
       <div ng-if="isDir">
-	<div ng-repeat="item in listKeys" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
 
-	  <a class="thumbnail" href="{{basePath + '/' + item}}">
-	    <h5>{{item}}</h5>
-	  </a>
-
+	<div class="list-group">
+	  <a class="list-group-item" ng-repeat="item in listKeys" href="{{basePath + '/' + item}}">{{item}}</a>
 	</div>
       </div>
       

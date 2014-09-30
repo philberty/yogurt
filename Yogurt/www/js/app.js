@@ -115,6 +115,11 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	$http.get ('/api/streams').success(function(data) {
 	    $scope.data = data ['starcraft2']
 	    $scope.data[0]['first'] = true
+	    for (i in $scope.data) {
+		if ($scope.data[i].logo == null) {
+		    $scope.data[i].logo = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
+		}
+	    }
 	})
 	$scope.oneAtATime = true;
     })
@@ -132,15 +137,6 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
     })
 
     app.controller ('videos', function ($scope, $routeParams, $http, usSpinnerService) {
-	$scope.startSpin = function(){
-            usSpinnerService.spin('loader');
-	}
-	$scope.stopSpin = function(){
-            usSpinnerService.stop('loader');
-	}
-
-	$scope.startSpin()
-
 	var league = $routeParams['league']
 	var path = $routeParams['resourceUrl'].split('/')
 
@@ -172,7 +168,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	    } else {
 		$scope.isDir = true
 	    }
-	    $scope.stopSpin()
+	    usSpinnerService.stop('loader')
 	})
     })
 
