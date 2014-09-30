@@ -1,43 +1,43 @@
 <div class="container-fluid">
 
-  <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
+    <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
 
-  <div class="container-fluid">
-    <hr>
-
-    <ol class="breadcrumb">
-      <li><a href="{{backToLeagues}}">Back</a></li>
-      <li ng-repeat="crumb in breadcrumb">
-	<a href="{{crumb.href}}">{{crumb.key}}</a>
-      </li>
-    </ol>
-  
-  </div>
-
-  <div class="row">
     <div class="container-fluid">
-      <div ng-if="isList">
-	<div ng-repeat="item in listKeys">
+        <hr>
 
-	  <div ng-repeat="video in data[item]" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+        <ol class="breadcrumb">
+            <li><a href="{{backToLeagues}}">Back</a>
+            </li>
+            <li ng-repeat="crumb in breadcrumb">
+                <a href="{{crumb.href}}">{{crumb.key}}</a>
+            </li>
+        </ol>
 
-	    <a class="thumbnail" href="{{video.url}}">
-	      <img ng-attr-src="{{video.preview}}" class="img-rounded" height="320" width="240">
-	      <label>{{video.title}}</label>
-	    </a>
-
-	  </div>
-
-	</div>
-      </div>
-
-      <div ng-if="isDir">
-	<div class="list-group">
-	  <a class="list-group-item" ng-repeat="item in listKeys" href="{{basePath + '/' + item}}">{{item}}</a>
-	</div>
-      </div>
-      
     </div>
-  </div>
-</div>
 
+    <div class="row">
+        <div class="container-fluid">
+            <div ng-if="isList">
+                <div ng-repeat="item in listKeys">
+
+                    <div ng-repeat="video in data[item]" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+
+                        <a class="thumbnail" href="{{video.url}}">
+                            <img ng-attr-src="{{video.preview}}" class="img-rounded" height="320" width="240">
+                            <label>{{video.title}}</label>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div ng-if="isDir">
+                <div class="list-group">
+                    <a class="list-group-item" ng-repeat="item in listKeys" href="{{basePath + '/' + item}}">{{item}}</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

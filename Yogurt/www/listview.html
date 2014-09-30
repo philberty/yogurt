@@ -1,25 +1,26 @@
 <div class="container-fluid">
-  <hr>
+    <div class="container">
+        <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
+    </div>
 
-  <div class="container">
-    <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
-  </div>
+    <div ng-if="valid" class="container-fluid">
+        <accordion close-others="oneAtATime">
 
-  <div ng-if="valid" class="container-fluid">
-    <accordion close-others="oneAtATime">
-      
-      <accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
-	<strong>Description: </strong><p ng-bind="event.description"></p>
-	<strong>Event Information: </strong><a ng-bind="event.event" href="{{ event.event }}"></a>
-	<br />
-	<strong>Stream: </strong><a ng-bind="event.stream" href="{{ event.stream }}"></a>
-      </accordion-group>
-      
-    </accordion>
-  </div>
+            <accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
+                <strong>Description: </strong>
+                <p ng-bind="event.description"></p>
+                <strong>Event Information: </strong>
+                <a ng-bind="event.event" href="{{ event.event }}"></a>
+                <br />
+                <strong>Stream: </strong>
+                <a ng-bind="event.stream" href="{{ event.stream }}"></a>
+            </accordion-group>
 
-  <div ng-if="valid == false">
-    <h2>Sorry, currently nothing to see here!</h2>
-  </div>
+        </accordion>
+    </div>
+
+    <div ng-if="valid == false">
+        <h2>Sorry, currently nothing to see here!</h2>
+    </div>
 
 </div>
