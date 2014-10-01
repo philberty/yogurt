@@ -1,7 +1,9 @@
 <div class="container-fluid">
 
-  <ul class="nav nav-pills nav-pills-justified nav-stacked">
-    <li ng-repeat="event in events.keys"><a href="#/videos/{{name}}/{{event}}">{{event}}</a></li>
-  </ul>
+  <div class="pagination">
+    <ul>
+      <li ng-repeat="event in events.keys"><a href="#/videos/{{name}}/{{event}}">{{event}}</a></li>
+    </ul>
+  </div>
 
 </div>
