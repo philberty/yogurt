@@ -12,19 +12,27 @@ Redis Cache.
 Development on Mac:
 
 ```bash
+# get Python 3 - redis and node + npm
 $ brew install npm python3 redis
+# install python dependancies
 $ sudo pip3 install -r requirements.txt
+# install bower to get javascript dependancies
 $ sudo npm install -g bower
+# install javascript deps
 $ bower install
 
+# run server unit-tests
 $ python3 ./yogurt_test.py
 ```
 
 Then in seperate bash shells run:
 
 ```bash
+# run the data-store
 $ redis-server
+# run the feed-handlers
 $ ./feeder.py -c etc/yogurt/yogurt.cfg # fills your cache with data
+# run the webapp
 $ ./yogurt.py -c etc/yogurt/yogurt.cfg # runs the webapp
 ```
 
