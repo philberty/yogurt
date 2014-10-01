@@ -34,7 +34,7 @@
 </head>
 
 <body>
-
+    <!-- Main Navigation -->
     <div class="navbar navbar-inverse navbar-embossed navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -76,22 +76,20 @@
                     <li class="{{ tab.indexOf('upcoming') > -1 && 'active' || '' }}">
                         <a href="#/upcoming"><i class="glyphicon glyphicon-pushpin"></i> Upcoming Events</a>
                     </li>
-
-                </ul>
-
                 </ul>
             </div>
-
         </div>
-        <!-- /.navbar-collapse -->
     </div>
 
-    <div class="container">
-        <div ng-view></div>
-    </div>
+    <!-- /Main Navigation -->
+
+
+    <!-- Body -->
+
+    <div ng-view></div>
 
     <!-- Footer -->
-    <div class="bottom-menu navbar-fixed-bottom">
+        <div class="bottom-menu navbar-fixed-bottom">
         <div class="container">
             <div class="row">
                 <div class="col-md-2 col-sm-2">

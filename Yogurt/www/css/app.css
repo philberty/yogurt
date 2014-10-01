@@ -1,8 +1,4 @@
-body {
-  margin-top: 5%;
-}
-
-/*div.navbar-collapse.collapse {
+div.navbar-collapse.collapse {
     display: block;
     overflow: hidden;
     max-height: 0px;
@@ -14,7 +10,7 @@ body {
 
 div.navbar-collapse.collapse.in {
     max-height: 2000px;
-}*/
+}
 
 @font-face {
   font-family: 'Lato';
@@ -379,6 +375,8 @@ body {
   line-height: 1.72222;
   color: #3B3B3B;
   background-color: #fff;
+  height: 100%;
+  margin-top: 5%;
   }
 a {
   color: #16a085;
@@ -5113,8 +5111,8 @@ a.list-group-item > .badge,
   color: #e74c3c;
   }
 .bottom-menu {
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   line-height: 1;
   color: #bcc3ca;
   background-color: #ebedef;
