@@ -1,13 +1,4 @@
-<<<<<<< HEAD
 div.navbar-collapse.collapse {
-=======
-body {
-  margin-top: 5%;
-  padding-top: 25px;
-}
-
-/*div.navbar-collapse.collapse {
->>>>>>> FETCH_HEAD
     display: block;
     overflow: hidden;
     max-height: 0px;
@@ -5120,13 +5111,8 @@ a.list-group-item > .badge,
   color: #e74c3c;
   }
 .bottom-menu {
-<<<<<<< HEAD
   padding-top: 15px;
   padding-bottom: 15px;
-=======
-  padding-top: 30px;
-  padding-bottom: 30px;
->>>>>>> FETCH_HEAD
   line-height: 1;
   color: #bcc3ca;
   background-color: #ebedef;
