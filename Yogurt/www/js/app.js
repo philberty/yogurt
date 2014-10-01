@@ -145,7 +145,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
     })
 
     app.controller('twitch', function($scope, $routeParams) {
-	$scope.channel = $routeParams.channel
+        $scope.channel = $routeParams.channel
         $scope.title = $routeParams.title
         $scope.id = $routeParams.id
     })
