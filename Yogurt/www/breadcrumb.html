@@ -18,7 +18,7 @@
             <div ng-if="isList">
                 <div ng-repeat="item in listKeys">
 
-                    <div ng-repeat="video in data[item]" class="col-xs-12 col-sm-6 col-md-4 col-lg-2">
+                    <div ng-repeat="video in data[item]" class="col-xs-12 col-md-3">
 
                         <a class="thumbnail" href="{{video.url}}">
                             <img ng-attr-src="{{video.preview}}" class="img-rounded" height="320" width="240">

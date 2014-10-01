@@ -1,8 +1,7 @@
 <div class="container-fluid">
-    <hr>
 
-    <div class="list-group">
-      <a class="list-group-item" ng-repeat="event in events.keys" href="#/videos/{{name}}/{{event}}">{{item}}</a>
-    </div>
+  <ul class="nav nav-pills nav-pills-justified nav-stacked">
+    <li ng-repeat="event in events.keys"><a href="#/videos/{{name}}/{{event}}">{{event}}</a></li>
+  </ul>
 
 </div>

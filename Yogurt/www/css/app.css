@@ -1,5 +1,6 @@
 body {
   margin-top: 5%;
+  padding-top: 25px;
 }
 
 /*div.navbar-collapse.collapse {
@@ -5113,8 +5114,8 @@ a.list-group-item > .badge,
   color: #e74c3c;
   }
 .bottom-menu {
-  padding-top: 42px;
-  padding-bottom: 42px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   line-height: 1;
   color: #bcc3ca;
   background-color: #ebedef;

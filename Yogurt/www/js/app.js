@@ -77,7 +77,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                         templateUrl: 'breadcrumb.html',
                         controller: 'videos'
                     })
-                    .when('/twitch/:title/:id', {
+                    .when('/twitch/:channel/:title/:id', {
                         templateUrl: 'twitch.html',
                         controller: 'twitch'
                     })
@@ -145,8 +145,9 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
     })
 
     app.controller('twitch', function($scope, $routeParams) {
+	$scope.channel = $routeParams.channel
         $scope.title = $routeParams.title
-        $scope.video = "archive_id=" + $routeParams.id
+        $scope.id = $routeParams.id
     })
 
     app.controller('videos', function($scope, $routeParams, $http, usSpinnerService) {
