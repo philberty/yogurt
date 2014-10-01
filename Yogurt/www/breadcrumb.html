@@ -6,9 +6,10 @@
 
         <ul class="breadcrumb">
             <li>
-	      <a href="{{backToLeagues}}">Back</a>
+                <a href="{{backToLeagues}}">Back</a>
             </li>
-            <li ng-repeat="crumb in breadcrumb"><a href="{{crumb.href}}">{{crumb.key}}</a></li>
+            <li ng-repeat="crumb in breadcrumb"><a href="{{crumb.href}}">{{crumb.key}}</a>
+            </li>
         </ul>
 
     </div>
@@ -32,13 +33,14 @@
 
             <div ng-if="isDir">
 
-	      <div class="pagination">
-		<ul>
-                  <li ng-repeat="item in listKeys"><a href="{{basePath + '/' + item}}">{{item}}</a></li>
-		</ul>
-              </div>
+                <div class="pagination">
+                    <ul>
+                        <li ng-repeat="item in listKeys"><a href="{{basePath + '/' + item}}">{{item}}</a>
+                        </li>
+                    </ul>
+                </div>
 
-	    </div>
+            </div>
 
         </div>
     </div>
