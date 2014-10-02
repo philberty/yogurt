@@ -369,6 +369,11 @@ div.navbar-collapse.collapse.in {
 .fui-apple:before {
   content: "\e660";
   }
+
+html {
+  height: 100%;
+  }
+
 body {
   font-family: "Lato", Helvetica, Arial, sans-serif;
   font-size: 18px;
@@ -376,7 +381,7 @@ body {
   color: #3B3B3B;
   background-color: #fff;
   padding-top: 70px;
-  padding-bottom: 165px;
+  height: 100%;
   }
 a {
   color: #16a085;
@@ -8571,7 +8576,10 @@ input.todo-search-field::-webkit-input-placeholder {
   margin-left: 40px !important;
   }
 
-.spacer {
-    margin-top: 40px;
+.homeicons {
+  font-size: 100px;
+  height: 110px;
+  display: block;
+  /*background-color: #f8f8f8;*/
 }
 
