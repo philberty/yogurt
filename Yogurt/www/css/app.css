@@ -375,8 +375,8 @@ body {
   line-height: 1.72222;
   color: #3B3B3B;
   background-color: #fff;
-  height: 100%;
-  margin-top: 5%;
+  padding-top: 70px;
+  padding-bottom: 165px;
   }
 a {
   color: #16a085;
