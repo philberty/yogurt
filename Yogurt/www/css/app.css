@@ -8580,6 +8580,13 @@ input.todo-search-field::-webkit-input-placeholder {
   font-size: 100px;
   height: 110px;
   display: block;
-  /*background-color: #f8f8f8;*/
 }
 
+.wrapper {
+  min-height: 100%;
+  margin: 0 auto -54px; /* the bottom margin is the negative value of the footer's height */
+}
+
+footer, .push {
+  height: 54px; /* '.push' must be the same height as 'footer' */
+}
