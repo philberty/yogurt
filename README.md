@@ -1,9 +1,8 @@
-# FringeTv
+# FringeTV
 
 [![Build Status](https://travis-ci.org/redbrain/yogurt.svg?branch=master)](https://travis-ci.org/redbrain/yogurt)
 
-Feed Aggregator for E-Sports FeedHandlers scrape Sites and push json representations of the VoD's and Events into
-Redis Cache.
+FringeTV is a feed aggregator for eSports. Feed handlers scrape set sites and push JSON representations of available VoD's, live streams and  upcomming events into Redis cache.
 
 ![FringeTV](/Yogurt/www/img/screenshot.png?raw=true "FringeTV")
 
