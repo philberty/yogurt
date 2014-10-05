@@ -4,6 +4,10 @@
 
 FringeTV is a feed aggregator for eSports. Feed handlers scrape set sites and push JSON representations of available VoD's, live streams and  upcomming events into Redis cache.
 
+## Website
+
+http://www.FringeTV.org
+
 ![FringeTV](/Yogurt/www/img/screenshot.png?raw=true "FringeTV")
 
 ## Compilation and installation
