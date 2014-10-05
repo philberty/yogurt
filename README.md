@@ -39,8 +39,8 @@ $ ./feeder.py -c etc/yogurt/yogurt.cfg # fills your cache with data
 $ ./yogurt.py -c etc/yogurt/yogurt.cfg # runs the webapp
 ```
 
-The Feeder process run's constantly filling the cache constantly you can stop it at any time but you won't get
+The feeder process runs constantly filling the cache, you can stop it at any time but you won't get
 automatic updates.
 
-The webapp is run and in Production it is behind a nginx reverse proxy configuration.
+The webapp is run and in production it is behind a Nginx reverse proxy configuration.
 
