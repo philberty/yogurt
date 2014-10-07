@@ -493,6 +493,14 @@ p {
   font-size: 18px;
   line-height: 1.72222;
   }
+
+@media screen and (max-width: 768px) {
+        h1 {
+    font-size:50px;
+    }
+}
+
+
 .lead {
   margin-bottom: 30px;
   font-size: 28px;
