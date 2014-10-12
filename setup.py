@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-import os
 import Yogurt
 
 from distutils.core import setup, Command
@@ -18,5 +17,4 @@ setup (
     packages = ['Yogurt'],
     scripts = ['yogurt.py', 'feeder.py'],
     package_data = {'Yogurt': ['www']},
-    data_files = [('/etc/yogurt/', ['etc/yogurt/yogurt.cfg'])]
 )
