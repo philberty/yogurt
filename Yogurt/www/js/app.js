@@ -11,6 +11,14 @@ require.config({
         angularSpinner: '/js/lib/angular-spinner/angular-spinner'
     },
     shim: {
+	'bootstrapAutoHiding': {
+	    deps: ['bootstrap'],
+	    exports: 'bootstrapAutoHiding'
+	},
+	'bootstrap': {
+	    deps: ['jquery'],
+	    exports: 'bootstrap'
+	},
         'angularSpinner': {
             deps: ['angular', 'spin'],
             exports: 'angular'
