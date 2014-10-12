@@ -1,9 +1,9 @@
 require.config({
     paths: {
         jquery: '/js/lib/jquery/dist/jquery',
-        bootstrap: '/js/lib/bootstrap/dist/js/bootstrap.min.js',
         spin: '/js/lib/spin.js/spin',
-        socialite: '/js/lib/socialite-js/socialite',
+        bootstrap: '/js/lib/bootstrap/dist/js/bootstrap',
+	bootstrapAutoHiding: '/js/lib/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar',
 
         angular: '/js/lib/angular/angular',
         angularRoute: '/js/lib/angular-route/angular-route',
@@ -31,7 +31,7 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularSpinner", "socialite"], function($, angular) {
+define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularSpinner", "bootstrap", "bootstrapAutoHiding"], function($, angular) {
     var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'angularSpinner']);
 
     app.controller("sidebar", function($scope, $location) {
@@ -220,7 +220,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
     })
 
     angular.bootstrap(document, ['FringeApp']);
-    Socialite.load();
-
+    $("div.navbar-fixed-top").autoHidingNavbar();
+    
     return app;
 });

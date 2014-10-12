@@ -3,8 +3,9 @@
     "private": true,
     "dependencies": {
 	"requirejs": "latest",
+	"jquery": "latest",
 	"bootstrap": "~3.2.0",
-	"socialite-js": "latest",
+	"bootstrap-autohidingnavbar": "1.0.0",
 	"angular": "1.2.x",
 	"angular-mocks": "~1.2.x",
 	"angular-route": "~1.2.x",
