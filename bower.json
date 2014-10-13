@@ -6,10 +6,9 @@
 	"jquery": "latest",
 	"bootstrap": "~3.2.0",
 	"bootstrap-autohidingnavbar": "1.0.0",
-	"angular": "1.2.x",
-	"angular-mocks": "~1.2.x",
-	"angular-route": "~1.2.x",
-	"angular-resource": "~1.2.x",
+	"angular": "1.2.23",
+	"angular-route": "1.2.23",
+	"angular-animate": "1.2.23",
 	"angular-bootstrap": "0.11.0",
 	"angular-spinner": "latest"
     }
