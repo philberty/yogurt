@@ -1,10 +1,15 @@
 <div class="container">
 
-    <div class="pagination">
-        <ul>
-            <li ng-repeat="event in events.keys"><a href="#/videos/{{name}}/{{event}}">{{event}}</a>
-            </li>
-        </ul>
+  <div class="row">
+    <div ng-repeat="event in events.keys" class="col-xs-12 col-md-3">
+
+      <a class="thumbnail" href="#/videos/{{name}}/{{event}}">
+        <img src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
+	     class="img-rounded" height="320" width="240">
+        <label>{{event}}</label>
+      </a>
+
     </div>
+  </div>
 
 </div>

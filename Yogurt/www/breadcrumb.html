@@ -33,15 +33,18 @@
 
             <div ng-if="isDir">
 
-                <div class="pagination">
-                    <ul>
-                        <li ng-repeat="item in listKeys"><a href="{{basePath + '/' + item}}">{{item}}</a>
-                        </li>
-                    </ul>
-                </div>
-
+	      <div ng-repeat="item in listKeys" class="col-xs-12 col-md-3">
+		
+		<a class="thumbnail" href="{{basePath + '/' + item}}">
+		  <img src="http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
+		       class="img-rounded" height="320" width="240">
+		  <label>{{item}}</label>
+		</a>
+		
+	      </div>
+	      
             </div>
-
+	    
         </div>
     </div>
 </div>
