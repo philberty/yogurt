@@ -2,6 +2,6 @@ language: python
   - "3.4"
 install:
   - "sudo pip install -r requirements.txt"
-  - "python setup.py build"
 script:
-  - ./yogurt_test.py
+  - "python setup.py build"
+  - "python yogurt_test.py"
