@@ -7,6 +7,7 @@ require.config({
 
         angular: '/js/lib/angular/angular',
         angularRoute: '/js/lib/angular-route/angular-route',
+	angularScroll: '/js/lib/angular-scroll/angular-scroll',
         angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls',
         angularSpinner: '/js/lib/angular-spinner/angular-spinner'
     },
@@ -18,6 +19,10 @@ require.config({
 	'bootstrap': {
 	    deps: ['jquery'],
 	    exports: 'bootstrap'
+	},
+	'angularScroll': {
+	    deps: ['angular'],
+	    exports: 'angularScroll'
 	},
         'angularSpinner': {
             deps: ['angular', 'spin'],
@@ -39,8 +44,24 @@ require.config({
     deps: ['app']
 });
 
-define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularSpinner", "bootstrap", "bootstrapAutoHiding"], function($, angular) {
-    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'angularSpinner']);
+define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularScroll",
+	       "angularSpinner", "bootstrap", "bootstrapAutoHiding"],
+       function($, angular)
+{
+    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'duScroll', 'angularSpinner']);
+
+    app.directive('dynamic', function ($compile) {
+	return {
+	    restrict: 'A',
+	    replace: true,
+	    link: function (scope, ele, attrs) {
+		scope.$watch(attrs.dynamic, function(html) {
+		    ele.html(html);
+		    $compile(ele.contents())(scope);
+		});
+	    }
+	};
+    });
 
     app.controller("sidebar", function($scope, $location) {
         $scope.$on('$locationChangeSuccess', function(event) {
@@ -171,7 +192,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
         $scope.id = $routeParams.id
     })
 
-    app.controller('videos', function($scope, $routeParams, $http, usSpinnerService) {
+    app.controller('videos', function($scope, $routeParams, $http, $document, usSpinnerService) {
         var league = $routeParams['league']
         var path = $routeParams['resourceUrl'].split('/')
 
@@ -198,6 +219,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                 $scope.data = $scope.data[elem]
             }
 
+	    $scope.isEmbed = false
             $scope.isList = false
             $scope.isDir = false
             $scope.listKeys = $scope.data['_keys']
@@ -208,6 +230,17 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
             }
             usSpinnerService.stop('loader')
         })
+
+	$scope.watchVideo = function(video) {
+	    usSpinnerService.spin('loader')
+	    $scope.html = video.embed
+	    $scope.isEmbed = true
+	    $document.scrollTopAnimated(0)
+	    usSpinnerService.stop('loader')
+	}
+	$scope.clearVideo = function() {
+	    $scope.isEmbed = false
+	}
     })
 
     app.controller('vods', function($scope, $http) {
