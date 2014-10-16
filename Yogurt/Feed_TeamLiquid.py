@@ -10,7 +10,7 @@ from pyquery import PyQuery as pq
 
 class Feeds_TeamLiquid:
     """
-    This isn't very nice to read all of this code but it will be fixed at some point
+    This isn't very nice to read all of this code but there is no structured way to access these
     """
 
     def __init__(self):
@@ -23,12 +23,17 @@ class Feeds_TeamLiquid:
         rhref = self.__base + data['href']
         return {'event': rhref, 'title': data['title']}
 
-    def __parseStreamLink(self, stream):
+    def __parseStreamLink(self, node):
+        stream = node['href']
         if 'teamliquid.net/video/streams' in stream:
-            stream = self.__parseStreamTeamLiquid({'href': stream})
+            return self.__parseStreamTeamLiquid(node)
         elif 'twitch.tv' in stream:
-            stream = self.__parseStreamTwitchTv({'href': stream}, stream.split('/').pop())
-        return stream
+            channel = stream.split('/').pop()
+            if 'twitch.tv/embed' in stream:
+                result = re.search("channel=[a-zA-Z0-9]*", stream)
+                channel = result.group()
+                channel = channel.split('=')[1]
+            return self.__parseStreamTwitchTv(node, channel)
 
     def __parseStreamTwitchTv(self, node, channel):
         try:
@@ -54,22 +59,8 @@ class Feeds_TeamLiquid:
             stream = None
             ServerUtil.warning('Unable to parse out stream info for [%s]' % node['href'])
         finally:
-            node['stream'] = stream
-        try:
-            result = re.search("channel=[a-zA-Z0-9]*", node['stream'])
-            channel = result.group()
-            channel = channel.split('=')[1]
-            node = self.__parseStreamLink(node, channel)
-        except:
-            pass
-        return node
-
-    def __parseLiveStream(self, node):
-        ServerUtil.info('Looking up stream info [%s]' % node['href'])
-        if 'teamliquid.net/video/streams' in node['href']:
-            return self.__parseStreamTeamLiquid(node)
-        else:
-            ServerUtil.warning('unknown stream location [%s]' % node['href'])
+            node['href'] = stream
+        return self.__parseStreamLink(node)
 
     def __parseEventStreamInfo(self, node):
         ServerUtil.info('Looking up event info for [%s]' % node['title'])
@@ -98,7 +89,7 @@ class Feeds_TeamLiquid:
         data = div.text()
         try:
             stream = re.split('Stream:', data)[1].strip().split(' ')[0]
-            stream = self.__parseStreamLink(stream)
+            stream = self.__parseStreamLink({'href': stream})
         except:
             stream = None
         finally:
@@ -147,7 +138,7 @@ class Feeds_TeamLiquid:
             if link[0] == '/':
                 link = self.__base + link
             streams.append({'name': i.text, 'href': link})
-        streams = list(map(self.__parseLiveStream, streams))
+        streams = list(map(self.__parseStreamLink, streams))
         return {'starcraft2': streams, 'length': len(streams)}
 
     @FeedUtil.Feed(key='upcoming', timer=60)
