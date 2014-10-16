@@ -194,7 +194,14 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
         $scope.valid = false
     })
 
-    app.controller('streams', function($scope, $http, $document, usSpinnerService) {
+    app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, video) {
+	$scope.video = video
+	$scope.cancel = function () {
+	    $modalInstance.dismiss('cancel');
+	};
+    });
+
+    app.controller('streams', function($scope, $http, $document, $modal, usSpinnerService) {
         $http.get('/api/streams').success(function(data) {
             $scope.data = data['starcraft2']
             $scope.data[0]['first'] = true
@@ -208,7 +215,27 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
         })
         $scope.valid = false
 
+	$scope.errorPopover = function(video) {
+	    var modalInstance = $modal.open({
+		templateUrl: 'streamError.html',
+		controller: 'ModalInstanceCtrl',
+		resolve: {
+		    video: function () {
+			return video;
+		    }
+		}
+	    });
+	    
+	    modalInstance.result.then(function (selectedItem) {
+		$scope.selected = selectedItem;
+	    });
+	};
+
 	$scope.watchVideo = function(video) {
+	    if (typeof(video.embed) == "undefined") {
+		$scope.errorPopover(video)
+		return
+	    }
 	    usSpinnerService.spin('loader')
 	    $scope.title = video.name
 	    $scope.html = video.embed

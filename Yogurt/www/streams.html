@@ -1,5 +1,22 @@
 <div class="container">
 
+  <script type="text/ng-template" id="streamError.html">
+    <div class="modal-header">
+      <h3 class="modal-title">Stream Error</h3>
+    </div>
+    
+    <div class="modal-body">
+      <p>Sorry unable to figure out how to emebed this stream!
+	<br/>
+	Try: <a href="{{video.href}}">{{video.href}}</a>
+      </p>
+    </div>
+    
+    <div class="modal-footer">
+      <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+  </script>
+  
   <div ng-if="isEmbed">
 
     <div class="row text-center">
