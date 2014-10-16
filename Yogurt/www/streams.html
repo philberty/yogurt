@@ -1,8 +1,20 @@
 <div class="container">
 
+  <div ng-if="isEmbed">
+
+    <div class="row text-center">
+      <div dynamic="html"></div>
+      <label class="row text-center">{{title}}</label>
+      <br/>
+      <button type="button" class="btn btn-primary" ng-click="clearVideo()">Clear Video</button>
+    </div>
+    
+    <br/>
+  </div>
+
     <div ng-if="valid" ng-repeat="stream in data">
         <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
-            <a class="thumbnail" href="{{stream.href}}">
+            <a class="thumbnail" ng-click="watchVideo(stream)">
                 <img ng-attr-src="{{stream.logo}}" height="320" width="240">
                 <h5>{{stream.name}}</h5>
             </a>

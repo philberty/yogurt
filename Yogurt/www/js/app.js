@@ -5,7 +5,6 @@ require.config({
 	    '/js/lib/jquery/dist/jquery'],
 
         spin: [
-	    '//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.min',
 	    '/js/lib/spin.js/spin'],
 
         bootstrap: [
@@ -31,7 +30,6 @@ require.config({
 	    '/js/lib/angular-bootstrap/ui-bootstrap-tpls'],
 
         angularSpinner: [
-	    '//cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.5.1/angular-spinner.min',
 	    '/js/lib/angular-spinner/angular-spinner']
     },
     shim: {
@@ -196,7 +194,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
         $scope.valid = false
     })
 
-    app.controller('streams', function($scope, $http, usSpinnerService) {
+    app.controller('streams', function($scope, $http, $document, usSpinnerService) {
         $http.get('/api/streams').success(function(data) {
             $scope.data = data['starcraft2']
             $scope.data[0]['first'] = true
@@ -208,8 +206,20 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
             $scope.valid = true
             usSpinnerService.stop('loader')
         })
-        $scope.oneAtATime = true
         $scope.valid = false
+
+	$scope.watchVideo = function(video) {
+	    usSpinnerService.spin('loader')
+	    $scope.title = video.name
+	    $scope.html = video.embed
+	    $scope.isEmbed = true
+	    $document.scrollTopAnimated(0)
+	    usSpinnerService.stop('loader')
+	}
+
+	$scope.clearVideo = function() {
+	    $scope.isEmbed = false
+	}
     })
 
     app.controller('league', function($scope, $routeParams, $http) {
