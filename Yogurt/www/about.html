@@ -1,13 +1,13 @@
 <!-- Main call to action -->
 <div class="container">
   <h1>Welcome to FringeTV!</h1>
-
-  <div ng-if="live" class="row text-center">
-    <div dynamic="html" class="row text-center"></div>
-    <br/>
-  </div>
-
   <p class="lead">Follow all Premier eSports content from a single page.</p>
+</div>
+
+<div ng-if="live" class="row text-center">
+  <div dynamic="html" class="row text-center"></div>
+  <label><strong>{{event.title}}</strong></label>
+  <br/>
 </div>
 
 <div class="container">

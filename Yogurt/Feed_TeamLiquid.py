@@ -41,8 +41,8 @@ class Feeds_TeamLiquid:
             node['followers'] = channelObject['followers']
             node['logo'] = channelObject['logo']
             node['views'] = channelObject['views']
-            channel = 'http://www.twitch.tv/embed?channel=%s' % channel
-            node['embed'] = "<iframe id=\"videoplayer\" width=\"800\" height=\"478\" src=\"%s\" frameborder=\"0\"></iframe>" % channel
+            channel = 'http://www.twitch.tv/%s/embed' % channel
+            node['embed'] = "<iframe width=\"620\" height=\"378\" src=\"%s\" scrolling=\"0\" frameborder=\"0\"></iframe>" % channel
         except:
             pass
         return node
