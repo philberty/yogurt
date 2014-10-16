@@ -7,11 +7,12 @@ def getChannelVideos(channel, broadcasts=True, offset=50):
     videos = []
     _endPoint = 'https://api.twitch.tv/kraken'
     _channelPath = '/channels/%s/videos'
+    headers = {'Accept': 'application/vnd.twitchtv.v2+json'}
     payload = {'broadcasts': str(broadcasts).lower(), 'limit': offset, 'offset': 0}
     while True:
         ServerUtil.debug("Twitch Channel [%s] videos offset [%s]"
                         % (channel, payload['offset']))
-        resp = requests.get(_endPoint + (_channelPath % channel), params=payload)
+        resp = requests.get(_endPoint + (_channelPath % channel), params=payload, headers=headers)
         if not resp.ok:
             raise Exception('Unable to fetch url [%s]', resp)
         data = resp.json()
