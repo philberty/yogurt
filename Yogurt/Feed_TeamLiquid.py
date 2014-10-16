@@ -36,7 +36,7 @@ class Feeds_TeamLiquid:
             node['followers'] = channelObject['followers']
             node['logo'] = channelObject['logo']
             node['views'] = channelObject['views']
-            node['embed'] = "<iframe id=\"videoplayer\" width=\"800\" height=\"478\" src=\"%s\" frameborder=\"0\"></iframe>" % node['stream']
+            node['embed'] = "<iframe id=\"videoplayer\" width=\"800\" height=\"478\" src=\"%s\" frameborder=\"0\"></iframe>" % channel
         except:
             pass
         return node
