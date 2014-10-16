@@ -68,265 +68,265 @@ require.config({
 define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angularScroll",
 	       "angularSpinner", "bootstrap", "bootstrapAutoHiding"],
        function($, angular)
-{
-    var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'duScroll', 'angularSpinner']);
+       {
+	   var app = angular.module("FringeApp", ['ngRoute', 'ui.bootstrap', 'duScroll', 'angularSpinner']);
 
-    app.directive('dynamic', function ($compile) {
-	return {
-	    restrict: 'A',
-	    replace: true,
-	    link: function (scope, ele, attrs) {
-		scope.$watch(attrs.dynamic, function(html) {
-		    ele.html(html);
-		    $compile(ele.contents())(scope);
-		});
-	    }
-	};
-    });
+	   app.directive('dynamic', function ($compile) {
+	       return {
+		   restrict: 'A',
+		   replace: true,
+		   link: function (scope, ele, attrs) {
+		       scope.$watch(attrs.dynamic, function(html) {
+			   ele.html(html);
+			   $compile(ele.contents())(scope);
+		       });
+		   }
+	       };
+	   });
 
-    app.controller("sidebar", function($scope, $location) {
-        $scope.$on('$locationChangeSuccess', function(event) {
-            var context = $location.path()
-            if (context.substring(1, 7) == "videos" || context.substring(1, 7) == "league") {
-                $scope.tab = "vods"
-            } else {
-                $scope.tab = context
-            }
-        })
-    })
+	   app.controller("sidebar", function($scope, $location) {
+               $scope.$on('$locationChangeSuccess', function(event) {
+		   var context = $location.path()
+		   if (context.substring(1, 7) == "videos" || context.substring(1, 7) == "league") {
+                       $scope.tab = "vods"
+		   } else {
+                       $scope.tab = context
+		   }
+               })
+	   })
 
-    app.config(
-        ['$routeProvider',
-            function($routeProvider) {
-                $routeProvider
-                    .when('/about', {
-                        templateUrl: 'about.html',
-                        controller: 'about'
-                    })
-                    .when('/upcoming', {
-                        templateUrl: 'listview.html',
-                        controller: 'upcoming'
-                    })
-                    .when('/live', {
-                        templateUrl: 'listview.html',
-                        controller: 'live'
-                    })
-                    .when('/streams', {
-                        templateUrl: 'streams.html',
-                        controller: 'streams'
-                    })
-                    .when('/vods', {
-                        templateUrl: 'vods.html',
-                        controller: 'vods'
-                    })
-                    .when('/league/:param', {
-                        templateUrl: 'league.html',
-                        controller: 'league'
-                    })
-                    .when('/videos/:league/:resourceUrl*', {
-                        templateUrl: 'breadcrumb.html',
-                        controller: 'videos'
-                    })
-                    .when('/', {
-                        redirectTo: "/about"
-                    })
-                    .otherwise({
-                        redirectTo: '/'
-                    })
-            }
-        ]
-    )
-
-    app.controller('about', function($scope, $http, usSpinnerService) {
-	$http.get('/api/live').success(function(data) {
-	    $scope.live = false
-	    if (data.length > 0) {
-		var eindex = Math.floor(Math.random() * data.length)
-		$scope.event = data.live_events[eindex]
-		if (typeof($scope.event.stream) == 'object') {
-		    $scope.html = $scope.event.stream.embed
-		    $scope.live = true
+	   app.config(
+               ['$routeProvider',
+		function($routeProvider) {
+                    $routeProvider
+			.when('/about', {
+                            templateUrl: 'about.html',
+                            controller: 'about'
+			})
+			.when('/upcoming', {
+                            templateUrl: 'listview.html',
+                            controller: 'upcoming'
+			})
+			.when('/live', {
+                            templateUrl: 'listview.html',
+                            controller: 'live'
+			})
+			.when('/streams', {
+                            templateUrl: 'streams.html',
+                            controller: 'streams'
+			})
+			.when('/vods', {
+                            templateUrl: 'vods.html',
+                            controller: 'vods'
+			})
+			.when('/league/:param', {
+                            templateUrl: 'league.html',
+                            controller: 'league'
+			})
+			.when('/videos/:league/:resourceUrl*', {
+                            templateUrl: 'breadcrumb.html',
+                            controller: 'videos'
+			})
+			.when('/', {
+                            redirectTo: "/about"
+			})
+			.otherwise({
+                            redirectTo: '/'
+			})
 		}
-	    }
-	})
-    })
+               ]
+	   )
 
-    app.controller('upcoming', function($scope, $http, usSpinnerService) {
-        $http.get('/api/upcoming').success(function(data) {
-            $scope.data = data['events']
-            $scope.data[0]['first'] = true
-	    for (i in $scope.data) {
-		if (typeof($scope.data[i].stream) == 'object') {
-		    if ($scope.data[i].stream == null) {
-			$scope.data[i].stream = 'Stream is unavailable'
-		    } else {
-			$scope.data[i].stream = $scope.data[i].stream.stream
-		    }
-		}
-            }
-            $scope.valid = true
-            usSpinnerService.stop('loader')
-        })
-        $scope.name = 'Upcoming Events'
-        $scope.oneAtATime = true;
-    })
+	   app.controller('about', function($scope, $http, usSpinnerService) {
+	       $http.get('/api/live').success(function(data) {
+		   $scope.live = false
+		   if (data.length > 0) {
+		       var eindex = Math.floor(Math.random() * data.length)
+		       $scope.event = data.live_events[eindex]
+		       if (typeof($scope.event.stream) == 'object') {
+			   $scope.html = $scope.event.stream.embed
+			   $scope.live = true
+		       }
+		   }
+	       })
+	   })
 
-    app.controller('live', function($scope, $http, usSpinnerService) {
-        $http.get('/api/live').success(function(data) {
-            $scope.data = data['live_events']
-            $scope.valid = ($scope.data.length > 0) ? true : false
-            if ($scope.valid) {
-                $scope.data[0]['first'] = true
-            }
-            for (i in $scope.data) {
-                if (typeof($scope.data[i].stream) == 'object') {
-		    if ($scope.data[i].stream == null) {
-			$scope.data[i].stream = 'Stream is unavailable'
-		    } else {
-			$scope.data[i].stream = $scope.data[i].stream.stream
-		    }
-                }
-            }
-            usSpinnerService.stop('loader')
-        })
-        $scope.name = 'Live Events'
-        $scope.oneAtATime = true
-        $scope.valid = false
-    })
+	   app.controller('upcoming', function($scope, $http, usSpinnerService) {
+               $http.get('/api/upcoming').success(function(data) {
+		   $scope.data = data['events']
+		   $scope.data[0]['first'] = true
+		   for (i in $scope.data) {
+		       if (typeof($scope.data[i].stream) == 'object') {
+			   if ($scope.data[i].stream == null) {
+			       $scope.data[i].stream = 'Stream is unavailable'
+			   } else {
+			       $scope.data[i].stream = $scope.data[i].stream.stream
+			   }
+		       }
+		   }
+		   $scope.valid = true
+		   usSpinnerService.stop('loader')
+               })
+               $scope.name = 'Upcoming Events'
+               $scope.oneAtATime = true;
+	   })
 
-    app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, video) {
-	$scope.video = video
-	$scope.cancel = function () {
-	    $modalInstance.dismiss('cancel');
-	};
-    });
+	   app.controller('live', function($scope, $http, usSpinnerService) {
+               $http.get('/api/live').success(function(data) {
+		   $scope.data = data['live_events']
+		   $scope.valid = ($scope.data.length > 0) ? true : false
+		   if ($scope.valid) {
+                       $scope.data[0]['first'] = true
+		   }
+		   for (i in $scope.data) {
+                       if (typeof($scope.data[i].stream) == 'object') {
+			   if ($scope.data[i].stream == null) {
+			       $scope.data[i].stream = 'Stream is unavailable'
+			   } else {
+			       $scope.data[i].stream = $scope.data[i].stream.stream
+			   }
+                       }
+		   }
+		   usSpinnerService.stop('loader')
+               })
+               $scope.name = 'Live Events'
+               $scope.oneAtATime = true
+               $scope.valid = false
+	   })
 
-    app.controller('streams', function($scope, $http, $document, $modal, usSpinnerService) {
-        $http.get('/api/streams').success(function(data) {
-            $scope.data = data['starcraft2']
-            $scope.data[0]['first'] = true
-            for (i in $scope.data) {
-                if ($scope.data[i].logo == null) {
-                    $scope.data[i].logo = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
-                }
-            }
-            $scope.valid = true
-            usSpinnerService.stop('loader')
-        })
-        $scope.valid = false
+	   app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, video) {
+	       $scope.video = video
+	       $scope.cancel = function () {
+		   $modalInstance.dismiss('cancel');
+	       };
+	   });
 
-	$scope.errorPopover = function(video) {
-	    var modalInstance = $modal.open({
-		templateUrl: 'streamError.html',
-		controller: 'ModalInstanceCtrl',
-		resolve: {
-		    video: function () {
-			return video;
-		    }
-		}
-	    });
-	    
-	    modalInstance.result.then(function (selectedItem) {
-		$scope.selected = selectedItem;
-	    });
-	};
+	   app.controller('streams', function($scope, $http, $document, $modal, usSpinnerService) {
+               $http.get('/api/streams').success(function(data) {
+		   $scope.data = data['starcraft2']
+		   $scope.data[0]['first'] = true
+		   for (i in $scope.data) {
+                       if ($scope.data[i].logo == null) {
+			   $scope.data[i].logo = "http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png"
+                       }
+		   }
+		   $scope.valid = true
+		   usSpinnerService.stop('loader')
+               })
+               $scope.valid = false
 
-	$scope.watchVideo = function(video) {
-	    if (typeof(video.embed) == "undefined") {
-		$scope.errorPopover(video)
-		return
-	    }
-	    usSpinnerService.spin('loader')
-	    $scope.title = video.name
-	    $scope.html = video.embed
-	    $scope.isEmbed = true
-	    $document.scrollTopAnimated(0)
-	    usSpinnerService.stop('loader')
-	}
+	       $scope.errorPopover = function(video) {
+		   var modalInstance = $modal.open({
+		       templateUrl: 'streamError.html',
+		       controller: 'ModalInstanceCtrl',
+		       resolve: {
+			   video: function () {
+			       return video;
+			   }
+		       }
+		   });
+		   
+		   modalInstance.result.then(function (selectedItem) {
+		       $scope.selected = selectedItem;
+		   });
+	       };
 
-	$scope.clearVideo = function() {
-	    $scope.isEmbed = false
-	}
-    })
+	       $scope.watchVideo = function(video) {
+		   if (typeof(video.embed) == "undefined") {
+		       $scope.errorPopover(video)
+		       return
+		   }
+		   usSpinnerService.spin('loader')
+		   $scope.title = video.name
+		   $scope.html = video.embed
+		   $scope.isEmbed = true
+		   $document.scrollTopAnimated(0)
+		   usSpinnerService.stop('loader')
+	       }
 
-    app.controller('league', function($scope, $routeParams, $http) {
-        $http.get('/api/league/' + $routeParams.param + '/events').success(function(data) {
-            $scope.events = data
-            $scope.name = $routeParams.param
-        })
-    })
+	       $scope.clearVideo = function() {
+		   $scope.isEmbed = false
+	       }
+	   })
 
-    app.controller('videos', function($scope, $routeParams, $http, $document, usSpinnerService) {
-        var league = $routeParams['league']
-        var path = $routeParams['resourceUrl'].split('/')
+	   app.controller('league', function($scope, $routeParams, $http) {
+               $http.get('/api/league/' + $routeParams.param + '/events').success(function(data) {
+		   $scope.events = data
+		   $scope.name = $routeParams.param
+               })
+	   })
 
-        var basePath = '#/videos/' + league
-        $scope.breadcrumb = []
-        for (var i in path) {
-            var elem = path[i]
-            basePath += '/' + elem
-            $scope.breadcrumb.push({
-                'key': elem,
-                'href': basePath
-            })
-        }
-        $scope.league = league
-        $scope.event = path[0]
-        $scope.basePath = basePath
-        $scope.backToLeagues = "#/league/" + league
+	   app.controller('videos', function($scope, $routeParams, $http, $document, usSpinnerService) {
+               var league = $routeParams['league']
+               var path = $routeParams['resourceUrl'].split('/')
 
-        $http.get('/api/league/' + league + '/event/' + $scope.event).success(function(data) {
-            $scope.data = data
+               var basePath = '#/videos/' + league
+               $scope.breadcrumb = []
+               for (var i in path) {
+		   var elem = path[i]
+		   basePath += '/' + elem
+		   $scope.breadcrumb.push({
+                       'key': elem,
+                       'href': basePath
+		   })
+               }
+               $scope.league = league
+               $scope.event = path[0]
+               $scope.basePath = basePath
+               $scope.backToLeagues = "#/league/" + league
 
-            for (var i in path) {
-                var elem = path[i]
-                $scope.data = $scope.data[elem]
-            }
+               $http.get('/api/league/' + league + '/event/' + $scope.event).success(function(data) {
+		   $scope.data = data
 
-	    $scope.isEmbed = false
-            $scope.isList = false
-            $scope.isDir = false
-            $scope.listKeys = $scope.data['_keys']
-            if ($scope.data['_type'] == 'list') {
-                $scope.isList = true
-            } else {
-                $scope.isDir = true
-            }
-            usSpinnerService.stop('loader')
-        })
+		   for (var i in path) {
+                       var elem = path[i]
+                       $scope.data = $scope.data[elem]
+		   }
 
-	$scope.watchVideo = function(video) {
-	    usSpinnerService.spin('loader')
-	    $scope.title = video.title
-	    $scope.html = video.embed
-	    $scope.isEmbed = true
-	    $document.scrollTopAnimated(0)
-	    usSpinnerService.stop('loader')
-	}
-	$scope.clearVideo = function() {
-	    $scope.isEmbed = false
-	}
-    })
+		   $scope.isEmbed = false
+		   $scope.isList = false
+		   $scope.isDir = false
+		   $scope.listKeys = $scope.data['_keys']
+		   if ($scope.data['_type'] == 'list') {
+                       $scope.isList = true
+		   } else {
+                       $scope.isDir = true
+		   }
+		   usSpinnerService.stop('loader')
+               })
 
-    app.controller('vods', function($scope, $http) {
-        $http.get('/api/leagues').success(function(data) {
-            var leagues = $scope.leagues = []
+	       $scope.watchVideo = function(video) {
+		   usSpinnerService.spin('loader')
+		   $scope.title = video.title
+		   $scope.html = video.embed
+		   $scope.isEmbed = true
+		   $document.scrollTopAnimated(0)
+		   usSpinnerService.stop('loader')
+	       }
+	       $scope.clearVideo = function() {
+		   $scope.isEmbed = false
+	       }
+	   })
 
-            $scope.addLeague = function(name) {
-                $http.get('/api/league/' + name).success(function(channel) {
-                    channel['_name'] = name
-                    leagues.push(channel);
-                })
-            };
+	   app.controller('vods', function($scope, $http) {
+               $http.get('/api/leagues').success(function(data) {
+		   var leagues = $scope.leagues = []
 
-            for (var i in data['leagues']) {
-                $scope.addLeague(data['leagues'][i])
-            }
-        })
-    })
+		   $scope.addLeague = function(name) {
+                       $http.get('/api/league/' + name).success(function(channel) {
+			   channel['_name'] = name
+			   leagues.push(channel);
+                       })
+		   };
 
-    angular.bootstrap(document, ['FringeApp']);
-    $("div.navbar-fixed-top").autoHidingNavbar();
-    
-    return app;
-});
+		   for (var i in data['leagues']) {
+                       $scope.addLeague(data['leagues'][i])
+		   }
+               })
+	   })
+
+	   angular.bootstrap(document, ['FringeApp']);
+	   $("div.navbar-fixed-top").autoHidingNavbar();
+	   
+	   return app;
+       });

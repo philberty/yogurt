@@ -26,7 +26,20 @@ class Feeds_TeamLiquid:
     def __parseStreamLink(self, stream):
         if 'teamliquid.net/video/streams' in stream:
             stream = self.__parseStreamTeamLiquid({'href': stream})
+        elif 'twitch.tv' in stream:
+            stream = self.__parseStreamTwitchTv({'href': stream}, stream.split('/').pop())
         return stream
+
+    def __parseStreamTwitchTv(self, node, channel):
+        try:
+            channelObject = Feed_TwitchTv.getChannelObject(channel)
+            node['followers'] = channelObject['followers']
+            node['logo'] = channelObject['logo']
+            node['views'] = channelObject['views']
+            node['embed'] = "<iframe id=\"videoplayer\" width=\"800\" height=\"478\" src=\"%s\" frameborder=\"0\"></iframe>" % node['stream']
+        except:
+            pass
+        return node
 
     def __parseStreamTeamLiquid(self, node):
         resp = requests.get(node['href'])
@@ -45,11 +58,7 @@ class Feeds_TeamLiquid:
             result = re.search("channel=[a-zA-Z0-9]*", node['stream'])
             channel = result.group()
             channel = channel.split('=')[1]
-            channelObject = Feed_TwitchTv.getChannelObject(channel)
-            node['followers'] = channelObject['followers']
-            node['logo'] = channelObject['logo']
-            node['views'] = channelObject['views']
-            node['embed'] = "<iframe id=\"videoplayer\" width=\"800\" height=\"478\" src=\"%s\" frameborder=\"0\"></iframe>" % node['stream']
+            node = self.__parseStreamLink(node, channel)
         except:
             pass
         return node
