@@ -138,15 +138,21 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	   )
 
 	   app.controller('about', function($scope, $http, usSpinnerService) {
+	       $scope.live = false
 	       $http.get('/api/live').success(function(data) {
-		   $scope.live = false
-		   if (data.length > 0) {
-		       var eindex = Math.floor(Math.random() * data.length)
-		       $scope.event = data.live_events[eindex]
-		       if (typeof($scope.event.stream) == 'object') {
-			   $scope.html = $scope.event.stream.embed
-			   $scope.live = true
+		   var validEvents = []
+		   for (var i in data.live_events) {
+		       if (data.live_events[i]['stream'] != null) {
+			   if (typeof(data.live_events[i]['stream']) == 'object') {
+			       validEvents.push(data.live_events[i])
+			   }
 		       }
+		   }
+		   if (validEvents.length > 0) {
+		       var eindex = Math.floor(Math.random() * validEvents.length)
+		       $scope.event = validEvents[eindex]
+		       $scope.html = $scope.event.stream.embed
+		       $scope.live = true
 		   }
 	       })
 	   })
