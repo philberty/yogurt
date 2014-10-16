@@ -80,7 +80,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                 $routeProvider
                     .when('/about', {
                         templateUrl: 'about.html',
-                        controller: ''
+                        controller: 'about'
                     })
                     .when('/upcoming', {
                         templateUrl: 'listview.html',
@@ -106,10 +106,6 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                         templateUrl: 'breadcrumb.html',
                         controller: 'videos'
                     })
-                    .when('/twitch/:channel/:title/:id', {
-                        templateUrl: 'twitch.html',
-                        controller: 'twitch'
-                    })
                     .when('/', {
                         redirectTo: "/about"
                     })
@@ -119,6 +115,20 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
             }
         ]
     )
+
+    app.controller('about', function($scope, $http, usSpinnerService) {
+	$http.get('/api/live').success(function(data) {
+	    $scope.live = false
+	    if (data.length > 0) {
+		var eindex = Math.floor(Math.random() * data.length)
+		$scope.event = data.live_events[eindex]
+		if (typeof($scope.event.stream) == 'object') {
+		    $scope.html = $scope.event.stream.embed
+		    $scope.live = true
+		}
+	    }
+	})
+    })
 
     app.controller('upcoming', function($scope, $http, usSpinnerService) {
         $http.get('/api/upcoming').success(function(data) {
@@ -184,12 +194,6 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
             $scope.events = data
             $scope.name = $routeParams.param
         })
-    })
-
-    app.controller('twitch', function($scope, $routeParams) {
-        $scope.channel = $routeParams.channel
-        $scope.title = $routeParams.title
-        $scope.id = $routeParams.id
     })
 
     app.controller('videos', function($scope, $routeParams, $http, $document, usSpinnerService) {
