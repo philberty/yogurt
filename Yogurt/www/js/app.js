@@ -1,15 +1,38 @@
 require.config({
     paths: {
-        jquery: '/js/lib/jquery/dist/jquery',
-        spin: '/js/lib/spin.js/spin',
-        bootstrap: '/js/lib/bootstrap/dist/js/bootstrap',
-	bootstrapAutoHiding: '/js/lib/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar',
+        jquery: [
+	    'https://code.jquery.com/jquery-2.1.1.min',
+	    '/js/lib/jquery/dist/jquery'],
 
-        angular: '/js/lib/angular/angular',
-        angularRoute: '/js/lib/angular-route/angular-route',
-	angularScroll: '/js/lib/angular-scroll/angular-scroll',
-        angularBootstrap: '/js/lib/angular-bootstrap/ui-bootstrap-tpls',
-        angularSpinner: '/js/lib/angular-spinner/angular-spinner'
+        spin: [
+	    '//cdnjs.cloudflare.com/ajax/libs/spin.js/2.0.1/jquery.spin.min',
+	    '/js/lib/spin.js/spin'],
+
+        bootstrap: [
+	    '//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min',
+	    '/js/lib/bootstrap/dist/js/bootstrap'],
+
+	bootstrapAutoHiding: [
+	    '/js/lib/bootstrap-autohidingnavbar/dist/jquery.bootstrap-autohidingnavbar'],
+
+        angular: [
+	    '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular.min',
+	    '/js/lib/angular/angular'],
+
+        angularRoute: [
+	    '//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min',
+	    '/js/lib/angular-route/angular-route'],
+
+	angularScroll: [
+	    '/js/lib/angular-scroll/angular-scroll'],
+
+        angularBootstrap: [
+	    '//cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.10.0/ui-bootstrap-tpls.min',
+	    '/js/lib/angular-bootstrap/ui-bootstrap-tpls'],
+
+        angularSpinner: [
+	    '//cdnjs.cloudflare.com/ajax/libs/angular-spinner/0.5.1/angular-spinner.min',
+	    '/js/lib/angular-spinner/angular-spinner']
     },
     shim: {
 	'bootstrapAutoHiding': {
