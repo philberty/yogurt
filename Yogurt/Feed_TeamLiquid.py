@@ -103,7 +103,7 @@ class Feeds_TeamLiquid:
             node['thread'] = thread
         return node
 
-    @FeedUtil.Feed(key='live', timer=10)
+    @FeedUtil.Feed(key='live', timer=20)
     def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
         request = requests.get(self.__base)
@@ -140,7 +140,7 @@ class Feeds_TeamLiquid:
         streams = list(map(self.__parseLiveStream, streams))
         return {'starcraft2': streams, 'length': len(streams)}
 
-    @FeedUtil.Feed(key='upcoming', timer=30)
+    @FeedUtil.Feed(key='upcoming', timer=60)
     def Feed_getUpcomingEvents(self):
         ServerUtil.info('Looking for upcomming events on teamliquid!')
         request = requests.get(self.__base)

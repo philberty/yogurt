@@ -237,6 +237,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 
 	$scope.watchVideo = function(video) {
 	    usSpinnerService.spin('loader')
+	    $scope.title = video.title
 	    $scope.html = video.embed
 	    $scope.isEmbed = true
 	    $document.scrollTopAnimated(0)

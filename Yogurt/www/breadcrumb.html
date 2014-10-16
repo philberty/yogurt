@@ -18,14 +18,14 @@
         <div class="container">
 
 	  <div ng-if="isEmbed">
-	    <div class="container" id="VideoSection">
-	      <div dynamic="html" class="row text-center"></div>
 
-	      <div class="row text-center">
-		<button type="button" class="btn btn-primary" ng-click="clearVideo()">Clear Video</button>
-	      </div>
-
+	    <div class="row text-center">
+	      <div dynamic="html"></div>
+	      <label class="row text-center">{{title}}</label>
+	      <br/>
+	      <button type="button" class="btn btn-primary" ng-click="clearVideo()">Clear Video</button>
 	    </div>
+	    
 	    <br/>
 	  </div>
 
