@@ -177,27 +177,79 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                $scope.oneAtATime = true;
 	   })
 
-	   app.controller('live', function($scope, $http, usSpinnerService) {
+	   app.controller('live', function($scope, $http, $modal, usSpinnerService) {
                $http.get('/api/live').success(function(data) {
 		   $scope.data = data['live_events']
 		   $scope.valid = ($scope.data.length > 0) ? true : false
 		   if ($scope.valid) {
                        $scope.data[0]['first'] = true
 		   }
+
+		   $scope.playing = false
+		   $scope.video = null
+		   $scope.chat = null
+
 		   for (i in $scope.data) {
                        if (typeof($scope.data[i].stream) == 'object') {
 			   if ($scope.data[i].stream == null) {
-			       $scope.data[i].stream = 'Stream is unavailable'
+			       $scope.data[i].canPlay = false
+			       $scope.data[i].streamhref = 'Stream is unavailable'
 			   } else {
-			       $scope.data[i].stream = $scope.data[i].stream.href
+			       if (!$scope.playing) {
+				   $scope.playing = true
+				   $scope.video = $scope.data[i].stream.embed
+				   $scope.chat = $scope.data[i].stream.embedChat
+				   $scope.title = $scope.data[i].title
+			       }
+			       
+			       $scope.data[i].canPlay = true
+			       $scope.data[i].streamhref = $scope.data[i].stream.href
+			       if ($scope.video == $scope.data[i].stream.embd) {
+				   $scope.data[i].status = 'Now Playing'
+			       } else {
+				   $scope.data[i].status = 'On Now'
+			       }
 			   }
                        }
 		   }
 		   usSpinnerService.stop('loader')
                })
+
+	       $scope.errorPopover = function(event) {
+		   var modalInstance = $modal.open({
+		       templateUrl: 'liveStreamError.html',
+		       controller: 'ModalInstanceCtrl',
+		       resolve: {
+			   video: function () {
+			       return event;
+			   }
+		       }
+		   });
+		   
+		   modalInstance.result.then(function (selectedItem) {
+		       $scope.selected = selectedItem;
+		   });
+	       };
+	       
                $scope.name = 'Live Events'
                $scope.oneAtATime = true
                $scope.valid = false
+
+	       $scope.watch = function(event) {
+		   if ($scope.playing) {
+		       if ($scope.video == event.stream.embed) {
+			   return
+		       }
+		   }
+		   if (!event.stream) {
+		       $scope.errorPopover(event)
+		       return
+		   }
+		   $scope.playing = true
+		   $scope.video = event.stream.embed
+		   $scope.chat = event.stream.embedChat
+		   $scope.title = event.title
+	       }
 	   })
 
 	   app.controller('ModalInstanceCtrl', function ($scope, $modalInstance, video) {

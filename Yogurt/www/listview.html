@@ -1,26 +1,58 @@
 <div class="container">
+
+  <script type="text/ng-template" id="liveStreamError.html">
+    <div class="modal-header">
+      <h3 class="modal-title">Stream Error</h3>
+    </div>
+    
+    <div class="modal-body">
+      <p>Sorry unable to figure out how to emebed this stream!
+	<br/>
+	Try: <a href="{{video.streamhref}}">{{video.streamhref}}</a>
+      </p>
+    </div>
+    
+    <div class="modal-footer">
+      <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>
+  </script>
+
+  <div class="container">
+    <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
+  </div>
+
+  <div ng-if="playing">
     <div class="container">
-        <span us-spinner spinner-key="loader" spinner-start-active="1"></span>
+      <div class="row text-center">
+	<div dynamic="video"></div>
+	<label class="row text-center">{{title}}</label>
+	<br/>
+      </div>
     </div>
+  </div>
 
-    <div ng-if="valid" class="container-fluid">
-        <accordion close-others="oneAtATime">
+  <div ng-if="valid" class="container-fluid">
+    <accordion close-others="oneAtATime">
 
-            <accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
-                <strong>Description: </strong>
-                <p ng-bind="event.description"></p>
-                <strong>Event Information: </strong>
-                <a ng-bind="event.event" href="{{ event.event }}"></a>
-                <br />
-                <strong>Stream: </strong>
-                <a ng-bind="event.stream" href="{{ event.stream }}"></a>
-            </accordion-group>
+      <accordion-group ng-repeat="event in data" is-open="event.first" heading="{{ event.title }}">
+	<div ng-if="event.canPlay">
+	  <button type="button" class="btn btn-primary" ng-click="watch(event)">{{event.status}}</button>
+	</div>
 
-        </accordion>
-    </div>
+        <p>
+	  <strong>Description: </strong>{{event.description}}
+	  <br/>
+          <strong>Event Information: </strong>{{event.event}}
+	  <br/>
+          <strong>Stream: </strong><a href="{{event.streamhref}}">{{event.streamhref}}</a>
+	</p>
+      </accordion-group>
 
-    <div ng-if="valid == false">
-        <h2>Looks like there are no upcoming events available at the moment. Please try again later.</h2>
-    </div>
+    </accordion>
+  </div>
+
+  <div ng-if="valid == false">
+    <h2>Looks like there are no upcoming events available at the moment. Please try again later.</h2>
+  </div>
 
 </div>

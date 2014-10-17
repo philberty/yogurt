@@ -19,8 +19,6 @@ def serverMain ():
     parser = optparse.OptionParser ()
     parser.add_option("-c", "--config", dest="config",
                       help="Config file location", default=None)
-    parser.add_option("-F", "--fork", dest="fork", action="store_true",
-                      help="Fork as daemon", default=False)
     (options, args) = parser.parse_args()
     if options.config is None:
         sys.exit("Error requires config file see --help")

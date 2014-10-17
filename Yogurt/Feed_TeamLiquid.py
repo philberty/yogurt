@@ -36,15 +36,16 @@ class Feeds_TeamLiquid:
             return self.__parseStreamTwitchTv(node, channel)
 
     def __parseStreamTwitchTv(self, node, channel):
-        try:
-            channelObject = Feed_TwitchTv.getChannelObject(channel)
-            node['followers'] = channelObject['followers']
-            node['logo'] = channelObject['logo']
-            node['views'] = channelObject['views']
-            channel = 'http://www.twitch.tv/%s/embed' % channel
-            node['embed'] = "<iframe width=\"620\" height=\"378\" src=\"%s\" scrolling=\"0\" frameborder=\"0\"></iframe>" % channel
-        except:
-            pass
+        channelObject = Feed_TwitchTv.getChannelObject(channel)
+        node['followers'] = channelObject['followers']
+        node['logo'] = channelObject['logo']
+        node['views'] = channelObject['views']
+        node['name'] = channel
+        node['href'] = 'http://twitch.tv/%s' % channel
+        channelStream = 'http://www.twitch.tv/%s/embed' % channel
+        channelChat = 'http://twitch.tv/chat/embed?channel=%s&amp;popout_chat=true' % channel
+        node['embed'] = "<iframe width=\"620\" height=\"378\" src=\"%s\" scrolling=\"0\" frameborder=\"0\"></iframe>" % channelStream
+        node['embedChat'] = "<iframe frameborder=\"0\" scrolling=\"no\" id=\"chat_embed\" src=\"%s\" height=\"500\" width=\"350\"></iframe>" % channelChat
         return node
 
     def __parseStreamTeamLiquid(self, node):
@@ -104,6 +105,13 @@ class Feeds_TeamLiquid:
             node['thread'] = thread
         return node
 
+    def __parseLogoForEvent(self, event):
+        if event['stream']:
+            event['logo'] = event['stream']['logo']
+        else:
+            event['logo'] = 'http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png'
+        return event
+
     @FeedUtil.Feed(key='live', timer=20)
     def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
@@ -122,6 +130,7 @@ class Feeds_TeamLiquid:
             eid = link.split('/').pop()
             events.append({'title': node.attrib['title'], 'event': link, 'id': eid[1:]})
         events = list(map(self.__parseEventStreamInfo, events))
+        events = list(map(self.__parseLogoForEvent, events))
         return {'live_events': events, 'length': len(events)}
 
     @FeedUtil.Feed(key='streams', timer=10)
