@@ -112,7 +112,7 @@ class Feeds_TeamLiquid:
             event['logo'] = 'http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png'
         return event
 
-    @FeedUtil.Feed(key='live', timer=20)
+    @FeedUtil.Feed(key='live', timer=30)
     def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
         request = requests.get(self.__base)
@@ -133,7 +133,7 @@ class Feeds_TeamLiquid:
         events = list(map(self.__parseLogoForEvent, events))
         return {'live_events': events, 'length': len(events)}
 
-    @FeedUtil.Feed(key='streams', timer=10)
+    @FeedUtil.Feed(key='streams', timer=15)
     def Feed_getStarcraftPlayerStreams(self):
         ServerUtil.info('Looking for player streams on teamliquid!')
         request = requests.get(self.__base)
@@ -150,7 +150,7 @@ class Feeds_TeamLiquid:
         streams = list(map(self.__parseStreamLink, streams))
         return {'starcraft2': streams, 'length': len(streams)}
 
-    @FeedUtil.Feed(key='upcoming', timer=60)
+    @FeedUtil.Feed(key='upcoming', timer=100)
     def Feed_getUpcomingEvents(self):
         ServerUtil.info('Looking for upcomming events on teamliquid!')
         request = requests.get(self.__base)
