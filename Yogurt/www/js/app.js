@@ -181,9 +181,6 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                $http.get('/api/live').success(function(data) {
 		   $scope.data = data['live_events']
 		   $scope.valid = ($scope.data.length > 0) ? true : false
-		   if ($scope.valid) {
-                       $scope.data[0]['first'] = true
-		   }
 
 		   $scope.playing = false
 		   $scope.video = null
@@ -204,9 +201,10 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 			       
 			       $scope.data[i].canPlay = true
 			       $scope.data[i].streamhref = $scope.data[i].stream.href
-			       if ($scope.video == $scope.data[i].stream.embd) {
+			       if ($scope.video == $scope.data[i].stream.embed) {
 				   $scope.data[i].status = 'Now Playing'
 			       } else {
+				   $scope.data[i].first = true
 				   $scope.data[i].status = 'On Now'
 			       }
 			   }
