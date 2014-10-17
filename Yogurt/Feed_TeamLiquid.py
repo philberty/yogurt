@@ -3,6 +3,8 @@ import re
 from . import FeedUtil
 from . import ServerUtil
 from . import Feed_TwitchTv
+from . import Feed_HitBoxTv
+from . import Feed_BinaryBeast
 
 import requests
 from pyquery import PyQuery as pq
@@ -27,6 +29,9 @@ class Feeds_TeamLiquid:
         stream = node['href']
         if 'teamliquid.net/video/streams' in stream:
             return self.__parseStreamTeamLiquid(node)
+        elif 'hitbox.tv' in stream:
+            channel = stream.split('/').pop()
+            return self.__parseHitBoxTvStream(channel, node)
         elif 'twitch.tv' in stream:
             channel = stream.split('/').pop()
             if 'twitch.tv/embed' in stream:
@@ -34,6 +39,14 @@ class Feeds_TeamLiquid:
                 channel = result.group()
                 channel = channel.split('=')[1]
             return self.__parseStreamTwitchTv(node, channel)
+
+    def __parseHitBoxTvStream(self, channel, node):
+        channelObject = Feed_HitBoxTv.getChannelObject(channel)
+        node['object'] = channelObject
+        node['name'] = channel
+        channelStream = 'http://hitbox.tv/#!/embed/%s' % channel
+        node['embed'] = "<iframe width=\"620\" height=\"378\" src=\"%s\" frameborder=\"0\" allowfullscreen></iframe>" % channelStream
+        return node
 
     def __parseStreamTwitchTv(self, node, channel):
         channelObject = Feed_TwitchTv.getChannelObject(channel)
@@ -63,6 +76,11 @@ class Feeds_TeamLiquid:
             node['href'] = stream
         return self.__parseStreamLink(node)
 
+    def __parseBracket(self, links):
+        for i in links:
+            if 'binarybeast.com' in i:
+                return Feed_BinaryBeast.getBracketEmbedCodeFromURL(i)
+
     def __parseEventStreamInfo(self, node):
         ServerUtil.info('Looking up event info for [%s]' % node['title'])
         tag = node['event'].split('/').pop()[1:]
@@ -87,6 +105,7 @@ class Feeds_TeamLiquid:
                 link = self.__base + link
             links.append(link)
         node['links'] = links
+        node['bracket'] = self.__parseBracket(links)
         data = div.text()
         try:
             stream = re.split('Stream:', data)[1].strip().split(' ')[0]
