@@ -12,6 +12,7 @@ from Yogurt import Feed_Dreamhack
 from Yogurt import Feed_TeamLiquid
 from Yogurt import Feed_WCS_EU
 from Yogurt import Feed_WCS_USA
+from Yogurt import Feed_TakeTv
 
 from Yogurt import YogurtFeeder
 
@@ -38,7 +39,8 @@ def serverMain ():
         Feed_Redbull.Feeds_TwitchTv_RedBull(),
         Feed_GSL.Feeds_TwitchTv_GSL(),
         Feed_WCS_EU.Feeds_TwitchTv_WCS_Europe(),
-        Feed_WCS_USA.Feeds_TwitchTv_WCS_USA()
+        Feed_WCS_USA.Feeds_TwitchTv_WCS_USA(),
+        Feed_TakeTv.Feeds_TwitchTv_TakeTv()
     ]
     YogurtFeeder(cache_config, feeds).run()
 
