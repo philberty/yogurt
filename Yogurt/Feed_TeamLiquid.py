@@ -72,12 +72,12 @@ class Feeds_TeamLiquid:
         try:
             stream = dom('iframe.videoplayer').eq(0)[0]
             stream = stream.attrib['src']
+            node['href'] = stream
+            return self.__parseStreamLink(node)
         except:
             stream = None
             ServerUtil.warning('Unable to parse out stream info for [%s]' % node['href'])
-        finally:
-            node['href'] = stream
-        return self.__parseStreamLink(node)
+        return node
 
     def __parseBracket(self, links):
         for i in links:
