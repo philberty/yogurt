@@ -246,6 +246,10 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 		   $scope.chat = event.stream.embedChat
 		   $scope.title = event.title
 		   $document.scrollTopAnimated(0)
+		   for (i in $scope.data) {
+		       $scope.data[i].status = 'On Now'
+		   }
+		   event.status = 'Now Playing'
 	       }
 	   })
 
