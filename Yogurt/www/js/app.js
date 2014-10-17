@@ -231,8 +231,6 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 	       
                $scope.name = 'Live Events'
                $scope.oneAtATime = true
-               $scope.valid = false
-
 	       $scope.watch = function(event) {
 		   if ($scope.playing) {
 		       if ($scope.video == event.stream.embed) {
