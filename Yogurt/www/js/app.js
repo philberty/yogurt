@@ -203,8 +203,8 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 			       $scope.data[i].streamhref = $scope.data[i].stream.href
 			       if ($scope.video == $scope.data[i].stream.embed) {
 				   $scope.data[i].status = 'Now Playing'
+				   $scope.data[i]['first'] = true
 			       } else {
-				   $scope.data[i].first = true
 				   $scope.data[i].status = 'On Now'
 			       }
 			   }
