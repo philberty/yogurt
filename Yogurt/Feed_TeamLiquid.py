@@ -29,6 +29,9 @@ class Feeds_TeamLiquid:
         stream = node['href']
         if 'teamliquid.net/video/streams' in stream:
             return self.__parseStreamTeamLiquid(node)
+        elif 'goodgame.ru' in stream:
+            node['embed'] = stream
+            return node
         elif 'hitbox.tv' in stream:
             channel = stream.split('/').pop()
             return self.__parseHitBoxTvStream(channel, node)
