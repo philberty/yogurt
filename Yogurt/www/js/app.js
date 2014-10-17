@@ -177,7 +177,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
                $scope.oneAtATime = true;
 	   })
 
-	   app.controller('live', function($scope, $http, $modal, usSpinnerService) {
+	   app.controller('live', function($scope, $http, $modal, $document, usSpinnerService) {
                $http.get('/api/live').success(function(data) {
 		   $scope.data = data['live_events']
 		   $scope.valid = ($scope.data.length > 0) ? true : false
@@ -247,6 +247,7 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 		   $scope.video = event.stream.embed
 		   $scope.chat = event.stream.embedChat
 		   $scope.title = event.title
+		   $document.scrollTopAnimated(0)
 	       }
 	   })
 
