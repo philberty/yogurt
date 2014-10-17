@@ -127,13 +127,6 @@ class Feeds_TeamLiquid:
             node['thread'] = thread
         return node
 
-    def __parseLogoForEvent(self, event):
-        if event['stream']:
-            event['logo'] = event['stream']['logo']
-        else:
-            event['logo'] = 'http://s.jtvnw.net/jtv_user_pictures/hosted_images/GlitchIcon_purple.png'
-        return event
-
     @FeedUtil.Feed(key='live', timer=30)
     def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
@@ -152,7 +145,6 @@ class Feeds_TeamLiquid:
             eid = link.split('/').pop()
             events.append({'title': node.attrib['title'], 'event': link, 'id': eid[1:]})
         events = list(map(self.__parseEventStreamInfo, events))
-        events = list(map(self.__parseLogoForEvent, events))
         return {'live_events': events, 'length': len(events)}
 
     @FeedUtil.Feed(key='streams', timer=15)
