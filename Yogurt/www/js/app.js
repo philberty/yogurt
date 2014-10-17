@@ -164,9 +164,9 @@ define('app', ["jquery", "angular", "angularBootstrap", "angularRoute", "angular
 		   for (i in $scope.data) {
 		       if (typeof($scope.data[i].stream) == 'object') {
 			   if ($scope.data[i].stream == null) {
-			       $scope.data[i].stream = 'Stream is unavailable'
+			       $scope.data[i].streamhref = 'Stream is unavailable'
 			   } else {
-			       $scope.data[i].stream = $scope.data[i].stream.stream
+			       $scope.data[i].streamhref = $scope.data[i].stream.href
 			   }
 		       }
 		   }
