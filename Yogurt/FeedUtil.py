@@ -3,11 +3,14 @@ import json
 import time
 import asyncio
 import functools
+import requests
 
 from datetime import datetime
 
 from . import AppCache
 from . import ServerUtil
+
+requests.adapters.DEFAULT_RETRIES = 5
 
 class FeedException(Exception):
     def __init__(self, message):
