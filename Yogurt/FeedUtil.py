@@ -59,8 +59,12 @@ class Feed(object):
     def __callAsync__(self, func):
         def decorated(*args, **kwargs):
             while True:
-                self._doFeedCall(func, *args, **kwargs)
-                yield from asyncio.sleep(self._timer)
+                try:
+                    self._doFeedCall(func, *args, **kwargs)
+                except:
+                    ServerUtil.error("Feed [%s] error [%s]" % (func.__name__, sys.exc_info()[1]))
+                finally:
+                    yield from asyncio.sleep(self._timer)
         return decorated
 
     def __callSync__(self, func):
