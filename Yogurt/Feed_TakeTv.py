@@ -6,7 +6,8 @@ class Feeds_TwitchTv_TakeTv:
         self._filters = [
             'HomeStoryCup VI',
             'HomeStoryCup VII',
-            'HomeStory Cup IX'
+            'HomeStory Cup IX',
+            'HomeStory Cup X'
         ]
 
     @property
