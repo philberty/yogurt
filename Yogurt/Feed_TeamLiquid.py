@@ -9,6 +9,9 @@ from . import Feed_BinaryBeast
 import requests
 from pyquery import PyQuery as pq
 
+_PROXY = {
+    'http': 'http://199.200.120.37:8089'
+}
 
 class Feeds_TeamLiquid:
     """
@@ -65,7 +68,7 @@ class Feeds_TeamLiquid:
         return node
 
     def __parseStreamTeamLiquid(self, node):
-        resp = requests.get(node['href'])
+        resp = requests.get(node['href'], proxies=_PROXY)
         if not resp.ok:
             raise Exception('unable to fetch [%s]' % node['href'])
         dom = pq(resp.content)
@@ -87,7 +90,7 @@ class Feeds_TeamLiquid:
     def __parseEventStreamInfo(self, node):
         ServerUtil.info('Looking up event info for [%s]' % node['title'])
         tag = node['event'].split('/').pop()[1:]
-        resp = requests.get(node['event'])
+        resp = requests.get(node['event'], proxies=_PROXY)
         if not resp.ok:
             raise Exception('Unable to fetch event info [%s]' % node['event'])
         dom = pq(resp.content)
@@ -130,7 +133,7 @@ class Feeds_TeamLiquid:
     @FeedUtil.Feed(key='live', timer=30)
     def Feed_getLiveEvents(self):
         ServerUtil.info('Looking for live events on teamliquid!')
-        request = requests.get(self.__base)
+        request = requests.get(self.__base, proxies=_PROXY)
         if not request.ok:
             raise Exception('unable to fetch [%s]' % self.__base)
         dom = pq(request.content)
@@ -150,7 +153,7 @@ class Feeds_TeamLiquid:
     @FeedUtil.Feed(key='streams', timer=15)
     def Feed_getStarcraftPlayerStreams(self):
         ServerUtil.info('Looking for player streams on teamliquid!')
-        request = requests.get(self.__base)
+        request = requests.get(self.__base, proxies=_PROXY)
         if not request.ok:
             raise Exception('unable to fetch [%s]' % self.__base)
         dom = pq(request.content)
@@ -167,7 +170,7 @@ class Feeds_TeamLiquid:
     @FeedUtil.Feed(key='upcoming', timer=100)
     def Feed_getUpcomingEvents(self):
         ServerUtil.info('Looking for upcomming events on teamliquid!')
-        request = requests.get(self.__base)
+        request = requests.get(self.__base, proxies=_PROXY)
         if not request.ok:
             raise Exception('unable to fetch [%s]' % self.__base)
         dom = pq(request.content)
