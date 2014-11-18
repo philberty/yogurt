@@ -7,7 +7,7 @@ class Feeds_TwitchTv_TakeTv:
             'HomeStoryCup VI',
             'HomeStoryCup VII',
             'HomeStory Cup IX',
-            'HomeStory Cup X'
+            'Homestory Cup X'
         ]
 
     @property

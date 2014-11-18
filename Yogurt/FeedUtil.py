@@ -23,10 +23,6 @@ def restfiyString(string):
         tmp = tmp.replace(i, '')
     return str(tmp)
 
-def getTimeStamp():
-    ts = time.time()
-    return datetime.fromtimestamp(ts).strftime('%Y-%m-%d %H:%M:%S')
-
 class Feed(object):
     def __init__(self, **kwargs):
         try:
@@ -51,11 +47,9 @@ class Feed(object):
         if retval is not None:
             if retval is not None:
                 if self._key:
-                    retval['__yogurt_timestamp'] = getTimeStamp()
                     AppCache.CacheServer.set(self._key, json.dumps(retval))
                 else:
                     for i in retval.keys():
-                        retval[i]['__yogurt_timestamp'] = getTimeStamp()
                         AppCache.CacheServer.set(self._base % restfiyString(i),
                                                  json.dumps(retval[i]))
 
