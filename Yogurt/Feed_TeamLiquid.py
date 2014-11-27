@@ -10,7 +10,7 @@ import requests
 from pyquery import PyQuery as pq
 
 _PROXY = {
-    'http': 'http://199.200.120.37:8089'
+    'http': 'http://204.45.51.113:7808'
 }
 
 class Feeds_TeamLiquid:
