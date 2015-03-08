@@ -19,7 +19,7 @@ class Feeds_TeamLiquid:
     """
 
     def __init__(self):
-        self.__base = 'http://corsproxy.com/teamliquid.net'
+        self.__base = 'http://teamliquid.net'
 
     def __parseEventInfo(self, node):
         elem = node.find_class('rightmenu upcoming_text')

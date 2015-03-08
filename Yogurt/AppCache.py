@@ -57,7 +57,7 @@ class CacheSystem:
         feeds = []
         for i in self.feeds:
             hooks = filter(lambda x: x.startswith('Feed_'), dir(i))
-            feeds.append ((i, list(hooks)))
+            feeds.append((i, list(hooks)))
         incubateFeeds = self._incubateFeeds if Testing else self._incubateFeedsAsync
         incubateFeeds(feeds)
 

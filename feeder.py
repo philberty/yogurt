@@ -14,7 +14,7 @@ from Yogurt import Feed_WCS_EU
 from Yogurt import Feed_WCS_USA
 from Yogurt import Feed_TakeTv
 
-from Yogurt import YogurtFeeder
+from Yogurt import Feeder
 
 from configparser import RawConfigParser as CParser
 
@@ -42,7 +42,7 @@ def serverMain ():
         Feed_WCS_USA.Feeds_TwitchTv_WCS_USA(),
         Feed_TakeTv.Feeds_TwitchTv_TakeTv()
     ]
-    YogurtFeeder(cache_config, feeds).run()
+    Feeder.Feeder(cache_config, feeds).run()
 
 if __name__ == "__main__":
     serverMain ()
