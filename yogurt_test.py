@@ -6,17 +6,17 @@ import unittest
 import Yogurt
 
 from Yogurt import AppCache
-AppCache.Testing = True
+from Yogurt import Routes as YogurtApp
 
 from Yogurt import FeedUtil
-from Yogurt import YogurtApp
-
 from Yogurt import Feed_GSL
 from Yogurt import Feed_Redbull
 from Yogurt import Feed_TwitchTv
 from Yogurt import Feed_Dreamhack
 
 from unittest.mock import MagicMock
+
+AppCache.Testing = True
 
 class MockFeedClass(object):
     @FeedUtil.Feed(key='mock', timer=60)
