@@ -2,6 +2,7 @@
 
 import os
 import sys
+import imp
 import logging
 import optparse
 import logging.config
@@ -16,23 +17,27 @@ from Yogurt import Feed_TakeTv
 
 from Yogurt import Feeder
 
-from configparser import RawConfigParser as CParser
 
-def serverMain ():
+def get_cache_config(filename):
+    d = imp.new_module('config')
+    d.__file__ = filename
+    try:
+        with open(filename) as config_file:
+            exec(compile(config_file.read(), filename, 'exec'), d.__dict__)
+    except IOError as e:
+        e.strerror = 'Unable to load configuration file (%s)' % e.strerror
+        raise
+    return d.__dict__['APP_CACHE']
+
+
+def main ():
     parser = optparse.OptionParser ()
     parser.add_option("-c", "--config", dest="config",
                       help="Config file location", default=None)
     (options, args) = parser.parse_args()
     if options.config is None:
         sys.exit("Error requires config file see --help")
-    try:
-        parseConfig = CParser()
-        parseConfig.read(options.config)
-        cache = str (parseConfig.get("yogurt", "cache"))
-        cache_config = parseConfig._sections[cache]
-    except:
-        sys.exit("Error Parsing config [%s]" % (options.config, sys.exc_info ()[1]))
-    logging.config.fileConfig(options.config)
+    cache_config = get_cache_config(options.config)
     feeds = [
         Feed_TeamLiquid.Feeds_TeamLiquid(),
         Feed_Dreamhack.Feeds_TwitchTv_Dreamhack(),
@@ -45,4 +50,4 @@ def serverMain ():
     Feeder.Feeder(cache_config, feeds).run()
 
 if __name__ == "__main__":
-    serverMain ()
+    main()
